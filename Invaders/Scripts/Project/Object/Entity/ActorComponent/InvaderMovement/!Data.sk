@@ -1,0 +1,2 @@
+// True if boundaries have been set
+Boolean !@has_boundaries?

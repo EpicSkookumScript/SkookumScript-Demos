@@ -1,0 +1,6 @@
+()
+[
+  @death_sound.play
+  GameLib.spawn_emitter_at_location(,@death_particle, actor_location) when @death_particle.valid?
+  destroy_sk_actor
+]

@@ -1,0 +1,12 @@
+// Third Person Example Map
+//
+// UE4 name of this class: ThirdPersonExampleMap_C
+
+// UE4 Asset Name: ThirdPersonExampleMap
+// UE4 Package Name: "/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap"
+
+annotations: &reflected_data &name("ThirdPersonExampleMap_C")
+
+$$ @
+
+$$ .

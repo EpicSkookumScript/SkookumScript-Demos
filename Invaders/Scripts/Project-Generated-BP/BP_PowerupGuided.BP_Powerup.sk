@@ -1,0 +1,12 @@
+// BP Powerup Guided
+//
+// UE4 name of this class: BP_PowerupGuided_C
+
+// UE4 Asset Name: BP_PowerupGuided
+// UE4 Package Name: "/Game/Blueprints/Actors/Powerups/BP_PowerupGuided"
+
+annotations: &reflected_data &name("BP_PowerupGuided_C")
+
+$$ @
+
+$$ .

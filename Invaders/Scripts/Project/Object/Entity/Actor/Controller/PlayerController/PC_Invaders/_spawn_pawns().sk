@@ -1,0 +1,31 @@
+()
+[
+  // This is the only place where player lives are touched during gameplay, so this is an example of
+  // pushing to UMG instead of polling from a UMG binding.
+  @game_ui.lives_set(@player_lives)
+  
+  println("Spawning pawns!")
+  loop
+  [
+    if @pawn.null?
+    [
+      !t : Transform!translation(@world_setup.@game_coord_player_start)
+      !p : GameLib.begin_spawning_actor_from_class(,GameLib.game_mode.@default_pawn_class, t)
+      p : GameLib.finish_spawning_actor(p t)<>Pawn
+      p<>BP_PlayerPawn._fly_in
+      possess(p)
+    ]
+    
+    // Wait until the pawn is null and consider it destroyed
+    _wait_pawn_null(0)
+
+    // Decrement lives, update UI and stop spawning if lives expired.
+    @player_lives--
+    @game_ui.lives_set(@player_lives)
+    [exit] when @player_lives = 0
+    
+    _wait(@respawn_delay)  
+  ]
+  
+  @game_is_over := true
+]

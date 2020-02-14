@@ -1,0 +1,10 @@
+//---------------------------------------------------------------------------------------
+// Broadcast the death event
+//---------------------------------------------------------------------------------------
+
+() 
+[
+  GameLib.spawn_emitter_at_location(,@death_particle, owner.actor_location) when @death_particle.valid?
+  @death_sound.play
+  @death_event.do[item()]
+]

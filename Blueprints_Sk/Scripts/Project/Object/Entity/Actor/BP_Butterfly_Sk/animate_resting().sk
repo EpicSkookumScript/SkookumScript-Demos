@@ -1,0 +1,10 @@
+//---------------------------------------------------------------------------------------
+// Animate the wing components for butterfly resting
+//---------------------------------------------------------------------------------------
+
+()
+  [
+  !wing_angle: MathLib.lerp(0 80 @resting_curve_flapping_motion_f7cc)
+  @left_wing.relative_rotation_set(RotationAngles!yaw_pitch_roll(0 0 wing_angle))
+  @right_wing.relative_rotation_set(RotationAngles!yaw_pitch_roll(0 0 -wing_angle))
+  ]

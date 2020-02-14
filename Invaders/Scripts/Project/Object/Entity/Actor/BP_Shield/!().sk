@@ -1,0 +1,4 @@
+()
+[
+  @shield_actors : List{Actor}!
+]

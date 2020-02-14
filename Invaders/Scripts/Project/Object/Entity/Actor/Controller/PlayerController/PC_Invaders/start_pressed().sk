@@ -1,0 +1,5 @@
+&blueprint
+(Boolean pressed?)
+[
+  @wants_start? := pressed?
+]

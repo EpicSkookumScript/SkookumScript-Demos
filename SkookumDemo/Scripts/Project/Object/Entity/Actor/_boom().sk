@@ -1,0 +1,25 @@
+//---------------------------------------------------------------------------------------
+// Make an explosion attached to this actor with optional offset
+// 
+// # Params:
+//   offset: make explosion offset to this actor
+//
+// # Examples:  actor._boom
+// # Author(s): Conan Reis
+//---------------------------------------------------------------------------------------
+
+(Vector3 offset: Vector3!) 
+
+  [
+  
+  sync
+    [
+    _play_sound("/Game/ScriptLoaded/Audio/Explosion01.Explosion01" offset)
+    _spawn_emitter("/Game/ScriptLoaded/Particles/P_Explosion.P_Explosion" offset)
+    // Camera shake with taper off
+    //_camera_shake(.4 .7)
+    //_camera_shake(.6 .3)
+    //_camera_shake(.8 .2)
+    ]
+  ]
+

@@ -1,0 +1,26 @@
+// BP World Setup
+//
+// UE4 name of this class: BP_WorldSetup_C
+
+// UE4 Asset Name: BP_WorldSetup
+// UE4 Package Name: "/Game/Blueprints/Game/BP_WorldSetup"
+
+annotations: &reflected_data &name("BP_WorldSetup_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")       PointerToUberGraphFrame !@uber_graph_frame       // Currently unsupported */
+&raw("PlayerEntranceSpline") SplineComponent !@player_entrance_spline // Player Entrance Spline
+&raw("DefaultSceneRoot")     SceneComponent  !@default_scene_root     // Default Scene Root
+&raw("EnableDebug")          Boolean         !@enable_debug?          // Enable Debug
+&raw("GameCamera")           CameraActor     !@game_camera            // Game Camera
+&raw("PlayfieldCenter")      Actor           !@playfield_center       // Playfield Center
+&raw("ShieldCount")          Integer         !@shield_count           // Shield Count
+&raw("FirstShieldLoc")       Vector2         !@first_shield_loc       // First Shield Loc
+&raw("ShieldClass")          EntityClass     !@shield_class           // Shield Class
+&raw("InvasionClass")        EntityClass     !@invasion_class         // Invasion Class
+&raw("FlyInStartPoint")      TargetPoint     !@fly_in_start_point     // Fly in Start Point
+&raw("SatStart")             TargetPoint     !@sat_start              // Sat Start
+&raw("SatEnd")               TargetPoint     !@sat_end                // Sat End
+
+$$ .

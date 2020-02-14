@@ -1,0 +1,7 @@
+// Allows you to create a custom SkookumScript component by deriving from the SkookumScriptBehaviorComponent class. Dynamically attach and detach to/from any actor as you like via script.
+//
+// UE4 name of this class: SkookumScriptBehaviorComponent
+
+annotations: &reflected_cpp &name("SkookumScriptBehaviorComponent")
+
+$$ .

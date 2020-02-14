@@ -1,0 +1,14 @@
+// BP Guided Projectile
+//
+// UE4 name of this class: BP_GuidedProjectile_C
+
+// UE4 Asset Name: BP_GuidedProjectile
+// UE4 Package Name: "/Game/Blueprints/Projectiles/BP_GuidedProjectile"
+
+annotations: &reflected_data &name("BP_GuidedProjectile_C")
+
+$$ @
+
+&raw("ForceMax") Real !@force_max // Force Max
+
+$$ .

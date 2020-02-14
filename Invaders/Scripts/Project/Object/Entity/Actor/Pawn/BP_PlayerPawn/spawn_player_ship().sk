@@ -1,0 +1,14 @@
+()
+[
+ /*
+  @instanced_static_mesh.clear_instances
+
+  @pattern_spawner.spawn_pattern_instanced(
+    E_Pattern.@@player
+    @instanced_static_mesh
+    100.0
+    Vector3!
+    3
+    0.14)
+    */
+]

@@ -1,0 +1,6 @@
+()
+[
+  !t : Transform!translation(@world_setup.@game_coord_saucer_spawn)
+  !s : GameLib.begin_spawning_actor_from_class(, @saucer_class, t)
+  GameLib.finish_spawning_actor(s, t)
+]

@@ -1,0 +1,22 @@
+// BP Powerup
+//
+// UE4 name of this class: BP_Powerup_C
+
+// UE4 Asset Name: BP_Powerup
+// UE4 Package Name: "/Game/Blueprints/Actors/Powerups/BP_Powerup"
+
+annotations: &reflected_data &name("BP_Powerup_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")      PointerToUberGraphFrame      !@uber_graph_frame      // Currently unsupported */
+&raw("InstancedStaticMesh") InstancedStaticMeshComponent !@instanced_static_mesh // Instanced Static Mesh
+&raw("SphereShell")         StaticMeshComponent          !@sphere_shell          // Sphere Shell
+&raw("Sphere")              SphereComponent              !@sphere                // Sphere
+&raw("RotatingMovement")    RotatingMovementComponent    !@rotating_movement     // Rotating Movement
+&raw("PatternSpawner")      PatternSpawner               !@pattern_spawner       // Pattern Spawner
+&raw("InvaderMovement")     InvaderMovement              !@invader_movement      // Invader Movement
+&raw("PowerupParams")       S_GunParams                  !@powerup_params        // Powerup Params
+&raw("PowerupSound")        SoundCue                     !@powerup_sound         // Powerup Sound
+
+$$ .

@@ -1,0 +1,19 @@
+// Character Blueprint that contains movement logic.
+//
+// UE4 name of this class: Hero_C
+
+// UE4 Asset Name: Hero
+// UE4 Package Name: "/Game/Blueprints/Hero"
+
+annotations: &reflected_data &name("Hero_C")
+
+$$ @
+
+/* &raw("UberGraphFrame") PointerToUberGraphFrame !@uber_graph_frame  // Currently unsupported */
+&raw("FollowCamera")   CameraComponent    !@follow_camera     // Follow Camera
+&raw("CameraBoom")     SpringArmComponent !@camera_boom       // Camera Boom
+&raw("BaseTurnRate")   Real               !@base_turn_rate    // Base Turn Rate
+&raw("BaseLookUpRate") Real               !@base_look_up_rate // Base Look Up Rate
+&raw("NewVar_0")       Entity             !@new_var_0         // New Var 0
+
+$$ .

@@ -1,0 +1,17 @@
+// BP Asteroid
+//
+// UE4 name of this class: BP_Asteroid_C
+
+// UE4 Asset Name: BP_Asteroid
+// UE4 Package Name: "/Game/Blueprints/Environment/BP_Asteroid"
+
+annotations: &reflected_data &name("BP_Asteroid_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")   PointerToUberGraphFrame   !@uber_graph_frame  // Currently unsupported */
+&raw("RotatingMovement") RotatingMovementComponent !@rotating_movement // Rotating Movement
+&raw("StaticMesh")       StaticMeshComponent       !@static_mesh       // Static Mesh
+&raw("RotationMinMax")   Vector2                   !@rotation_min_max  // Rotation Min Max
+
+$$ .

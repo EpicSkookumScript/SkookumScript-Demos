@@ -1,0 +1,15 @@
+// Example Map
+//
+// UE4 name of this class: Example_Map_C
+
+// UE4 Asset Name: Example_Map
+// UE4 Package Name: "/Game/Maps/Example_Map"
+
+annotations: &reflected_data &name("Example_Map_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")          PointerToUberGraphFrame !@uber_graph_frame        // Currently unsupported */
+&raw("Obstacle start location") Vector3 !@obstacle_start_location // Obstacle Start Location
+
+$$ .

@@ -1,0 +1,14 @@
+// Gun Component
+//
+// UE4 name of this class: GunComponent_C
+
+// UE4 Asset Name: GunComponent
+// UE4 Package Name: "/Game/Blueprints/Components/GunComponent"
+
+annotations: &reflected_data &name("GunComponent_C")
+
+$$ @
+
+&raw("GunParams") S_GunParams !@gun_params // Gun Params
+
+$$ .

@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------------------
+// Fire a projectile with firing delay. Return a fired? which indicates if we fired or not.
+//---------------------------------------------------------------------------------------
+
+(;Boolean fired?) 
+[
+  fired? : false
+  // If we successfully fire a projectile then wait for the firing delay
+  if fire
+  [
+    fire_broadcast
+    _wait(@gun_params.@firing_delay_9_692e)
+    fired? := true
+  ]
+  else
+  [
+    // Kind of arbitrary, but if we couldn't fire, we wait for half of the firing delay
+    // This is mostly used as a way of spacing out the firing of the gun empty sound
+    _wait(@gun_params.@firing_delay_9_692e * 0.5)
+  ]
+]

@@ -1,0 +1,16 @@
+// A basic first-person character pawn
+//
+// UE4 name of this class: BP_FPS_CharacterPawn_C
+
+// UE4 Asset Name: BP_FPS_CharacterPawn
+// UE4 Package Name: "/Game/Assets/Blueprints/BP_FPS_CharacterPawn"
+
+annotations: &reflected_data &name("BP_FPS_CharacterPawn_C")
+
+$$ @
+
+/* &raw("UberGraphFrame") PointerToUberGraphFrame !@uber_graph_frame  // Currently unsupported */
+&raw("BaseTurnRate")   Real !@base_turn_rate    // Base Turn Rate
+&raw("BaseLookUpRate") Real !@base_look_up_rate // Base Look Up Rate
+
+$$ .

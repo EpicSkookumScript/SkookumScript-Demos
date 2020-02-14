@@ -1,0 +1,9 @@
+(PlayerController pc) 
+[
+  if pc.valid?
+  [
+    // Saucer coordinates
+    GameLib.deproject_point_to_plane(pc, Vector2!xy(-1.2, -0.8), @plane_dist, true; @game_coord_saucer_spawn)
+    GameLib.deproject_point_to_plane(pc, Vector2!xy(1.2, -0.8),  @plane_dist, true; @game_coord_saucer_despawn)
+  ]
+]

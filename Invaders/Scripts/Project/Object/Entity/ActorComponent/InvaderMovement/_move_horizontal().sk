@@ -1,0 +1,7 @@
+// Move left or right
+// Optionally pass an origin point to consider as the location, useful for moving groups
+(Boolean right?, Vector3 origin : owner.actor_location; Boolean did_move?) 
+[
+  !dir : right?.as_vec3s(Vector3!right, -Vector3!right)
+  _move(dir, origin; did_move?)
+]

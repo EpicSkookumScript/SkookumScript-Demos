@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------------------
+// Callback invoked just _after_ this component has been attached to an actor.
+//
+// This is where you can override different values for your component. In this case,
+// we're specifying a different socket attachment for vfx spawning.
+//
+// Author: Shadi Dadenji
+//---------------------------------------------------------------------------------------
+
+()
+  [
+  socket_name_set("pelvis".Name)
+  ]

@@ -1,0 +1,12 @@
+// Third Person Character
+//
+// UE4 name of this class: ThirdPersonCharacter_C
+
+// UE4 Asset Name: ThirdPersonCharacter
+// UE4 Package Name: "/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter"
+
+annotations: &reflected_data &name("ThirdPersonCharacter_C")
+
+$$ @
+
+$$ .

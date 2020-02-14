@@ -1,0 +1,16 @@
+//---------------------------------------------------------------------------------------
+// Move butterfly forward based on speed variables
+// and smoothly ease butterfly rotation to face the flight target
+//---------------------------------------------------------------------------------------
+
+(Real forward_speed Real upward_speed)
+  [
+  !delta_time: GameLib.world_delta_seconds
+  
+  // Move butterfly forward based on speed variables
+  @base.add_local_offset(Vector3!xyz(forward_speed 0 upward_speed) * delta_time)
+  
+  // Smoothly ease butterfly rotation to face the flight target
+  !target_rotation: MathLib.find_look_at_rotation(@base.component_location @flight_target.component_location)
+  @base.world_rotation_set(MathLib.rinterp_to(@base.component_rotation target_rotation delta_time 1.2))
+  ] 

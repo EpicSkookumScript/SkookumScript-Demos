@@ -1,0 +1,15 @@
+// BP Tree Stump
+//
+// UE4 name of this class: BP_TreeStump_C
+
+// UE4 Asset Name: BP_TreeStump
+// UE4 Package Name: "/Game/Blueprints/BP_TreeStump"
+
+annotations: &reflected_data &name("BP_TreeStump_C")
+
+$$ @
+
+&raw("BurnComponentBase") BurnComponentBase   !@burn_component_base // Burn Component Base
+&raw("StaticMesh")        StaticMeshComponent !@static_mesh         // Static Mesh
+
+$$ .

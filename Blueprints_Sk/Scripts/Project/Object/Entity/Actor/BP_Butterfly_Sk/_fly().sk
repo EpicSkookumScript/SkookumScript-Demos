@@ -1,0 +1,104 @@
+//---------------------------------------------------------------------------------------
+// Simulates the butterfly's flight
+//---------------------------------------------------------------------------------------
+
+() 
+  [
+  // Variable storing location to land at
+  !landing_spot : HitResult!   
+  loop
+    [
+        
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    // 1) Takeoff phase
+    @trail.activate(false)           // Turn on trail effect    
+    @flight_curve.play               // Start flying timeline    
+    @flight_curve.play_rate_set(2.6) // Speed up wingbeats    
+    @time_in_flight := 0             // Reset flight time    
+    @audio_flight.fade_in(0 1)       // AUDIO: Fade in Flying Soundcue
+    
+    race
+      [
+      loop
+        [
+        move_flight(45 35) // Move and rotate        
+        animate_flight     // Animate wing/body components        
+        _wait              // Wait one frame
+        ]
+        
+      _wait(1.8)  
+      ]
+    
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    // 2) Flight phase
+    @flight_curve.play_rate_set(1.5)
+    
+    race
+      [         
+      // Pick a new flight target once in a while
+      loop
+        [
+        pick_new_flight_target
+        _wait(@@random.uniform_range(1 2.5))
+        ]
+        
+      // Flight movement
+      loop
+        [        
+        move_flight(100 0) // Move and rotate        
+        animate_flight     // Animate wing/body components        
+        _wait              // Wait one frame
+        ]
+        
+      // Collision detection
+      loop
+        [
+        if check_for_landing_spot(landing_spot) [exit]   // Move on to landing phase if landing spot found
+        _wait(0.4)                                       // Space out executions so they're not every frame
+        ]      
+      ]
+      
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    // 3) landing phase
+    !landing_start     : @base.component_location
+    !landing_start_rot : @base.component_rotation
+    !landing_end       : landing_spot.@location + [landing_spot.@normal * 1.5] // Offset slightly above impact point
+    !landing_end_rot   : MathLib.find_look_at_rotation(landing_start landing_spot.@location + [landing_spot.@normal * -5]) // Rotate towards location slightly below the surface of the impact point
+    landing_end_rot.@pitch += 90      // Offset pitch to face forward
+    @flight_curve.play_rate_set(2.5)  // Speed up wingbeats
+    @landing_curve.play_from_start    // Simple curve from 0 to 1
+    
+    loop
+      [
+      move_landing(landing_start landing_start_rot landing_end landing_end_rot)     // Move and rotate butterfly towards landing spot        
+      if not @landing_curve.is_playing? [exit]  // When done playing, end landing phase and move on to resting phase        
+      animate_flight                                // Animate wing/body components      
+      _wait
+      ]
+      
+    @flight_curve.stop           // Stop flapping
+    @trail.deactivate            // Turn off trail effect
+    @audio_flight.fade_out(0.5)  // AUDIO: Fade out Flying Soundcue          
+    
+    // 4) Resting phase
+    @resting_curve.play          // Play flapping motion for rest
+    @audio_ground.fade_in(1 1)   // AUDIO: Fade in Resting Soundcue    
+    
+    race
+      [
+        // Animate the wing components for butterfly resting
+        loop
+          [
+          animate_resting
+          _wait  
+          ] 
+     
+        // Timeout after a while - rest longer depending on length of flight
+        _wait(@@random.uniform_range(@time_in_flight.clamp(1 7) [@time_in_flight + 6]))
+      ]
+      
+    @resting_curve.stop          // Stop flapping motion for rest
+    @audio_ground.fade_out(1)    // AUDIO: Fade out Resting Soundcue
+    @flight_target.world_location_set(landing_start) // Take off by flying back towards "Landing start" location
+    ]      
+  ]

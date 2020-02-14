@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.24",
+	"Category": "SkookumScript",
+	"Description": "Skookum Demo - simple game level demonstrating the power of the SkookumScript programming language.",
+	"Plugins": [
+		{
+			"Name": "SkookumScript",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/38694f554c2c4b9f84c585256d509481"
+		}
+	]
+}

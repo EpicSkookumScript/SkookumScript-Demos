@@ -1,0 +1,5 @@
+(Integer amount) 
+[
+  @score += amount
+  [@high_score := @score] when @score > @high_score
+]

@@ -1,0 +1,32 @@
+()
+[
+  @game_coord_shields.do
+  [
+    BP_Shield.spawn_at_xform(Transform!translation(item))
+  ]
+  
+  // Have all the shields fly in
+  branch
+  [
+    !shields : BP_ShieldBlockNew.instances
+    loop
+    [
+      [exit] when shields.length = 0
+      !s : shields.any
+      shields.remove_same(s)
+      [
+        _wait(@@random.uniform_range(0.001, 0.007))
+        branch[s._fly_in]
+      ]
+    ]
+  ]
+  /*
+  branch
+  [
+    !pc : GameLib.player_controller<>PC_Invaders
+    _wait(2.5)
+    pc.view_shield_camera
+    _wait(2)
+    pc.view_game_camera
+  ]*/
+]

@@ -1,0 +1,11 @@
+(;Boolean won?)
+[
+  won? : false
+  loop
+  [
+    [exit] when BP_Invader.instances.length = 0
+    _wait(0.1)
+  ]
+  won? := true
+  println("All invaders destroyed")
+]

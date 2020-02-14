@@ -1,0 +1,27 @@
+//---------------------------------------------------------------------------------------
+// Pick new location to flutter towards
+//---------------------------------------------------------------------------------------
+
+() 
+  [
+  // Keep track of how many times we pick a new target
+  @time_in_flight++
+    
+  // Choose new target nearby the attractor location
+  !new_target_location:
+    if @time_in_flight >= 6
+      [
+      // Got tired - head back to our trusted landing spot
+      @attractor_location
+      ]
+    else
+      [
+      // Pick random flight targets as long as we aren't tired
+      !target_offset_h: MathLib.random_float_in_range(-0.7 * @max_flight_range @max_flight_range)
+      !target_offset_v: MathLib.random_float_in_range(-0.15 * @max_flight_range @max_flight_range)
+        
+      @attractor_location + Vector3!xyz(target_offset_h target_offset_h target_offset_v)
+      ]
+    
+  @flight_target.world_location_set(new_target_location)  
+  ]

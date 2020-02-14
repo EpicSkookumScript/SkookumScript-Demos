@@ -1,0 +1,7 @@
+&blueprint
+(Real axis_value)
+  [
+  !yaw_rotation: RotationAngles!yaw_pitch_roll(control_rotation.@yaw 0 0).Rotation
+  !direction: Vector3!right.rotate_by(yaw_rotation)
+  add_movement_input(direction axis_value)
+  ] 

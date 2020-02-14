@@ -1,0 +1,14 @@
+// TEST Invader
+//
+// UE4 name of this class: TEST_Invader_C
+
+// UE4 Asset Name: TEST_Invader
+// UE4 Package Name: "/Game/Maps/TEST_Invader"
+
+annotations: &reflected_data &name("TEST_Invader_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+
+$$ .

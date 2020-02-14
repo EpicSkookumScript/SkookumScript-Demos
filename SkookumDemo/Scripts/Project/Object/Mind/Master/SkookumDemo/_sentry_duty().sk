@@ -1,0 +1,28 @@
+//---------------------------------------------------------------------------------------
+// Loop enemies around target points
+// 
+// Params:
+//   enable?: `true` to start sentry duty, `false` to stop
+//---------------------------------------------------------------------------------------
+
+(enable?: true) 
+
+  [
+  @sentry? := enable?
+ 
+  !enemy 
+  !target
+  !targets: {@'TargetPoint4' @'TargetPoint5' @'TargetPoint6'}
+    
+  loop
+    [
+    if not @sentry? [exit]
+    // Get a new target each time
+    target: targets.any_but(target)
+    // Get a new enemy each time
+    enemy: Enemy.instances.any_but(enemy)
+    enemy._path_to_actor(target)
+    enemy._sentry_action
+    ]
+  ]
+

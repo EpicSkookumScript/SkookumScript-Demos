@@ -1,0 +1,6 @@
+&blueprint
+()
+[
+  // Subscribe our destroy method to the health component's death event
+  @health_component.death_subscribe(^[destroy])    
+]

@@ -1,0 +1,18 @@
+//-------------------------------------------------------------------------------------------
+// FireBotCharacter constructor; creates a PlayerBurnComponent, attaches it, then enables it.
+// Author: Shadi Dadenji
+//-------------------------------------------------------------------------------------------
+
+() 
+  [
+  @fire_component : PlayerBurnComponent!
+  @fire_component.attach(this "FireComponent".Name)
+  @fire_component.enable_burn()
+  ]
+
+// Skookum calls to spawn some vfx. We're currently doing it in C++ but this is how
+// they look like in Sk. Try calling them in the console while the game is running!
+
+// !vfx : ParticleSystem.load("/Game/StarterContent/Particles/P_Fire.P_Fire")
+// !mesh : StaticMeshComponent.from(@'BP_TreeStump_476')
+// !vfx_component : GameLib.spawn_emitter_attached(vfx mesh "root".Name location_type : EAttachLocation.@@snap_to_target_including_scale)

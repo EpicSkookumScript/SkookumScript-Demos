@@ -1,0 +1,5 @@
+()
+[
+  @death_event : List{()}!
+  @health := @max_health!
+]

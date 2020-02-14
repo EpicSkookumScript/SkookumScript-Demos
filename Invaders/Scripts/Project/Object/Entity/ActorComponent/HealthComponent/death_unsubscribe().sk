@@ -1,0 +1,5 @@
+// Unsubscribe to death events from this component
+(() code)
+[
+  @death_event.remove_same(code)
+]

@@ -1,0 +1,14 @@
+//---------------------------------------------------------------------------------------
+// Method description...
+//---------------------------------------------------------------------------------------
+
+(Vector3 landing_start RotationAngles landing_start_rot Vector3 landing_end RotationAngles landing_end_rot)
+  [
+  // Lerp from landing start position to landing end position
+  @base.world_location_set(MathLib.vlerp(landing_start landing_end @landing_curve_0_to_1_8b65))
+  // Stop rotating slightly early
+  if @landing_curve_0_to_1_8b65 < .99
+    [
+    @base.world_rotation_set(MathLib.rlerp(landing_start_rot landing_end_rot @landing_curve_0_to_1_8b65))
+    ]
+  ] 

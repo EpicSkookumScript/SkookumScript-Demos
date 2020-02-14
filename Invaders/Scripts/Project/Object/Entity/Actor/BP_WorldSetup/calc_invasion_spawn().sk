@@ -1,0 +1,7 @@
+(PlayerController pc) 
+[
+  if pc.valid?
+  [
+    GameLib.deproject_point_to_plane(pc, Vector2!xy(0.0, -0.70), @plane_dist, true; @game_coord_invader_spawn)
+  ]
+]

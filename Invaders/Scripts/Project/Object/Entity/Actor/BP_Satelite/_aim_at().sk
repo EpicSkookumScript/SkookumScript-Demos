@@ -1,0 +1,31 @@
+&blueprint
+(Vector3 world_point)
+[
+  // Assume that the satellite will always be roughly sitting on a level ground plane
+  // Find a direction vector for:
+  // 1. Satellite base forward
+  // 2. Vector from base to destination
+  !bone_base : "platform_rotation_bone_01".Name
+  !current_loc : @poseable_mesh.bone_location_by_name(bone_base, EBoneSpaces.@@world_space)
+  !dir_desired : MathLib.normal(world_point - current_loc)
+  
+  // If a satellite is in quadrant 0 or 1 we need to adjust their cross product direction
+  !in_quad_01? : actor_location.@y > 0
+  
+  loop
+  [ 
+    !dir_current : @poseable_mesh.bone_rotation_by_name(bone_base, EBoneSpaces.@@world_space).Vector3
+    !cross : dir_current.cross(dir_desired)
+    !dot : dir_current.dot(dir_desired)      
+    !mult : if cross.@z < 0[-1.0] else[1.0]
+    
+    if in_quad_01?[mult := mult * -1]
+
+    !amount : GameLib.world_delta_seconds * @rotation_rate * mult
+    
+    !rot_bone_comp : @poseable_mesh.bone_rotation_by_name(bone_base, EBoneSpaces.@@component_space)
+    @poseable_mesh.bone_rotation_by_name_set(bone_base, rot_bone_comp + RotationAngles!yaw_pitch_roll(amount 0 0), EBoneSpaces.@@component_space)
+    [exit] when MathLib.nearly_equal_float_float(cross.@z, 0.0, 1e-2)
+    _wait
+  ]
+]

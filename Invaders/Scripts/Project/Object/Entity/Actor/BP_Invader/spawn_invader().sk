@@ -1,0 +1,19 @@
+&blueprint
+()
+[
+/*
+  if @pattern ~= E_Pattern.@@none
+  [
+    // Spawn the pattern for this actor
+    @invader_instanced_mesh.clear_instances
+
+    @pattern_spawner.spawn_pattern_instanced(
+      @pattern
+      @invader_instanced_mesh
+      100.0
+      Vector3!
+      @center_index
+      @invader_scale)
+  ]
+  */
+]

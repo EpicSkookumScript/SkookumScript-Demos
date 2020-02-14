@@ -1,0 +1,12 @@
+()
+[
+  // Shut everything down
+  
+  // Particles
+  @laser.active_set(false)
+  
+  // Sounds
+  @firing_cue.stop when @firing_cue.valid?
+  @target_cue.stop when @target_cue.valid?
+  @idle_cue.stop when @idle_cue.valid? 
+]

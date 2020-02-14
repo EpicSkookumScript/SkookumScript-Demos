@@ -1,0 +1,30 @@
+&blueprint
+()
+[
+  // Make sure we don't have any undefined data in the list, like someone added an entry and never populated the class
+  Debug.assert(@spawn_info.all?[item.@class_6_3692.not_nil?], "There are empty class entries in the spawn volume! Ignore this and fix them.")
+  
+  // Spawn stuff
+  @spawn_count.do
+  [
+    // Rand class
+    !spawn : @spawn_info.any(@random)
+    
+    // Rand location
+    !loc : @random.point_in_bounding_box(actor_location, @box.scaled_box_extent)
+    
+    // Rand rotation
+    !rot : RotationAngles!yaw_pitch_roll(
+      @random.uniform_range(0.0, 360.0)
+      @random.uniform_range(0.0, 360.0)
+      @random.uniform_range(0.0, 360.0))
+      
+    // Rand scale
+    !scale : Vector3!scalar(@random.uniform_range(spawn.@scale_range_5_1276.@x, spawn.@scale_range_5_1276.@y))
+
+    // Try to spawn, fail if colliding
+    !t : Transform!translation_rotation_scale(loc, rot.Rotation, scale)
+    !a : GameLib.begin_deferred_actor_spawn_from_class(, spawn.@class_6_3692, t, ESpawnActorCollisionHandlingMethod.@@adjust_if_possible_but_dont_spawn_if_colliding)
+    a : GameLib.finish_spawning_actor(a, t)
+  ]
+]

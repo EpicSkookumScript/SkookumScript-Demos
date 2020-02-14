@@ -1,0 +1,6 @@
+&blueprint
+()
+[
+  !r : () Real[@@random.uniform_range(@rotation_min_max.@x, @rotation_min_max.@y)]
+  @rotating_movement.@rotation_rate := RotationAngles!yaw_pitch_roll(r() r() r())
+]

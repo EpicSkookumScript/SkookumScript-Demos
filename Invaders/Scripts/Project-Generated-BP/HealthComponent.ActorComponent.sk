@@ -1,0 +1,20 @@
+// Health Component
+//
+// UE4 name of this class: HealthComponent_C
+
+// UE4 Asset Name: HealthComponent
+// UE4 Package Name: "/Game/Blueprints/Components/HealthComponent"
+
+annotations: &reflected_data &name("HealthComponent_C")
+
+$$ @
+
+/* &raw("UberGraphFrame") PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+&raw("MaxHealth")      Real           !@max_health      // Max Health
+&raw("Health")         Real           !@health          // Health
+&raw("DamageParticle") ParticleSystem !@damage_particle // Damage Particle
+&raw("DeathParticle")  ParticleSystem !@death_particle  // Death Particle
+&raw("ScoreValue")     Integer        !@score_value     // Score Value
+&raw("DeathSound")     SoundCue       !@death_sound     // Death Sound
+
+$$ .

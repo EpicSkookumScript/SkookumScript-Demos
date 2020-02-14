@@ -1,0 +1,6 @@
+(Vector3 dest)
+[
+  _laser_on
+  _look_at(dest)
+  _laser_off
+]

@@ -1,0 +1,14 @@
+// GameMode Blueprint that defines default pawn to use.
+//
+// UE4 name of this class: MyGame_C
+
+// UE4 Asset Name: MyGame
+// UE4 Package Name: "/Game/Blueprints/MyGame"
+
+annotations: &reflected_data &name("MyGame_C")
+
+$$ @
+
+&raw("DefaultSceneRoot") SceneComponent !@default_scene_root // Default Scene Root
+
+$$ .

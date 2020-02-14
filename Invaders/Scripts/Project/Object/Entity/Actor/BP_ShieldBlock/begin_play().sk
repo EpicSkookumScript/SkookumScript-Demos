@@ -1,0 +1,6 @@
+&blueprint
+()
+[
+  @health_component.death_subscribe(^[destroy_sk_actor])
+  register_overlaps
+]

@@ -1,0 +1,12 @@
+&blueprint
+()
+[
+  !loc : Vector3!xyz(1000.0, 0.0, 100.0)
+  !rot : RotationAngles!yaw_pitch_roll(0 90 0).Rotation
+  loop
+  [
+    
+    BP_GuidedProjectile.spawn_at_xform(Transform!translation_rotation(loc, rot))
+    _wait(1)
+  ]
+]

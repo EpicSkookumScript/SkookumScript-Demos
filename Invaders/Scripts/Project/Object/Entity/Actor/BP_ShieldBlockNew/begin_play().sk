@@ -1,0 +1,9 @@
+&blueprint
+()
+[
+  actor_hidden_in_game_set(true)
+  setup_entrance_spline
+  
+  @health_component.death_subscribe(^[destroy_sk_actor])
+  register_overlaps
+]

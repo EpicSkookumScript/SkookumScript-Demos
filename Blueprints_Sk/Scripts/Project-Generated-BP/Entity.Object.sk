@@ -1,0 +1,8 @@
+// Direct base class for all UE4 objects
+// @note The full C++ class is located here: Engine\Source\Runtime\CoreUObject\Public\UObject\Object.h
+//
+// UE4 name of this class: Object
+
+annotations: &reflected_cpp &name("Object")
+
+$$ .

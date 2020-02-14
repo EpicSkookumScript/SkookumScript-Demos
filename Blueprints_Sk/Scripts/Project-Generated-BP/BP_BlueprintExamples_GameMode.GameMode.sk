@@ -1,0 +1,34 @@
+// BP Blueprint Examples Game Mode
+//
+// UE4 name of this class: BP_BlueprintExamples_GameMode_C
+
+// UE4 Asset Name: BP_BlueprintExamples_GameMode
+// UE4 Package Name: "/Game/Assets/Blueprints/BP_BlueprintExamples_GameMode"
+
+annotations: &reflected_data &name("BP_BlueprintExamples_GameMode_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+/* &raw("Audio_Music")AudioComponent !@audio_music  // Currently unsupported */
+&raw("AlarmState") Boolean !@alarm_state? // Alarm State
+
+$$ @security_alarm_interface
+// Security Alarm Interface
+//
+// UE4 name of this method: Security Alarm Interface
+
+&aka("Security Alarm Interface")
+
+(Boolean send_alarm? : false) 
+
+$$ @monitor_camera_swap
+// Monitor Camera Swap
+//
+// UE4 name of this method: MonitorCameraSwap
+
+&aka("MonitorCameraSwap")
+
+() 
+
+$$ .

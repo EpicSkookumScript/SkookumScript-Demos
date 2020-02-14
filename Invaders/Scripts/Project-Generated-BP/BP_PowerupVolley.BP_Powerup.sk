@@ -1,0 +1,12 @@
+// BP Powerup Volley
+//
+// UE4 name of this class: BP_PowerupVolley_C
+
+// UE4 Asset Name: BP_PowerupVolley
+// UE4 Package Name: "/Game/Blueprints/Actors/Powerups/BP_PowerupVolley"
+
+annotations: &reflected_data &name("BP_PowerupVolley_C")
+
+$$ @
+
+$$ .

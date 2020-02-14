@@ -1,0 +1,28 @@
+()
+[
+  branch
+  [
+    owner._on_take_point_damage_do
+    [
+      if valid?
+      [
+        @health -= damage
+        GameLib.spawn_emitter_at_location(,@damage_particle, hit_location) when @damage_particle.valid?
+
+        if @health <= 0
+        [
+          // Increment the player score if this thing provides a score
+          if @score_value > 0
+          [
+            if instigated_by.valid? and instigated_by.class_of?(PC_Invaders)
+            [
+              instigated_by<>PC_Invaders.increment_score(@score_value)
+            ]
+          ]
+          death_broadcast
+        ]
+        
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,5 @@
+// Subscribe to death events from this component
+(() code)
+[
+  @fire_event.append(code)
+]

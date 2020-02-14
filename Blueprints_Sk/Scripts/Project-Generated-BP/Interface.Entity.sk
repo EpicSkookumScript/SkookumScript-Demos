@@ -1,0 +1,7 @@
+// Interface
+//
+// UE4 name of this class: Interface
+
+annotations: &reflected_cpp &name("Interface")
+
+$$ .

@@ -1,0 +1,25 @@
+// BP Satelite
+//
+// UE4 name of this class: BP_Satelite_C
+
+// UE4 Asset Name: BP_Satelite
+// UE4 Package Name: "/Game/Blueprints/Actors/BP_Satelite"
+
+annotations: &reflected_data &name("BP_Satelite_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")   PointerToUberGraphFrame !@uber_graph_frame   // Currently unsupported */
+&raw("LaserCollision")   BoxComponent            !@laser_collision    // Laser Collision
+&raw("Laser")            ParticleSystemComponent !@laser              // Laser
+&raw("PoseableMesh")     PoseableMeshComponent   !@poseable_mesh      // Poseable Mesh
+&raw("RotationRate")     Real                    !@rotation_rate      // Rotation Rate
+&raw("Damage")           Real                    !@damage             // Damage
+&raw("LaserFireTime")    Real                    !@laser_fire_time    // Laser Fire Time
+&raw("LaserWarmupTime")  Real                    !@laser_warmup_time  // Laser Warmup Time
+&raw("LaserIdleCue")     SoundCue                !@laser_idle_cue     // Laser Idle Cue
+&raw("LaserFireCue")     SoundCue                !@laser_fire_cue     // Laser Fire Cue
+&raw("LaserEndCue")      SoundCue                !@laser_end_cue      // Laser End Cue
+&raw("TargetAcquireCue") SoundCue                !@target_acquire_cue // Target Acquire Cue
+
+$$ .

@@ -1,0 +1,26 @@
+// These are a bunch of game world coordinates that are calculated during world setup and are
+// needed to place objects during gameplay. 
+Vector3 !@game_coord_bl
+Vector3 !@game_coord_tl
+Vector3 !@game_coord_tr
+Vector3 !@game_coord_br
+Vector3 !@game_coord_player_start
+Vector3 !@game_coord_game_over_line
+List{Vector3} !@game_coord_shields
+
+// The movement boundaries for the Y axis
+Vector2 !@movement_boundary
+
+Real !@plane_dist
+
+// Flying saucer points
+Vector3 !@game_coord_saucer_spawn
+Vector3 !@game_coord_saucer_despawn
+
+// Where the invasion spawns at
+Vector3 !@game_coord_invader_spawn
+
+Boolean !@world_setup_complete?
+
+
+

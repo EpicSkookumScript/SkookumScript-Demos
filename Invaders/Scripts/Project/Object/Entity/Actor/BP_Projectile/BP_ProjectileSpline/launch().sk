@@ -1,0 +1,38 @@
+()
+[
+  // Setup start and end points on the spline
+  @spline.clear_spline_points
+  
+  !start_point : actor_location
+  !possible_targets: BP_Invader.instances
+  !target : BP_Invader!null
+   
+  !target_loc : if possible_targets.length > 0[possible_targets.any.actor_location] else[actor_location + [actor_forward_vector * 100.0]]
+  
+  // find a half-way point between start and target that is raised in the -X by a value. I want the projectiles to arc towards
+  // the screen before blasting their target.
+  !midway_vec : target_loc - actor_location
+  !midway_dir : MathLib.normal(midway_vec)
+  !midway_length : midway_vec.length
+  !arc_dist : 400.0
+  !midway_loc : start_point + [midway_dir * midway_length * 0.5] + [Vector3!xyz(-1 0 0) * arc_dist]
+  
+  @spline.add_spline_world_point(start_point)
+  @spline.add_spline_world_point(midway_loc)
+  @spline.add_spline_world_point(target_loc)
+  @spline.closed_loop_set(false)
+  
+  branch
+  [
+    !spline_time : 0.0
+    !spline_mult : 2.0
+    loop
+    [
+      [exit] when spline_time >= 1.0
+      actor_location_set(@spline.world_location_at_time(spline_time, false))
+      spline_time += GameLib.world_delta_seconds * spline_mult
+      _wait
+    ]
+    explode
+  ]
+]

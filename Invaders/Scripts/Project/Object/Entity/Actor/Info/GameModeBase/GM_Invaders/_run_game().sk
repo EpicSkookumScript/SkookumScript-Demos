@@ -1,0 +1,22 @@
+(PC_Invaders pc)
+[
+  // Start main music
+  pc.@game_music.fade_in(3.0) when pc.@game_music.valid?
+  loop
+  [
+    // TODO Bug work-around, should be able to just do _wait_game_over(;!lose_reason)
+    !lose_reason : E_GameOverCause.@@e_max!
+    !won? : false
+    
+    // Wait until the player wins or loses
+    race
+    [
+      _wait_game_over(;lose_reason)
+      _wait_game_win(;won?)
+    ]
+    
+    _handle_win_lose(pc, lose_reason, won?; !game_over?)
+    [exit] when game_over?
+  ]
+  pc.@game_music.fade_out(1.0) when pc.@game_music.valid?
+]

@@ -1,0 +1,24 @@
+&blueprint
+(Real axis)
+[
+  if axis ~= 0
+  [
+    !delta_loc : Vector3!right * GameLib.world_delta_seconds * @movement_rate * axis
+    !new_loc : actor_location + delta_loc
+    
+    // Clamp the location y value so that we can't move beyond the movement boundary
+    new_loc.@y := Real.clamp(
+      new_loc.@y
+      @world_setup.@movement_boundary.@x 
+      @world_setup.@movement_boundary.@y)
+      
+    actor_location_set(new_loc)
+    @thruster_left.active_set(axis > 0)
+    @thruster_right.active_set(axis < 0)
+  ]
+  else
+  [
+    @thruster_left.active_set(false)
+    @thruster_right.active_set(false)
+  ]
+]

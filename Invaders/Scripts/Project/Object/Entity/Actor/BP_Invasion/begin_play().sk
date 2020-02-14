@@ -1,0 +1,8 @@
+&blueprint
+()
+[
+  // Spawn invaders, hide invaders and configure movement boundaries
+  spawn_invaders
+  @spawned_actors%actor_hidden_in_game_set(true)
+  branch _configure_movement_boundaries
+]

@@ -1,0 +1,10 @@
+(Vector3 world_point) 
+[
+  @target_cue : GameLib.spawn_sound_at_location(,@target_acquire_cue)
+  sync
+  [
+    _aim_at(world_point)
+    _aim_tip_at(world_point)
+  ]
+  @target_cue.stop when @target_cue.valid? // it's good to be careful with latent commands, someone could rip this out from under us
+]

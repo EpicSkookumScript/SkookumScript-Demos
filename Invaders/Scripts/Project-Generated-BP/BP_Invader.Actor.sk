@@ -1,0 +1,37 @@
+// BP Invader
+//
+// UE4 name of this class: BP_Invader_C
+
+// UE4 Asset Name: BP_Invader
+// UE4 Package Name: "/Game/Blueprints/Actors/Invaders/BP_Invader"
+
+annotations: &reflected_data &name("BP_Invader_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")   PointerToUberGraphFrame !@uber_graph_frame   // Currently unsupported */
+&raw("GunComponent")     GunComponent            !@gun_component      // Gun Component
+&raw("PointLight")       PointLightComponent     !@point_light        // Point Light
+&raw("SkeletalMesh")     SkeletalMeshComponent   !@skeletal_mesh      // Skeletal Mesh
+&raw("HealthComponent")  HealthComponent         !@health_component   // Health Component
+&raw("PatternSpawner")   PatternSpawner          !@pattern_spawner    // Pattern Spawner
+&raw("DefaultSceneRoot") SceneComponent          !@default_scene_root // Default Scene Root
+&raw("Pattern")          E_Pattern               !@pattern            // Pattern
+&raw("CenterIndex")      Integer                 !@center_index       // Center Index
+&raw("InvaderScale")     Real                    !@invader_scale      // The amount to scale the object used in the pattern
+&raw("ShootDelay")       Vector2                 !@shoot_delay        // Shoot Delay
+&raw("InvaderAnimState") E_BotAnimState          !@invader_anim_state // Invader Anim State
+&raw("ShipMaterial")     MaterialInstanceDynamic !@ship_material      // Ship Material
+&raw("Color")            Color                   !@color              // Color
+&raw("DeathParticle")    ParticleSystem          !@death_particle     // Death Particle
+
+$$ @bot_color_set
+// Set Bot Color
+//
+// UE4 name of this method: SetBotColor
+
+&aka("SetBotColor")
+
+() 
+
+$$ .

@@ -1,0 +1,6 @@
+()
+[
+  @firing_cue : AudioComponent!null
+  @target_cue : AudioComponent!null
+  @idle_cue : AudioComponent!null
+]

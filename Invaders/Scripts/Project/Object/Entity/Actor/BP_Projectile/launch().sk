@@ -1,0 +1,4 @@
+()
+[
+  @sphere.physics_linear_velocity_set(actor_forward_vector * @velocity)
+]

@@ -1,0 +1,20 @@
+()
+[
+  // Make sure that the required objects exist
+  Debug.assert(@game_camera.valid? "BP_WorldSetup is missing the game camera")
+  Debug.assert(@playfield_center.valid? "BP_WorldSetup is missing playfield center")
+  
+  @game_coord_bl : Vector3!
+  @game_coord_tl : Vector3!  
+  @game_coord_tr : Vector3!  
+  @game_coord_br : Vector3!
+  @game_coord_saucer_spawn : Vector3!
+  @game_coord_saucer_despawn : Vector3!
+  @game_coord_player_start : Vector3!
+  @game_coord_game_over_line : Vector3!
+  @game_coord_shields : List{Vector3}!
+  @game_coord_invader_spawn : Vector3!
+  @movement_boundary : Vector2!
+  @plane_dist : 0
+  @world_setup_complete? : false
+]

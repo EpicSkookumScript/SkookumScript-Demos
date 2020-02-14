@@ -1,0 +1,9 @@
+()
+[
+  loop
+  [
+    !delta : Vector3!up * Real.sin(2.0 * !pi * GameLib.time_seconds * @bounce_frequency) * @bounce_magnitude
+    @sk_saucer.relative_location_set(delta)
+    _wait
+  ]
+]

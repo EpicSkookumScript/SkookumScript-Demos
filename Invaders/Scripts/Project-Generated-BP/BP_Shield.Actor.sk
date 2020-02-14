@@ -1,0 +1,21 @@
+// BP Shield
+//
+// UE4 name of this class: BP_Shield_C
+
+// UE4 Asset Name: BP_Shield
+// UE4 Package Name: "/Game/Blueprints/Actors/BP_Shield"
+
+annotations: &reflected_data &name("BP_Shield_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")   PointerToUberGraphFrame !@uber_graph_frame   // Currently unsupported */
+&raw("HealthComponent")  HealthComponent !@health_component   // Health Component
+&raw("PatternSpawner")   PatternSpawner  !@pattern_spawner    // Pattern Spawner
+&raw("DefaultSceneRoot") SceneComponent  !@default_scene_root // Default Scene Root
+&raw("DesiredPattern")   E_Pattern       !@desired_pattern    // Desired Pattern
+&raw("ShieldScale")      Real            !@shield_scale       // Shield Scale
+&raw("ShieldClass")      EntityClass     !@shield_class       // Shield Class
+&raw("Spacing")          Real            !@spacing            // Spacing
+
+$$ .

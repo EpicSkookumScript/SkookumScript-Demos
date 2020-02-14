@@ -1,0 +1,2 @@
+// The coroutine that runs the core _run_core
+InvokedCoroutine !@core_co

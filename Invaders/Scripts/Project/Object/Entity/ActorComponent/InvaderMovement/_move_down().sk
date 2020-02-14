@@ -1,0 +1,5 @@
+// Move down
+(Vector3 origin : owner.actor_location; Boolean did_move?)
+[
+  _move(Vector3!down, origin; did_move?)
+]

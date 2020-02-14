@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------------------------------
+// Waits for overlap by a burning FireBotCharacter then runs a closure that lights the torch on fire.
+// Author: Shadi Dadenji
+//---------------------------------------------------------------------------------------------------
+
+()
+  [
+  _on_actor_begin_overlap_do_until
+    [
+    if other_actor.class_of?(FireBotCharacter) and other_actor<>FireBotCharacter.is_burning?
+      [
+      BurnComponentBase.from(this).enable_burn 
+      true
+      ]
+    else 
+      [
+      false
+      ]
+    ]
+  ]
+

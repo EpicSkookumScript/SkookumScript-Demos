@@ -1,0 +1,20 @@
+()
+[
+  loop
+  [
+    // Wait a random amount of time and then pick a random invader from the list of
+    // spawned invaders and make them fire.
+    _wait(@@random.uniform_range(@firing_delay_range.@x, @firing_delay_range.@y))
+    
+    // Fire once for each level of difficulty
+    @difficulty_mult.do
+    [
+      !invader : @spawned_actors.select[item.valid?].any
+    
+      if invader.valid?
+      [
+        invader<>BP_Invader.fire
+      ]
+    ]
+  ]
+]

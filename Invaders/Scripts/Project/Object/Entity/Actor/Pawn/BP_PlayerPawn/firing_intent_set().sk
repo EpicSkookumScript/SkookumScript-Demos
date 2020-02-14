@@ -1,0 +1,5 @@
+&blueprint
+(Boolean wants_to_fire?)
+[
+  @wants_to_fire? := wants_to_fire?
+]

@@ -1,0 +1,22 @@
+// BP Projectile
+//
+// UE4 name of this class: BP_Projectile_C
+
+// UE4 Asset Name: BP_Projectile
+// UE4 Package Name: "/Game/Blueprints/Projectiles/BP_Projectile"
+
+annotations: &reflected_data &name("BP_Projectile_C")
+
+$$ @
+
+/* &raw("UberGraphFrame") PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+&raw("PointLight")     PointLightComponent     !@point_light     // Point Light
+&raw("ParticleSystem") ParticleSystemComponent !@particle_system // Particle System
+&raw("Sphere")         SphereComponent         !@sphere          // Sphere
+&raw("Velocity")       Real                    !@velocity        // Velocity
+&raw("LifetimeMax")    Real                    !@lifetime_max    // Lifetime Max
+&raw("DeathParticle")  ParticleSystem          !@death_particle  // Death Particle
+&raw("DeathSound")     SoundCue                !@death_sound     // Death Sound
+&raw("Damage")         Real                    !@damage          // How much damage this does
+
+$$ .

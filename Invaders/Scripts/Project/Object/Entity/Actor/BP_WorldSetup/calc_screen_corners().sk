@@ -1,0 +1,16 @@
+(PlayerController pc) 
+[
+  if pc.valid?
+  [
+     // The 4 corners of the screen
+    !bottom_left : Vector2!xy(-1, 1)
+    !top_left    : Vector2!xy(-1, -1)
+    !top_right   : Vector2!xy(1, -1)
+    !bottom_right: Vector2!xy(1, 1)
+    
+    GameLib.deproject_point_to_plane(pc, bottom_left,  @plane_dist, true; @game_coord_bl)
+    GameLib.deproject_point_to_plane(pc, bottom_right, @plane_dist, true; @game_coord_br)
+    GameLib.deproject_point_to_plane(pc, top_right,    @plane_dist, true; @game_coord_tr)
+    GameLib.deproject_point_to_plane(pc, top_left,     @plane_dist, true; @game_coord_tl)
+  ]
+]

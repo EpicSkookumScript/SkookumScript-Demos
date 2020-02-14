@@ -1,0 +1,26 @@
+&blueprint
+()
+[
+  !fog : ExponentialHeightFog.instances_first
+  if fog.valid?
+  [
+    // Start black
+    !inscat : fog.@component
+    !color : Color!black
+    inscat.fog_inscattering_color_set(color)
+        
+    loop
+    [
+      @background_colors._do
+      [
+        loop
+        [
+          color := MathLib.cinterp_to(color, item, GameLib.world_delta_seconds, @background_cycle_speed)
+          inscat.fog_inscattering_color_set(color)
+          [exit] when color.near?(item, 0.25)
+          _wait
+        ]
+      ]
+    ]
+  ]
+]

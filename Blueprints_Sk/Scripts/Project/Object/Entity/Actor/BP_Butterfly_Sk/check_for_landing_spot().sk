@@ -1,0 +1,10 @@
+//---------------------------------------------------------------------------------------
+// Line trace to check for surfaces to land on
+//---------------------------------------------------------------------------------------
+
+(HitResult landing_spot) Boolean
+  [
+  !seg_start: @base.component_location
+  !seg_end:   seg_start + [@base.forward_vector * 50] - Vector3!xyz(0 0 15)
+  SystemLib.line_trace_single_for_objects(@@world seg_start seg_end {EObjectTypeQuery.@@object_type_query_1} true List{Actor}! EDrawDebugTrace.@@none landing_spot)  
+  ]

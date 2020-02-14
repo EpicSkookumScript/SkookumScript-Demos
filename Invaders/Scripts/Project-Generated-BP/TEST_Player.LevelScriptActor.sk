@@ -1,0 +1,14 @@
+// TEST Player
+//
+// UE4 name of this class: TEST_Player_C
+
+// UE4 Asset Name: TEST_Player
+// UE4 Package Name: "/Game/Maps/TEST_Player"
+
+annotations: &reflected_data &name("TEST_Player_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+
+$$ .

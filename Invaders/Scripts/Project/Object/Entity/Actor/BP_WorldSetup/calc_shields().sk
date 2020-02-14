@@ -1,0 +1,19 @@
+(PlayerController pc) 
+[
+  if pc.valid?
+  [
+    // Player Shields
+    // total distance that the shields span is from left coordinate to right coordinate or left * 2
+    !total_dist : Real.abs(@first_shield_loc.@x) * 2.0
+  
+    // How much space is between each shield
+    !increment : total_dist / [@shield_count - 1]>>
+    @shield_count.do
+    [
+      // Bug workaround
+      !b : Vector3!
+      GameLib.deproject_point_to_plane(pc, Vector2!xy(@first_shield_loc.@x + [idx>>Real * increment], @first_shield_loc.@y), @plane_dist, true; b)
+      @game_coord_shields.append(b)
+    ]
+  ]
+]

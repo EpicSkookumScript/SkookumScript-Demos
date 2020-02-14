@@ -1,0 +1,4 @@
+() BP_Invasion
+[
+  BP_Invasion.spawn_at_xform(Transform!translation(@game_coord_invader_spawn))
+]

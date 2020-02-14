@@ -1,0 +1,11 @@
+//---------------------------------------------------------------------------------------
+// 
+//---------------------------------------------------------------------------------------
+
+() 
+  [
+  !vfx:  ParticleSystem.load("/Game/StarterContent/Particles/P_Steam_Lit.P_Steam_Lit")
+  !mesh: StaticMeshComponent.from(this)
+  !vfx_component: GameLib.spawn_emitter_attached(
+    vfx, mesh, "fire_base".Name, location_type : EAttachLocation.@@snap_to_target_including_scale)    
+  ]

@@ -1,0 +1,45 @@
+// Monitor that displays scene capture images from security camera blueprints
+//
+// UE4 name of this class: BP_Security_Monitor_C
+
+// UE4 Asset Name: BP_Security_Monitor
+// UE4 Package Name: "/Game/Assets/Blueprints/BP_Security_Monitor"
+
+annotations: &reflected_data &name("BP_Security_Monitor_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")                                               PointerToUberGraphFrame !@uber_graph_frame                 // Currently unsupported */
+/* &raw("Audio_Screen")                                                 AudioComponent !@audio_screen                     // Currently unsupported */
+/* &raw("MonitorMesh")                                                  StaticMeshComponent !@monitor_mesh                     // Currently unsupported */
+&raw("Noise_animation_Float_curve_A4C1FB474BBFE3AAA2B048B78226487D") Real    !@noise_animation_float_curve_a4c1 // Noise Animation Float Curve A4C1FB474BBFE3AAA2B048B78226487D
+/* &raw("Noise_animation__Direction_A4C1FB474BBFE3AAA2B048B78226487D")  ETimelineDirection !@noise_animation_direction_a4c1   // Currently unsupported */
+/* &raw("Noise animation")                                              TimelineComponent !@noise_animation                  // Currently unsupported */
+/* &raw("Transfer Material")                                            MaterialInstance !@transfer_material                // Currently unsupported */
+/* &raw("Camera Blueprints")                                            List{Actor} !@camera_blueprints                // Currently unsupported */
+/* &raw("Monitor material")                                             MaterialInstanceDynamic !@monitor_material                 // Currently unsupported */
+&raw("Camera index")                                                 Integer !@camera_index                     // Camera Index
+&raw("Previous index")                                               Integer !@previous_index                   // Previous Index
+&raw("Set Volume")                                                   Real    !@set_volume                       // Set Volume
+&raw("Set Pitch")                                                    Real    !@set_pitch                        // Set Pitch
+/* &raw("Screen Soundcue")                                              SoundBase !@screen_soundcue                  // Currently unsupported */
+
+$$ @security_alarm_interface
+// Security Alarm Interface
+//
+// UE4 name of this method: Security Alarm Interface
+
+&aka("Security Alarm Interface")
+
+(Boolean send_alarm? : false) 
+
+$$ @monitor_camera_swap
+// Monitor Camera Swap
+//
+// UE4 name of this method: MonitorCameraSwap
+
+&aka("MonitorCameraSwap")
+
+() 
+
+$$ .

@@ -1,0 +1,19 @@
+//(;PC_Invaders pc)
+()
+[ 
+  // This is a bug work-around. In a built game, there are timing issues that require
+  // you to make sure the PC is valid before continuing. The logical thing to do is
+  // use a return argument and pass that PC back. If you do that, the world crumbles.
+//  pc : PC_Invaders!null
+
+  loop
+  [
+//    pc := PC_Invaders.instances_first
+    !pc : PC_Invaders.instances_first
+    
+    // Need to be careful of timing when it comes to BeginPlay, make sure PC is here 
+    // and is finished creating the start menu
+    [exit] when pc.valid? and pc.@start_menu.valid?
+    _wait(0.1)
+  ]
+]

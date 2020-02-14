@@ -1,0 +1,12 @@
+// BP Asteroid 2
+//
+// UE4 name of this class: BP_Asteroid2_C
+
+// UE4 Asset Name: BP_Asteroid2
+// UE4 Package Name: "/Game/Blueprints/Environment/BP_Asteroid2"
+
+annotations: &reflected_data &name("BP_Asteroid2_C")
+
+$$ @
+
+$$ .

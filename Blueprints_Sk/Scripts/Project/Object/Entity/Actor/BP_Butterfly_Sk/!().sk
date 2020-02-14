@@ -1,0 +1,33 @@
+//---------------------------------------------------------------------------------------
+// Default constructor
+// Gets called when an object of this type is instantiated
+//---------------------------------------------------------------------------------------
+
+&blueprint
+() 
+  [ 
+  // Attractor location becomes the first target for the butterfly to fly towards
+  @flight_target.relative_location_set(@attractor_location)
+  
+  // Make and set a material instance dynamic
+  @wing_material := @left_wing.create_dynamic_material_instance(0)
+  
+  // Set the material on the other wing too
+  @right_wing.material_set(0 @wing_material)
+  
+  // User can choose the wing color
+  @wing_material.vector_parameter_value_set("Wing Color".Name, @wing_color)
+  
+  // User can set flight sound loop
+  @audio_flight.sound_set(@flying_soundcue)
+  
+  // User can set On ground sound loop
+  @audio_ground.sound_set(@resting_soundcue)
+  
+  // Now, kick off the coroutines implementing the butterfly behavior
+  // Note: We will soon add a feature to the language called coroutine constructors
+  // which will be a default place for an object's behavior to live
+  // For now, start these coroutines from this constructor
+  branch [_fly]                    // Main behavior: Moves and animates the butterfly
+  branch [_animate_wing_material]  // Graphics effect animating the wing material
+  ]

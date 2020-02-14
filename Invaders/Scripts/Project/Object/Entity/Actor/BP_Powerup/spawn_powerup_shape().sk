@@ -1,0 +1,13 @@
+()
+[
+  // Spawn the pattern for this actor
+  @instanced_static_mesh.clear_instances
+
+  @pattern_spawner.spawn_pattern_instanced(
+    E_Pattern.@@powerup
+    @instanced_static_mesh
+    100.0
+    Vector3!
+    7
+    0.1)
+]

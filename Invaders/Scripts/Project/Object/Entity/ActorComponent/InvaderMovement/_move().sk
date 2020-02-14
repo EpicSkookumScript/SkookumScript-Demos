@@ -1,0 +1,40 @@
+//---------------------------------------------------------------------------------------
+// Used to move @movement_distance in a direction. If the destination is valid (inside the
+// left/right screen boundary) then the owner will be interpolated to this location at
+// a speed of @movement_speed.
+// 
+// Args:
+//     dir: The direction to move
+//  origin: The location to use as the origin of the validity test. So if moving right
+//          with a group of actors, you'd want to use the origin of a right-most actor
+//          to make sure you don't violate the screen edge.
+//
+// Return args:
+//   did_move?: True if the owner was moved, false if the move was invalid.
+//---------------------------------------------------------------------------------------
+(Vector3 dir, Vector3 origin : owner.actor_location; Boolean did_move?) 
+[
+  did_move? : false
+  !dest : origin + [dir * @movement_distance]
+  
+  if is_valid_dest?(dir, dest)
+  [
+    // We are about to move the owner location to the destination
+    // If the user specified an origin then we need to calculate the
+    // destination in terms of the owner's world location.
+    !owner_dest : owner.actor_location + [dir * @movement_distance]
+    loop
+    [      
+      !new_loc : MathLib.vinterp_to_constant(owner.actor_location, owner_dest, GameLib.world_delta_seconds, @movement_speed)
+      owner.actor_location_set(new_loc)
+      
+      // Are we there yet?
+      if new_loc.equal?(owner_dest)
+      [
+        did_move? := true
+        exit
+      ]
+      _wait
+    ]
+  ]
+]

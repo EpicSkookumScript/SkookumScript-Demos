@@ -1,0 +1,8 @@
+()
+[
+  if @drop_list.length > 0
+  [
+    !drop : GameLib.begin_spawning_actor_from_class(,@drop_list.any, transform)
+    GameLib.finish_spawning_actor(drop, transform)
+  ]
+]

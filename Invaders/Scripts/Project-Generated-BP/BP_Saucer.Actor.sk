@@ -1,0 +1,23 @@
+// BP Saucer
+//
+// UE4 name of this class: BP_Saucer_C
+
+// UE4 Asset Name: BP_Saucer
+// UE4 Package Name: "/Game/Blueprints/Actors/BP_Saucer"
+
+annotations: &reflected_data &name("BP_Saucer_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")  PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+&raw("SK_saucer")       SkeletalMeshComponent !@sk_saucer        // SK Saucer
+&raw("Audio")           AudioComponent        !@audio            // Audio
+/* &raw("SkookumScriptClassData")SkookumScriptClassDataComponent !@skookum_script_class_data // Currently unsupported */
+&raw("Scene")           SceneComponent        !@scene            // Scene
+&raw("InvaderMovement") InvaderMovement       !@invader_movement // Invader Movement
+&raw("HealthComponent") HealthComponent       !@health_component // Health Component
+&raw("BounceFrequency") Real                  !@bounce_frequency // In Hz
+&raw("BounceMagnitude") Real                  !@bounce_magnitude // Bounce Magnitude
+&raw("DropList")        List{EntityClass}     !@drop_list        // Things that the saucer can drop
+
+$$ .

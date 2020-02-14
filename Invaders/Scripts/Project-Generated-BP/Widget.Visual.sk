@@ -1,0 +1,7 @@
+// This is the base class for all wrapped Slate controls that are exposed to UObjects.
+//
+// UE4 name of this class: Widget
+
+annotations: &reflected_cpp &name("Widget")
+
+$$ .

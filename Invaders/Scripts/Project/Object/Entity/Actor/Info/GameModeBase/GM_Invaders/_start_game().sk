@@ -1,0 +1,23 @@
+(PC_Invaders pc)
+[  
+  // Show the start menu
+  pc._start_menu
+    
+  // Spawn the invaders and shields
+  @world_setup._spawn_board
+    
+  // Reset player score/lives
+  pc.reset_player
+    
+  // Start the pawn spawning coroutine to spawn pawns until we run out of lives
+  branch pc._spawn_pawns
+  
+  // Start the core spinning
+  branch @core._start_core when @core.valid?
+
+  // Start invader invasion
+  BP_Invasion.instances%invasion_start
+  
+  // Show the main game UI
+  pc.game_ui
+]

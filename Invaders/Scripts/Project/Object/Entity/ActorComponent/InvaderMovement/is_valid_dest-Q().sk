@@ -1,0 +1,22 @@
+(Vector3 dir, Vector3 dest) Boolean
+[
+  if @has_boundaries?
+  [
+    if dir = Vector3!right // right
+    [
+      dest.@y <= @right_boundary
+    ]
+    dir = -Vector3!right  // left
+    [
+      dest.@y >= @left_boundary
+    ]
+    else // down
+    [
+      true
+    ]
+  ]
+  else
+  [
+    true
+  ]
+]

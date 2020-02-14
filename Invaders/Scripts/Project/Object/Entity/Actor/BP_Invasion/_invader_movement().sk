@@ -1,0 +1,12 @@
+()
+[
+  // Move in an endless loop: right, down, left, down
+  // TODO Clean this up when coroutine pausing is fixed
+  loop
+  [
+    [exit] when @pause_invasion?
+    _move_horizontal(@moving_right?)
+    [exit] when @pause_invasion?
+    _move_down
+  ]
+]

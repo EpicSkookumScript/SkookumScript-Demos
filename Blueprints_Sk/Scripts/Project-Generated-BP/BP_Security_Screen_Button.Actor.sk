@@ -1,0 +1,51 @@
+// Interactive button blueprint
+//
+// UE4 name of this class: BP_Security_Screen_Button_C
+
+// UE4 Asset Name: BP_Security_Screen_Button
+// UE4 Package Name: "/Game/Assets/Blueprints/BP_Security_Screen_Button"
+
+annotations: &reflected_data &name("BP_Security_Screen_Button_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")                                    PointerToUberGraphFrame !@uber_graph_frame          // Currently unsupported */
+/* &raw("TextArrow")                                         ArrowComponent !@text_arrow                // Currently unsupported */
+/* &raw("Audio_Interior")                                    AudioComponent !@audio_interior            // Currently unsupported */
+/* &raw("Audio_ControlRoom")                                 AudioComponent !@audio_control_room        // Currently unsupported */
+/* &raw("ButtonCollision")                                   SphereComponent !@button_collision          // Currently unsupported */
+/* &raw("ButtonMesh")                                        StaticMeshComponent !@button_mesh               // Currently unsupported */
+/* &raw("ButtonBaseMesh")                                    StaticMeshComponent !@button_base_mesh          // Currently unsupported */
+/* &raw("Arrow1")                                            ArrowComponent !@arrow_1                   // Currently unsupported */
+&raw("Button_push_Push_5A7E939245E8DEB7A118A7A963B8FA8D") Real    !@button_push_push_5a7e     // Button Push Push 5A7E939245E8DEB7A118A7A963B8FA8D
+/* &raw("Button_push__Direction_5A7E939245E8DEB7A118A7A963B8FA8D")ETimelineDirection !@button_push_direction_5a7e // Currently unsupported */
+/* &raw("Button push")                                       TimelineComponent !@button_push               // Currently unsupported */
+&raw("ButtonCollisionTrigger")                            Boolean !@button_collision_trigger? // Button Collision Trigger
+/* &raw("Screen Blueprints")                                 List{Actor} !@screen_blueprints         // Currently unsupported */
+&raw("Button Input")                                      Boolean !@button_input?             // Button Input
+/* &raw("Camera Blueprints")                                 List{Actor} !@camera_blueprints         // Currently unsupported */
+&raw("Control Room Volume")                               Real    !@control_room_volume       // Control Room Volume
+&raw("Control Room Pitch")                                Real    !@control_room_pitch        // Control Room Pitch
+&raw("Interior Volume")                                   Real    !@interior_volume           // Interior Volume
+&raw("Interior Pitch")                                    Real    !@interior_pitch            // Interior Pitch
+/* &raw("TextComponent")                                     TextRenderComponent !@text_component            // Currently unsupported */
+
+$$ @security_alarm_interface
+// Security Alarm Interface
+//
+// UE4 name of this method: Security Alarm Interface
+
+&aka("Security Alarm Interface")
+
+(Boolean send_alarm? : false) 
+
+$$ @monitor_camera_swap
+// Monitor Camera Swap
+//
+// UE4 name of this method: MonitorCameraSwap
+
+&aka("MonitorCameraSwap")
+
+() 
+
+$$ .

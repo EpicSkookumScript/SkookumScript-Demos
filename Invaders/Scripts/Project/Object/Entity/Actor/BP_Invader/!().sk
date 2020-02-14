@@ -1,0 +1,6 @@
+()
+[
+  @fly_in_start : Vector3!
+  @fly_in_destination : Vector3!
+  @start_location_reached? : false
+]

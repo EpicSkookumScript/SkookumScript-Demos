@@ -1,0 +1,51 @@
+// Spawn a pattern using an instanced static mesh
+(E_Pattern p_enum
+ InstancedStaticMeshComponent mesh
+ Real unity_spacing : 100
+ Vector3 origin 
+ Integer index_origin : 0
+ Real spawn_scale : 1.0 )
+[
+  // Get the width, height and pattern
+  !w
+  !h
+  !l
+  pattern(p_enum; l w h)
+
+  Debug.assert(index_origin < l.length, "Index origin is beyond length of pattern")
+      
+  // Define directions
+  !right : Vector3!right
+  !down : Vector3!down
+  
+  // Adjust spacing by the spawn scale
+  !spacing : unity_spacing * spawn_scale
+  
+  // Calculate the direction vectors to the index origin
+  !origin_index_right : index_origin.mod(w)
+  !origin_index_down  : index_origin / w
+  
+  h.do
+  [ 
+    w.do (Integer idx2)
+    [
+      !full_index : idx2 + [w * idx]
+      !entry : l.at(full_index)
+      if entry = 1
+      [
+        !to_current_index_down : [full_index / w] - origin_index_down
+        !to_current_index_right : full_index.mod(w) - origin_index_right
+        
+          // For each index, calculate how to reach the index from
+          // the origin index in terms of right and down
+        !t : Transform!translation_rotation_scale(origin 
+          + [right * spacing * to_current_index_right>>] 
+          + [down * spacing * to_current_index_down>>]
+          RotationAngles!.Rotation
+          Vector3!scalar(spawn_scale))
+
+        mesh.add_instance(t)
+      ]
+    ]
+  ]
+]

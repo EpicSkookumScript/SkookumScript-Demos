@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------------------
+// Burn for a given duration in seconds. Passing in 0.0 will burn infinitely.
+// This example demonstrates the simplicity of creating coroutines out of methods.
+// No programmers were disturbed in the creation of this coroutine!!
+//
+// Author: Shadi Dadenji
+//---------------------------------------------------------------------------------------
+
+
+(Real duration : 0.0)
+  [
+  if [duration = 0.0]
+    [
+    enable_burn
+    ]
+  else
+    [
+    enable_burn
+    _wait(duration)
+    enable_burn(false)
+    ]
+  ]

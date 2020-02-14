@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------------------
+// Go berzerk and randomly chase other robots or player forever until cancelled
+// 
+// # Author(s): Conan Reis
+//---------------------------------------------------------------------------------------
+
+() 
+
+  [
+  // Wait between 0-1 seconds
+  _wait(@@random.uniform * .5)
+  branch [_boom]
+      
+  // Alternate between chasing player or random robot (including player)
+  // Player will be chased 50% of the time
+  loop
+    [
+    _chase(GameLib.player_pawn or Enemy.instances.any_but(this))
+    ]
+  ]  
+  
+

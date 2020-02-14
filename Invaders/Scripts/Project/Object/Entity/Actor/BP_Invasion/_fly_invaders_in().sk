@@ -1,0 +1,79 @@
+()
+[
+  // Calculate two random start locations on left and right hand side of the screen
+  !v1 : @world_setup.@game_coord_tl + [-Vector3!forward * @spawn_zdistance]
+  !v2 : @world_setup.@game_coord_bl + [-Vector3!forward * @spawn_zdistance]
+  
+  !w1 : @world_setup.@game_coord_tr + [-Vector3!forward * @spawn_zdistance]
+  !w2 : @world_setup.@game_coord_br + [-Vector3!forward * @spawn_zdistance]
+  
+  // Calculate starting location for all invaders to fly to the play area
+  @spawned_actors.do_idx
+  [
+    // Pick random coordinates based on index so we split invaders between left/right
+    !p1 : if idx.even?[v1] else[w1]
+    !p2 : if idx.even?[v2] else[w2]
+    !invader : item<>BP_Invader
+    
+    // Set the invader to his initial fly in location
+    invader.fly_from_to_set(@@random.vector3_between(p1, p2), invader.actor_location)
+    invader.actor_location_set(invader.@fly_in_start)
+  ]
+  
+  @spawned_actors._do
+  [
+    if item.valid?
+    [ 
+      branch item<>BP_Invader._enter_from_location
+      _wait(@@random.uniform_range(0.01, 0.01))
+    ]
+  ]
+  
+  // You might be thinking "hey, why didn't he just do this"
+  // @spawned_actors<>List{BP_Invader}%_enter_from_location
+  // And that's the first thing I did. The problem is that
+  // as invaders are flying in, if 1 or more get destroyed
+  // while the others are flying in, the apply operator %
+  // will never complete.
+  //
+  // This lead me to ask this question about the apply operator:
+  // http://forum.skookumscript.com/t/clarification-on-apply-operator/1531
+  //
+  // I'll admit I'm still a bit confused on how the scope of a coroutine
+  // is determined. Every time I destroy an invader, the destroy function
+  // calls abort_coroutines_on_this(true) which is supposed to indicate 
+  // that the aborted coroutine was completed successfully. So you'd think
+  // that this would cause the apply operator to succeed in this case...
+  // But since it doesn't, perhaps the scope of the coroutine is the class
+  // it was launched from (BP_Invasion)??
+  // I'm actually unsure.
+  //
+  // So the way to allow for invaders to get destroyed while they're flying
+  // in is to branch off the _enter_from_location and then only check whether 
+  // the remaining invaders have reached the start location.
+  loop
+  [
+    // Cull the list of spawned actors
+    @spawned_actors.select[item.valid?]
+    
+    // See if they've all arrived
+    [exit] when @spawned_actors<>List{BP_Invader}.all?[item.@start_location_reached?]
+    _wait(0.1) 
+  ]
+
+  // Start all invaders hovering
+  BP_Invader.instances.do_idx
+  [
+    // calculate unique phi for each so that wave is offset
+    branch item._hover(idx>>)
+  ]
+   
+  // Animate all invaders opening 
+  BP_Invader.instances.do
+  [
+    item.animation_set(E_BotAnimState.@@spin)
+  ]
+  
+  _wait(1.5)
+   
+]

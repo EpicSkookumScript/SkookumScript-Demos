@@ -1,0 +1,3 @@
+AudioComponent !@firing_cue
+AudioComponent !@target_cue
+AudioComponent !@idle_cue

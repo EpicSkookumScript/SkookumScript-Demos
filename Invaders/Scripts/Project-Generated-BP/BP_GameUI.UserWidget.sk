@@ -1,0 +1,26 @@
+// BP Game UI
+//
+// UE4 name of this class: BP_GameUI_C
+
+// UE4 Asset Name: BP_GameUI
+// UE4 Package Name: "/Game/UI/BP_GameUI"
+
+annotations: &reflected_data &name("BP_GameUI_C")
+
+$$ @
+
+&raw("TextBlock_Highscore") TextBlock !@text_block_highscore // Text Block Highscore
+&raw("TextBlock_Lives")     TextBlock !@text_block_lives     // Text Block Lives
+&raw("TextBlock_Score")     TextBlock !@text_block_score     // Text Block Score
+&raw("ScoreUpdateSpeed")    Real      !@score_update_speed   // Score Update Speed
+
+$$ @lives_set
+// Set Lives
+//
+// UE4 name of this method: SetLives
+
+&aka("SetLives")
+
+(Integer lives : 0) 
+
+$$ .

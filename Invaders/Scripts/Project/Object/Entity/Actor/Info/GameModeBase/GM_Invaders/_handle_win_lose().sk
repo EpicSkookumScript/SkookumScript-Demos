@@ -1,0 +1,50 @@
+(PC_Invaders pc E_GameOverCause lose_reason Boolean won?; Boolean game_ended?)
+[
+  // Used to signal to the caller that the game is dunzo
+  game_ended? : false
+  
+  if lose_reason < E_GameOverCause.@@e_max
+  [
+    BP_Invasion.instances%invasion_pause
+      
+    // Game is actually over
+    if [lose_reason = E_GameOverCause.@@invaders_landed] or [lose_reason = E_GameOverCause.@@lives_expired]
+    [
+      // Stop pawn from spawning
+      pc.abort_coroutines_on_this(true)
+      
+      // Unpossess pawn if he's alive
+      pc.un_possess when pc.@pawn.valid?
+      
+      // Make sure that the pawn doesn't continue to fire his gun like a sore loser
+      BP_PlayerPawn.instances%firing_intent_set(false)
+
+       // destroy the core
+      @core._destroy_core when @core.valid?
+        
+      // Show game over screen
+      pc.show_game_over(true)
+        
+      game_ended? := true
+    ]
+    // We've only lost a life
+    else
+    [
+      pc._wait_pawn_valid
+      BP_Invasion.instances%invasion_resume
+    ]
+  ]
+  won?
+  [
+    @invasion_count++
+    // We won
+    BP_Invasion.instances%destroy_sk_actor
+            
+    // spawn another invasion and set difficulty
+    !invasion : @world_setup.spawn_invasion
+    invasion.@difficulty_mult := @invasion_count
+    
+    // Start the invasion
+    BP_Invasion.instances%invasion_start
+  ]
+]

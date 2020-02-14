@@ -1,0 +1,8 @@
+&blueprint
+()
+[ 
+  // Why do this here instead of in !?
+  // If you do it there then you run the risk of constructor firing before the component is attached
+  // to an actor. Since we need the owner to exist when this is called, it needs to be here.
+  register_damage_handler
+]

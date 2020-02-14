@@ -1,0 +1,49 @@
+()
+[
+  !pc : GameLib.player_controller
+  Debug.assert(pc.valid? "PC is not valid in world setup")
+  
+  calc_plane_distance(pc)
+  calc_screen_corners(pc)
+  calc_movement_boundary(pc)
+  calc_saucer(pc)
+  calc_shields(pc)
+  calc_player_start(pc)  
+  calc_invasion_spawn(pc)
+  calc_game_over_line(pc)
+
+  println(@game_coord_invader_spawn)
+  // Draw all of these helper locations
+  if @enable_debug?
+  [
+    !game_over_end : Vector3!
+    GameLib.deproject_point_to_plane(pc, Vector2!xy(1.0, 0.6), @plane_dist, true; game_over_end)
+  
+    branch
+    [
+      loop
+      [
+        SystemLib.draw_debug_line(,@game_coord_bl, @game_coord_tl, Color!red,,5.0)
+        SystemLib.draw_debug_line(,@game_coord_tl, @game_coord_tr, Color!red,,5.0)
+        SystemLib.draw_debug_line(,@game_coord_tr, @game_coord_br, Color!red,,5.0)
+        SystemLib.draw_debug_line(,@game_coord_br, @game_coord_bl, Color!red,,5.0)
+        
+        SystemLib.draw_debug_sphere(,@game_coord_saucer_spawn, line_color: Color!blue)
+        SystemLib.draw_debug_sphere(,@game_coord_saucer_despawn, line_color: Color!blue)
+        
+        SystemLib.draw_debug_sphere(,@game_coord_player_start, 50.0, line_color: Color!green)
+
+        SystemLib.draw_debug_line(,@game_coord_game_over_line, game_over_end, Color!red,,5.0)
+        
+        SystemLib.draw_debug_sphere(,@game_coord_invader_spawn, 50.0, line_color: Color!red)
+        
+        @game_coord_shields.do 
+        [
+          SystemLib.draw_debug_sphere(,item, 50.0, line_color: Color!cyan)
+        ]
+        
+        _wait
+      ]
+    ]
+  ]
+]

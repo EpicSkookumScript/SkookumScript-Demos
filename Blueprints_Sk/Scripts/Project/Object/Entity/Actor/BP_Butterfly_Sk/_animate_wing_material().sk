@@ -1,0 +1,38 @@
+//---------------------------------------------------------------------------------------
+// Animate butterfly wing material
+//---------------------------------------------------------------------------------------
+
+() 
+  [
+  _wait(@@random.uniform_range(0.0 2.0))
+  !pulse_param_name: "Pulse".Name
+  !pattern_param_name: "Pattern".Name
+  !fade_in?: true
+  !pattern_fade: 0.0
+  loop
+    [
+    // Play pulse every 3 seconds
+    sync
+      [
+        [
+        // Repeatedly play the pulse timeline
+        @pulse_curve.play
+        loop
+          [
+          // Animate pulse effect in material
+          @wing_material.scalar_parameter_value_set(pulse_param_name @pulse_curve_pulse_475b)
+          // Fade in/out pattern
+          pattern_fade := if fade_in? [1.0 - @pulse_curve_pulse_475b] else [@pulse_curve_pulse_475b]
+          @wing_material.scalar_parameter_value_set(pattern_param_name pattern_fade)
+          // Exit loop when done
+          if not @pulse_curve.is_playing? [exit]
+          // Wait one frame
+          _wait
+          ]
+        fade_in? := not fade_in?
+        ]
+        
+        _wait(3.0)
+      ]
+    ]
+  ]

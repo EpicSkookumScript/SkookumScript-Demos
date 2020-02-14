@@ -1,0 +1,21 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.24",
+	"Category": "SkookumScript",
+	"Description": "Modified version of original 'Blueprints' demo project using SkookumScript to replace the butterfly Blueprint.",
+	"Plugins": [
+		{
+			"Name": "SkookumScript",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/38694f554c2c4b9f84c585256d509481"
+		}
+	],
+	"TargetPlatforms": [
+		"WindowsNoEditor",
+		"MacNoEditor",
+		"IOS",
+		"TVOS",
+		"Android"
+	],
+	"EpicSampleNameHash": "2118947570"
+}

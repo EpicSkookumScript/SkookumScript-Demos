@@ -1,0 +1,6 @@
+&blueprint
+()
+[
+  spawn_powerup_shape
+  branch _move
+]

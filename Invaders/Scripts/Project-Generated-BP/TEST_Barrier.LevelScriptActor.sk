@@ -1,0 +1,14 @@
+// TEST Barrier
+//
+// UE4 name of this class: TEST_Barrier_C
+
+// UE4 Asset Name: TEST_Barrier
+// UE4 Package Name: "/Game/Maps/TEST_Barrier"
+
+annotations: &reflected_data &name("TEST_Barrier_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+
+$$ .

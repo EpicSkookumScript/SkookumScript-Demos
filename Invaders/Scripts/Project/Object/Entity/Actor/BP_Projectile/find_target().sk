@@ -1,0 +1,18 @@
+() Actor
+[
+  !target : Actor!null
+  !invaders: BP_Invader.instances
+  if invaders.length > 0
+  [
+    target : invaders.any
+  ]
+  else
+  [
+    !saucers : BP_Saucer.instances
+    if saucers.length > 0
+    [
+      target : saucers.any
+    ]
+  ]
+  target
+]

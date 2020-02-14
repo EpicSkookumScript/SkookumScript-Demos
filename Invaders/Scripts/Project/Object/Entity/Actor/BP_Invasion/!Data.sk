@@ -1,0 +1,22 @@
+// Used to track the invasion
+InvokedCoroutine !@invasion_co
+
+// True when an invader crosses the landing point in the level
+Boolean !@invader_touched_down
+
+// Reference to world setup to get game coordinates
+BP_WorldSetup !@world_setup
+
+// The number of invaders that were spawned in this group. Used to adjust speed of the invasion 
+// as individual invaders are killed off.
+Integer !@invader_count
+
+// Set to true to pause the invasion
+Boolean !@pause_invasion?
+
+// Used to remember if the invasion was last moving right or left so that we can pause/resume
+// the invasion and continue moving in the same direction
+Boolean !@moving_right?
+
+// Used to increase difficulty
+Integer !@difficulty_mult

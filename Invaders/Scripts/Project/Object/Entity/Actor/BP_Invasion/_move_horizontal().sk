@@ -1,0 +1,31 @@
+(Boolean right?) 
+[
+  !furthest_actor : Actor!null
+  !dir : right?.as_vec3s(Vector3!right, -Vector3!right)
+
+  loop
+  [
+    if furthest_actor.null?
+    [
+      // Find the actor that is furthest left or right
+      furthest_actor : Actor.furthest_in_dir(@spawned_actors, dir)   
+    ]
+    [_wait exit] when furthest_actor.null?
+    
+    // Move this direction until we fail
+    @invader_movement._move_horizontal(right?, furthest_actor.actor_location; !success)
+    if success.not
+    [
+      // if we failed to move then we have reached the edge and should change directions for next time
+      // TODO Clean this up when coroutine pausing is fixed
+      right? := right?.not
+      exit
+    ]
+    
+    // Also exit if we should pause the invasion
+    // TODO Clean this up when coroutine pausing is fixed
+    [exit] when @pause_invasion?
+    
+    _wait(@movement_delay)
+  ] 
+]

@@ -1,0 +1,8 @@
+&blueprint
+()
+[
+  // Create Menus but don't make them visible
+  @start_menu     := WidgetBlueprintLibrary.create(,BP_StartMenu.static_class, this)<>BP_StartMenu
+  @game_over_menu := WidgetBlueprintLibrary.create(,BP_GameOverMenu.static_class, this)<>BP_GameOverMenu
+  @game_ui        := WidgetBlueprintLibrary.create(,BP_GameUI.static_class, this)<>BP_GameUI 
+]

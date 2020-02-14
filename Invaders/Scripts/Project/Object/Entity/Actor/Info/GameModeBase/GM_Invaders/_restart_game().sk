@@ -1,0 +1,26 @@
+(PC_Invaders pc)
+[
+  // Destroy any invaders
+  BP_Invader.instances%destroy_sk_actor
+ 
+  // Destroy any invasions
+  BP_Invasion.instances%destroy_sk_actor
+    
+  // Destroy shields
+  BP_Shield.instances%destroy
+  
+  // Make sure the PC won't try spawning new pawns
+  pc.abort_coroutines_on_this(true)
+  
+  // Power down satellites
+  BP_Satelite.instances%_laser_off
+  
+  // Destroy any existing pawns
+  BP_PlayerPawn.instances.do[item.@health_component.death_broadcast]
+  
+  // Wait a few seconds then restart the game
+  _wait(3)
+  pc.show_game_over(false)
+  
+  @invasion_count := 1
+]

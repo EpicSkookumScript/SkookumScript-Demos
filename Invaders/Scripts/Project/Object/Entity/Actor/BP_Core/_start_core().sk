@@ -1,0 +1,5 @@
+()
+[
+  play_start
+  @core_start_cue.play 
+]

@@ -1,0 +1,8 @@
+()
+[
+  loop
+  [
+    // do stuff
+    _wait
+  ]
+]

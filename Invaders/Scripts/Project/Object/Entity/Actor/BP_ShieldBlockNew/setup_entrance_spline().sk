@@ -1,0 +1,9 @@
+()
+[
+  @spline.clear_spline_points
+  !world : BP_WorldSetup.instances_first
+  
+  @spline.add_spline_world_point(world.@fly_in_start_point.actor_location)
+//  @spline.add_spline_world_point(world.@game_camera.actor_location)
+  @spline.add_spline_world_point(actor_location)
+]

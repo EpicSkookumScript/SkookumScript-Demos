@@ -1,0 +1,12 @@
+(Boolean show?)
+[
+  if show?
+  [
+    @game_ui.remove_from_parent
+    @game_over_menu.add_to_player_screen
+  ]
+  else
+  [
+    @game_over_menu.remove_from_parent
+  ]
+]

@@ -1,0 +1,115 @@
+// A customizable Blueprint that constructs rooms and doorways for Content Examples.
+//
+// UE4 name of this class: BP_DemoRoom_C
+
+// UE4 Asset Name: BP_DemoRoom
+// UE4 Package Name: "/Game/DemoRoom/BluePrint/BP_DemoRoom"
+
+annotations: &reflected_data &name("BP_DemoRoom_C")
+
+$$ @
+
+&raw("Scene1")        SceneComponent         !@scene_1        // Scene 1
+&raw("RoomSize")      Integer                !@room_size      // Room Size
+&raw("SectionWidth")  Vector3                !@section_width  // Section Width
+&raw("TrimWidth")     Vector3                !@trim_width     // Trim Width
+&raw("MirrorRoom")    Boolean                !@mirror_room?   // Mirror Room
+&raw("Lights")        Boolean                !@lights?        // Lights
+&raw("LightRadius")   Real                   !@light_radius   // Light Radius
+&raw("Brightness")    Real                   !@brightness     // Brightness
+&raw("DoubleHeight")  Boolean                !@double_height? // Double Height
+&raw("LoopMesh")      StaticMesh             !@loop_mesh      // Loop Mesh
+&raw("OpenRoof")      Boolean                !@open_roof?     // Open Roof
+&raw("NumberofRooms") Integer                !@numberof_rooms // Numberof Rooms
+&raw("SwitchColor")   Boolean                !@switch_color?  // Switch Color
+&raw("GlassWalls")    Boolean                !@glass_walls?   // Glass Walls
+&raw("RoomNames")     List{String}           !@room_names     // Room Names
+&raw("RoomType")      List{BP_DemoRoom_Enum} !@room_type      // Room Type
+&raw("FrontDoor")     Boolean                !@front_door?    // Front Door
+&raw("OpenBack")      Boolean                !@open_back?     // Open Back
+&raw("CastShadows")   Boolean                !@cast_shadows?  // You may want to disable shadows for extremely large rooms or if lots of other lights are used nearby.
+
+$$ @add_room_names
+// Add Room Names
+//
+// UE4 name of this method: AddRoomNames
+
+&aka("AddRoomNames")
+
+(Integer index  : 0
+ Real    offset : 0.0) 
+
+$$ @add_open_trim
+// Add Open Trim
+//
+// UE4 name of this method: AddOpenTrim
+
+&aka("AddOpenTrim")
+
+(Vector3 scale  : Vector3!
+ Real    offset : 0.0
+ Integer index  : 0) 
+
+$$ @add_lights
+// Add Lights
+//
+// UE4 name of this method: AddLights
+
+&aka("AddLights")
+
+(Integer index  : 0
+ Real    offset : 0.0) 
+
+$$ @add_wall
+// Add Wall
+//
+// UE4 name of this method: AddWall
+
+&aka("AddWall")
+
+(Vector3 scale  : Vector3!
+ Real    offset : 0.0
+ Integer index  : 0) 
+
+$$ @add_trim
+// Add Trim
+//
+// UE4 name of this method: AddTrim
+
+&aka("AddTrim")
+
+(Vector3 scale  : Vector3!
+ Integer index  : 0
+ Real    offset : 0.0) 
+
+$$ @add_clamp
+// Add Clamp
+//
+// UE4 name of this method: AddClamp
+
+&aka("AddClamp")
+
+(Real    offset : 0.0
+ Integer index  : 0) 
+
+$$ @add_back_wall
+// Add Back Wall
+//
+// UE4 name of this method: AddBackWall
+
+&aka("AddBackWall")
+
+(Real offset : 0.0) 
+
+$$ @add_loop_sections
+// Add Loop Sections
+//
+// UE4 name of this method: AddLoopSections
+
+&aka("AddLoopSections")
+
+(Vector3 scale  : Vector3!
+ Real    offset : 0.0
+ Integer index  : 0) 
+
+$$ .

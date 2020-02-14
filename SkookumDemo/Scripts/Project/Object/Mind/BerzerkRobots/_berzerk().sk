@@ -1,0 +1,37 @@
+//---------------------------------------------------------------------------------------
+// Simple example of chase
+//---------------------------------------------------------------------------------------
+
+() 
+  [
+  println("Running BerzerkRobots._berzerk() on the " this_mind " mind.")
+  
+  loop
+    [
+    // Robots go berzerk when berzerk effect entered
+    Volume@'TriggerBerzerk'._wait_actor_begin_overlap
+    
+    Emitter@'BerzerkEmitter'.deactivate
+    branch GameLib.player_pawn._boom
+    branch
+      [
+      _wait(.75)
+      _draw_text_at_player("The robots are berzerk!")
+      ]
+    
+    race
+      [
+      // All enemy robots chase random targets forever
+      Enemy.instances%_go_berzerk
+        
+      // Stop when berzerk off effect entered
+      Volume@'TriggerBerzerkOff'._wait_actor_begin_overlap      
+      ]
+    
+    Enemy.instances%path_stop
+    Emitter@'BerzerkEmitter'.activate
+    branch GameLib.player_pawn._boom
+    _wait(.75)
+    _draw_text_at_player("The robots have calmed down.")
+    ]
+  ]

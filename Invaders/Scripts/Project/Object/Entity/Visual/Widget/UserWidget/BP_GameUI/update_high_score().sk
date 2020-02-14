@@ -1,0 +1,19 @@
+&blueprint
+() Integer
+[
+  !result : 0
+  !pc : owning_player<>PC_Invaders
+  
+  if pc.valid?
+  [
+    if pc.@score >= pc.@high_score
+    [
+      result := @displayed_score>>Integer
+    ]
+    else
+    [
+      result := pc.@high_score
+    ]
+  ]
+  result
+]

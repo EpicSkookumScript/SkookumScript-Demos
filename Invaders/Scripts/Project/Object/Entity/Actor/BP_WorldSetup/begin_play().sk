@@ -1,0 +1,13 @@
+&blueprint
+()
+[
+  // Get the 1st player controller/local player and set camera
+  branch
+  [
+    !pc : GameLib.player_controller
+    pc.view_target_with_blend_set(@game_camera)
+    _wait_frames
+    setup_board
+    @world_setup_complete? := true
+  ]
+]

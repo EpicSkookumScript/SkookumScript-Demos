@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------------------
+// Animate the wing/body components for butterfly flight
+//---------------------------------------------------------------------------------------
+
+() 
+  [
+  // Wings flap
+  !wing_angle: MathLib.lerp(0 80 @flight_curve_flapping_motion_d9aa)
+  @left_wing.relative_rotation_set(RotationAngles!yaw_pitch_roll(0 0 wing_angle))
+  @right_wing.relative_rotation_set(RotationAngles!yaw_pitch_roll(0 0 -wing_angle))  
+  
+  // Body bobs up and down
+  @body.relative_location_set(Vector3!xyz(0 0 MathLib.lerp(2 -2 @flight_curve_flapping_motion_d9aa)))
+  @body.relative_rotation_set(RotationAngles!yaw_pitch_roll(0 MathLib.lerp(4 -2 @flight_curve_flapping_motion_d9aa) 0))  
+  ]

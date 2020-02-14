@@ -1,0 +1,50 @@
+// BP Core
+//
+// UE4 name of this class: BP_Core_C
+
+// UE4 Asset Name: BP_Core
+// UE4 Package Name: "/Game/Blueprints/Actors/BP_Core"
+
+annotations: &reflected_data &name("BP_Core_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")                                                        PointerToUberGraphFrame !@uber_graph_frame                           // Currently unsupported */
+&raw("PointLight")                                                            PointLightComponent     !@point_light                                // Point Light
+&raw("SkeletalMesh")                                                          SkeletalMeshComponent   !@skeletal_mesh                              // Skeletal Mesh
+&raw("Destroy_Core_Timeline_Color_51E4924E4BCD26466676A388BBE149DB")          Color                   !@destroy_core_timeline_color_51e4           // Destroy Core Timeline Color 51E4924E4BCD26466676A388BBE149DB
+&raw("Destroy_Core_Timeline_LightIntensity_51E4924E4BCD26466676A388BBE149DB") Real                    !@destroy_core_timeline_light_intensity_51e4 // Destroy Core Timeline Light Intensity 51E4924E4BCD26466676A388BBE149DB
+&raw("Destroy_Core_Timeline_Intensity_51E4924E4BCD26466676A388BBE149DB")      Real                    !@destroy_core_timeline_intensity_51e4       // Destroy Core Timeline Intensity 51E4924E4BCD26466676A388BBE149DB
+&raw("Destroy_Core_Timeline_Spin_Rate_51E4924E4BCD26466676A388BBE149DB")      Real                    !@destroy_core_timeline_spin_rate_51e4       // Destroy Core Timeline Spin Rate 51E4924E4BCD26466676A388BBE149DB
+/* &raw("Destroy_Core_Timeline__Direction_51E4924E4BCD26466676A388BBE149DB")     ETimelineDirection      !@destroy_core_timeline_direction_51e4       // Currently unsupported */
+&raw("Destroy Core Timeline")                                                 TimelineComponent       !@destroy_core_timeline                      // Destroy Core Timeline
+&raw("Start_Core_Timeline_LightIntensity_9F2F8D03478BAA0EC752CEAD2FB89EC6")   Real                    !@start_core_timeline_light_intensity_9f2f   // Start Core Timeline Light Intensity 9F2F8D03478BAA0EC752CEAD2FB89EC6
+&raw("Start_Core_Timeline_Emissive_9F2F8D03478BAA0EC752CEAD2FB89EC6")         Real                    !@start_core_timeline_emissive_9f2f          // Start Core Timeline Emissive 9F2F8D03478BAA0EC752CEAD2FB89EC6
+&raw("Start_Core_Timeline_Spin_Rate_9F2F8D03478BAA0EC752CEAD2FB89EC6")        Real                    !@start_core_timeline_spin_rate_9f2f         // Start Core Timeline Spin Rate 9F2F8D03478BAA0EC752CEAD2FB89EC6
+/* &raw("Start_Core_Timeline__Direction_9F2F8D03478BAA0EC752CEAD2FB89EC6")       ETimelineDirection      !@start_core_timeline_direction_9f2f         // Currently unsupported */
+&raw("Start Core Timeline")                                                   TimelineComponent       !@start_core_timeline                        // Start Core Timeline
+&raw("MaterialInstance")                                                      MaterialInstanceDynamic !@material_instance                          // Material Instance
+&raw("CoreStartCue")                                                          SoundCue                !@core_start_cue                             // Core Start Cue
+&raw("CoreOkColor")                                                           Color                   !@core_ok_color                              // Core Ok Color
+&raw("CoreDestroyedColor")                                                    Color                   !@core_destroyed_color                       // Core Destroyed Color
+&raw("CoreOverloadCue")                                                       SoundCue                !@core_overload_cue                          // Core Overload Cue
+
+$$ @play_start
+// Play Start
+//
+// UE4 name of this method: PlayStart
+
+&aka("PlayStart")
+
+() 
+
+$$ @play_destroy
+// Play Destroy
+//
+// UE4 name of this method: PlayDestroy
+
+&aka("PlayDestroy")
+
+() 
+
+$$ .

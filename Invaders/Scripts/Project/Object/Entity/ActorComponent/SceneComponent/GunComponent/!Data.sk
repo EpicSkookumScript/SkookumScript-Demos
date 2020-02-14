@@ -1,0 +1,5 @@
+// Keeps track of the projectiles that this gun fires so that we can limit # of projectiles at a time
+List{BP_Projectile} !@current_projectiles
+
+// A callback for notifying things of a firing event
+List{()} !@fire_event

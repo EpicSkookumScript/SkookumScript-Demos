@@ -1,0 +1,33 @@
+()
+[
+
+  if @death_particle.valid?
+  [
+    // I want to make symmetrical patterns like this
+    // o is actor center, - | are particles spraying
+    //
+    //     |
+    //  -- o --
+    //     |
+    //
+    //  \  /
+    //   o
+    //   |
+    // This is basically, choose the number of particles you want N
+    // spawn N sets of particles that are 360/N degrees apart.
+    // Also pick a random starting angle between 0, 360/N
+    
+    !n : @@random.uniform_int(4) + 2 // [2, 5]
+    !deg : 360.0 / n>>Real
+
+    // Spawn N emitters deg degrees apart with a random initial angle
+    !r : RotationAngles!yaw_pitch_roll(0 0 @@random.uniform_range(0, deg))
+    n.do
+    [
+      !p : GameLib.spawn_emitter_at_location(, @death_particle, actor_location, r,,,EPSCPoolMethod.@@auto_release)
+      p.vector_parameter_set("Color".Name, Vector3!xyz(@color.@r, @color.@g, @color.@b))
+      r.@roll += deg
+    ]
+    
+  ]
+]

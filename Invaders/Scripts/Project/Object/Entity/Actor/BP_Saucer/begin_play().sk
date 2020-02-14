@@ -1,0 +1,12 @@
+&blueprint
+()
+[
+  // Call drop_loot on death
+  @health_component.death_subscribe(^[drop_loot destroy_sk_actor])
+  
+  // Bounce the ship up and down
+  branch _bounce
+  
+  // Fly across the screen
+  branch _move
+]

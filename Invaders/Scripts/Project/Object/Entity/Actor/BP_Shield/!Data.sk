@@ -1,0 +1,2 @@
+// keep track of all the actors we spawned
+List{Actor} !@shield_actors

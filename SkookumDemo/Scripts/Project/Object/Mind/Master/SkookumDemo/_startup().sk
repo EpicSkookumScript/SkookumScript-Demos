@@ -1,0 +1,9 @@
+//---------------------------------------------------------------------------------------
+// SkookumDemo starting point for durational (coroutine based) behaviour
+//---------------------------------------------------------------------------------------
+
+()
+
+  [
+  Debug.println("Member: SkookumDemo._startup() - Default starting point for behaviour that takes time to complete.")
+  ]

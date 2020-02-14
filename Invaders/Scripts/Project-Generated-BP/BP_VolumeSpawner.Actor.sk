@@ -1,0 +1,19 @@
+// BP Volume Spawner
+//
+// UE4 name of this class: BP_VolumeSpawner_C
+
+// UE4 Asset Name: BP_VolumeSpawner
+// UE4 Package Name: "/Game/Blueprints/Environment/BP_VolumeSpawner"
+
+annotations: &reflected_data &name("BP_VolumeSpawner_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+&raw("TextRender") TextRenderComponent !@text_render // Text Render
+&raw("Box")        BoxComponent        !@box         // Box
+&raw("SpawnInfo")  List{S_SpawnInfo}   !@spawn_info  // Spawn Info
+&raw("SpawnCount") Integer             !@spawn_count // Spawn Count
+&raw("RNGSeed")    Integer             !@rngseed     // RNGSeed
+
+$$ .

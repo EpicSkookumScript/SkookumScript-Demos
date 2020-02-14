@@ -1,0 +1,11 @@
+(PlayerController pc) 
+[
+  if pc.valid?
+  [
+      // Set the movement boundary to be just a little in from the screen edge
+    GameLib.deproject_point_to_plane(pc, Vector2!xy(-0.95 1),  @plane_dist, true; !edge_left)
+    GameLib.deproject_point_to_plane(pc, Vector2!xy(0.95 1),  @plane_dist, true; !edge_right)  
+    @movement_boundary.@x := edge_left.@y
+    @movement_boundary.@y := edge_right.@y
+  ]  
+]

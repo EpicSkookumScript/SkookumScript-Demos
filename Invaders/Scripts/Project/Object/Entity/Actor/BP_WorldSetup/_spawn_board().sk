@@ -1,0 +1,7 @@
+
+()
+[
+  spawn_shields
+  _wait(2)
+  spawn_invasion  
+]

@@ -1,0 +1,2 @@
+// So we know if this unit is still flying in
+InvokedCoroutine !@fly_in_co

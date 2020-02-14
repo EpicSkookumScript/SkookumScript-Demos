@@ -1,0 +1,13 @@
+// The direction the connection is from
+(E_ShieldArm dir) Boolean
+[
+  if @fly_in_co.valid?
+  [
+    false
+  ]
+  else
+  [
+    branch[_extend_arm(dir)]
+    true
+  ]
+]

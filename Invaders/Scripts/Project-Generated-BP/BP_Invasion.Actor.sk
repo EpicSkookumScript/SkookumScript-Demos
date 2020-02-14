@@ -1,0 +1,31 @@
+// BP Invasion
+//
+// UE4 name of this class: BP_Invasion_C
+
+// UE4 Asset Name: BP_Invasion
+// UE4 Package Name: "/Game/Blueprints/Actors/BP_Invasion"
+
+annotations: &reflected_data &name("BP_Invasion_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")             PointerToUberGraphFrame !@uber_graph_frame              // Currently unsupported */
+&raw("InvaderMovement")            InvaderMovement   !@invader_movement              // Invader Movement
+&raw("PatternSpawner")             PatternSpawner    !@pattern_spawner               // Pattern Spawner
+&raw("DefaultSceneRoot")           SceneComponent    !@default_scene_root            // Default Scene Root
+&raw("SpawnClasses")               List{EntityClass} !@spawn_classes                 // Spawn Classes
+&raw("SpawnPattern")               E_Pattern         !@spawn_pattern                 // Spawn Pattern
+&raw("MovementDelay")              Real              !@movement_delay                // Delay between moves
+&raw("Spacing")                    Real              !@spacing                       // Spacing
+&raw("FiringDelayRange")           Vector2           !@firing_delay_range            // Firing
+&raw("SaucerDelayRange")           Vector2           !@saucer_delay_range            // Saucer Delay Range
+&raw("SaucerClass")                EntityClass       !@saucer_class                  // Saucer Class
+&raw("MovementDelayRange")         Vector2           !@movement_delay_range          // Lerp between these values as invaders get killed off to increase the speed of the invasion.
+&raw("MovementSpeedRange")         Vector2           !@movement_speed_range          // Max/Min speed
+&raw("SpawnedActors")              List{Actor}       !@spawned_actors                // Spawned Actors
+&raw("SpawnZDistance")             Real              !@spawn_zdistance               // Spawn ZDistance
+&raw("InvasionCountMaxDifficulty") Integer           !@invasion_count_max_difficulty // Invasion Count Max Difficulty
+&raw("InvasionDifficultyMult")     Real              !@invasion_difficulty_mult      // Invasion Difficulty Mult
+&raw("SpawnScale")                 Real              !@spawn_scale                   // Spawn Scale
+
+$$ .

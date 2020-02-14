@@ -1,0 +1,27 @@
+// Fire the gun in the direction specified
+// This version of fire works without any delay
+// Returns true if a projectile was fired
+(Vector3 dir : component_rotation.Vector3) Boolean
+[
+  !fired? : false
+  if @gun_params.valid? and @gun_params.@projectile_class_3_42d5.valid?
+  [
+    // See if we *can* fire based on max projectiles. The second check to see how many non-null projectiles
+    // exist also has the side-effect of culling the @current_projectiles list of null entries.
+    if [@gun_params.@max_projectiles_6_1113 = 0] or [@current_projectiles.select[item.valid?].length < @gun_params.@max_projectiles_6_1113]
+    [
+      // Fire the selected firing pattern
+      fire_pattern(dir)
+                  
+      // Pew pew
+      @gun_params.@firing_sound_23_19e4.play when @gun_params.@firing_sound_23_19e4.valid?
+      
+      fired? := true
+    ]
+    else
+    [
+      @gun_params.@firing_sound_empty_24_b26b.play when @gun_params.@firing_sound_empty_24_b26b.valid?
+    ]
+  ]
+  fired?
+]

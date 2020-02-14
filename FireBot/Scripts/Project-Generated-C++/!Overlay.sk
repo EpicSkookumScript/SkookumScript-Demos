@@ -1,0 +1,72 @@
+$$ UStruct < Object
+// UStruct
+$$ Enum < Object
+// Enum
+$$ Entity < Object
+$$ ActorComponent < Entity
+$$ Actor < Entity
+$$ Info < Actor
+$$ Pawn < Actor
+$$ GameModeBase < Info
+$$ Character < Pawn
+$$ GameMode < GameModeBase
+$$ SkookumScriptBehaviorComponent < ActorComponent
+// Allows you to create a custom SkookumScript component by deriving from the SkookumScriptBehaviorComponent class. Dynamically attach and detach to/from any actor as you like via script.
+//
+// UE4 name of this class: SkookumScriptBehaviorComponent
+
+annotations: &reflected_cpp &name("SkookumScriptBehaviorComponent")
+
+$$ BurnComponentBase < SkookumScriptBehaviorComponent
+// Customized SkookumScriptBehaviorComponent that exposes C++ SkookumScript routines for use by scripts
+//
+// UE4 name of this class: BurnComponentBase
+
+annotations: &reflected_cpp &name("BurnComponentBase")
+
+$$ @
+
+&raw("IsBurning") Boolean !@is_burning? // Is this component active?
+
+$$ @socket_name_set
+// Set socket name for vfx attachment
+//
+// UE4 name of this method: SetSocketName
+// Blueprint category: SkookumScript
+
+&aka("SetSocketName")
+
+(Name socket_name : Name!none) 
+
+$$ @enable_burn
+// Start burning
+//
+// UE4 name of this method: EnableBurn
+// Blueprint category: SkookumScript
+
+&aka("EnableBurn")
+
+(Boolean enable? : true) 
+
+$$ FireBotCharacter < Character
+// Fire Bot Character
+//
+// UE4 name of this class: FireBotCharacter
+
+annotations: &reflected_cpp &name("FireBotCharacter")
+
+$$ @
+
+&raw("CameraBoom")     SpringArmComponent !@camera_boom       // Camera boom positioning the camera behind the character
+&raw("FollowCamera")   CameraComponent    !@follow_camera     // Follow camera
+&raw("BaseTurnRate")   Real               !@base_turn_rate    // Base turn rate, in deg/sec. Other scaling may affect final turn rate.
+&raw("BaseLookUpRate") Real               !@base_look_up_rate // Base look up/down rate, in deg/sec. Other scaling may affect final rate.
+
+$$ FireBotGameMode < GameMode
+// Fire Bot Game Mode
+//
+// UE4 name of this class: FireBotGameMode
+
+annotations: &reflected_cpp &name("FireBotGameMode")
+
+$$ .

@@ -1,0 +1,21 @@
+&blueprint
+() Integer
+[
+  // Increment the displayed score smoothly from the displayed value to the current value. Control
+  // the speed with the UI variable ScoreUpdateSpeed. I admit this does get a little odd with the
+  // casting. SkookumScript can't use the text type, so what I'm doing is storing the displayed
+  // score as a Real so that I can interpolate it from frame to frame. Then I cast that back to 
+  // int to send to the HUD.
+  !result : @displayed_score!>>Integer
+  
+  !pc : owning_player<>PC_Invaders
+  if pc.valid?
+  [
+    if @displayed_score ~= pc.@score>>
+    [
+      @displayed_score := MathLib.finterp_to(@displayed_score, pc.@score>>, GameLib.world_delta_seconds, @score_update_speed)
+      result := @displayed_score>>
+    ]
+  ]
+  result
+]

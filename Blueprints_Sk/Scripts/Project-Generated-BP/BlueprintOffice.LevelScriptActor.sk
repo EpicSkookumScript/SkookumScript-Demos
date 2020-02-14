@@ -1,0 +1,16 @@
+// Blueprint Office
+//
+// UE4 name of this class: BlueprintOffice_C
+
+// UE4 Asset Name: BlueprintOffice
+// UE4 Package Name: "/Game/Maps/BlueprintOffice"
+
+annotations: &reflected_data &name("BlueprintOffice_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")                                                     PointerToUberGraphFrame !@uber_graph_frame                                                      // Currently unsupported */
+&raw("DefaultSceneRoot")                                                   SceneComponent    !@default_scene_root                                                    // Default Scene Root
+&raw("BP_Commentary_Box_C_0_ExecuteUbergraph_BlueprintOffice_RefProperty") BP_Commentary_Box !@bp_commentary_box_c_0_execute_ubergraph_blueprint_office_ref_property // BP Commentary Box C 0 Execute Ubergraph Blueprint Office Ref Property
+
+$$ .

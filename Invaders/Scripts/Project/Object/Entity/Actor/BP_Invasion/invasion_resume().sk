@@ -1,0 +1,6 @@
+()
+[
+  //@invasion_co.pending_decrement
+  @pause_invasion? := false
+  println("Resuming invasion")
+]

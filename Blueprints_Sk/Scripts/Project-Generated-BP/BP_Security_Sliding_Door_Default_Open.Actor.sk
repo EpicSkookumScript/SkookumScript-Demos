@@ -1,0 +1,48 @@
+// Sliding doors that close when triggered
+//
+// UE4 name of this class: BP_Security_Sliding_Door_Default_Open_C
+
+// UE4 Asset Name: BP_Security_Sliding_Door_Default_Open
+// UE4 Package Name: "/Game/Assets/Blueprints/BP_Security_Sliding_Door_Default_Open"
+
+annotations: &reflected_data &name("BP_Security_Sliding_Door_Default_Open_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")                                        PointerToUberGraphFrame !@uber_graph_frame           // Currently unsupported */
+/* &raw("DoorRight")                                             StaticMeshComponent !@door_right                 // Currently unsupported */
+/* &raw("DoorLeft")                                              StaticMeshComponent !@door_left                  // Currently unsupported */
+/* &raw("Arrow1")                                                ArrowComponent !@arrow_1                    // Currently unsupported */
+&raw("Timeline_0_DoorClose_592E9BC44A79C8BADC0E7B883F843F64") Real    !@timeline_0_door_close_592e // Timeline 0 Door Close 592E9BC44A79C8BADC0E7B883F843F64
+/* &raw("Timeline_0__Direction_592E9BC44A79C8BADC0E7B883F843F64")ETimelineDirection !@timeline_0_direction_592e  // Currently unsupported */
+/* &raw("Timeline_0")                                            TimelineComponent !@timeline_0                 // Currently unsupported */
+&raw("Timeline_1_DoorOpen_3303FDAC4D87429BEF2E0CA0523DC909")  Real    !@timeline_1_door_open_3303  // Timeline 1 Door Open 3303FDAC4D87429BEF2E0CA0523DC909
+/* &raw("Timeline_1__Direction_3303FDAC4D87429BEF2E0CA0523DC909")ETimelineDirection !@timeline_1_direction_3303  // Currently unsupported */
+/* &raw("Timeline_1")                                            TimelineComponent !@timeline_1                 // Currently unsupported */
+&raw("DoorLeftStart")                                         Vector3 !@door_left_start            // Door Left Start
+&raw("DoorOpenWidth")                                         Vector3 !@door_open_width            // Door Open Width
+&raw("DoorRightStart")                                        Vector3 !@door_right_start           // Door Right Start
+&raw("DoorLeftSize")                                          Vector3 !@door_left_size             // Door Left Size
+&raw("DoorRightSize")                                         Vector3 !@door_right_size            // Door Right Size
+&raw("AlarmOn")                                               Boolean !@alarm_on?                  // Alarm On
+&raw("Open")                                                  Boolean !@open?                      // Open
+
+$$ @monitor_camera_swap
+// Monitor Camera Swap
+//
+// UE4 name of this method: MonitorCameraSwap
+
+&aka("MonitorCameraSwap")
+
+() 
+
+$$ @security_alarm_interface
+// Security Alarm Interface
+//
+// UE4 name of this method: Security Alarm Interface
+
+&aka("Security Alarm Interface")
+
+(Boolean send_alarm? : false) 
+
+$$ .

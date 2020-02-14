@@ -1,0 +1,51 @@
+&blueprint
+()
+[
+  _wait_frames
+  BP_WorldSetup.instances_first.spawn_shields
+  
+  // Have this shield show off
+  !shield : BP_ShieldBlockNew.named("BP_ShieldBlock1".Name)
+  !start : TargetPoint.named("TargetPointStart".Name)
+  !camera : CameraActor.instances_first
+  
+  // Create spline points
+  shield.@spline.clear_spline_points
+  shield.@spline.add_spline_world_point(start.actor_location)
+  shield.@spline.add_spline_world_point(camera.actor_location)
+  shield.@spline.add_spline_world_point(shield.actor_location)
+  
+  
+  branch
+  [
+    loop
+    [
+      // Open all, close all
+      shield._extend_arm(E_ShieldArm.@@top)
+      shield._extend_arm(E_ShieldArm.@@right)
+      shield._extend_arm(E_ShieldArm.@@bottom)
+      shield._extend_arm(E_ShieldArm.@@left)
+      shield._extend_arm(E_ShieldArm.@@top, true)
+      shield._extend_arm(E_ShieldArm.@@right, true)
+      shield._extend_arm(E_ShieldArm.@@bottom, true)
+      shield._extend_arm(E_ShieldArm.@@left, true)
+      
+      // All at same time
+      sync
+      [
+        shield._extend_arm(E_ShieldArm.@@top)
+        shield._extend_arm(E_ShieldArm.@@right)
+        shield._extend_arm(E_ShieldArm.@@bottom)
+        shield._extend_arm(E_ShieldArm.@@left)
+      ]
+      sync
+      [
+        shield._extend_arm(E_ShieldArm.@@top, true)
+        shield._extend_arm(E_ShieldArm.@@right, true)
+        shield._extend_arm(E_ShieldArm.@@bottom, true)
+        shield._extend_arm(E_ShieldArm.@@left, true)
+      ]      
+      _wait
+    ]
+  ]
+]

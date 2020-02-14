@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------------------
+// Draw text at player for a given duration and return after it goes away
+// 
+// Params:
+//   text:      text to display
+//   duration:  how long to display the text
+//   offset:    offset in actor space
+//   color:     text color
+//
+// Examples:  _draw_text("Floating text!" 3.0 Vector3!xyz(0 0 100))
+//---------------------------------------------------------------------------------------
+
+( String  text,
+  Real    duration: 1.0,
+  Vector3 offset:   !up * !meter,
+  Color   color:    !white
+)
+  [
+  draw_text(text duration offset color)
+  _wait(duration)
+  ]

@@ -1,0 +1,28 @@
+// E Firing Pattern
+//
+// UE4 name of this enum: E_FiringPattern
+
+// UE4 Asset Name: E_FiringPattern
+// UE4 Package Name: "/Game/Blueprints/Data/E_FiringPattern"
+
+annotations: &reflected_data &name("E_FiringPattern")
+
+$$ @@
+
+E_FiringPattern !@@straight
+E_FiringPattern !@@spread
+E_FiringPattern !@@e_max
+
+$$ @@!
+// E_FiringPattern
+// EnumPath: /Game/Blueprints/Data/E_FiringPattern.E_FiringPattern
+
+()
+
+  [
+  @@straight: E_FiringPattern!int(0)
+  @@spread:   E_FiringPattern!int(1)
+  @@e_max:    E_FiringPattern!int(2)
+  ]
+
+$$ .

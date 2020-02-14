@@ -1,0 +1,18 @@
+(Vector3 dir) Actor
+[
+  // Spawn the projectile
+  !t : Transform!translation_rotation_scale(component_location, dir.RotationAngles.Rotation, Vector3!one)
+  !p : GameLib.begin_deferred_actor_spawn_from_class(, @gun_params.@projectile_class_3_42d5, t, ESpawnActorCollisionHandlingMethod.@@always_spawn, owner)
+  p : GameLib.finish_spawning_actor(p t)
+  
+  // Set the instigator on the projectile when fired from a pawn, this tells us who the instigator is
+  // on death of the projectile so we can do scoring.
+  [p.@instigator := owner<>Pawn] when owner.class_of?(Pawn)
+           
+  // Store a reference to the projectile so that we can later see how many exist at any given time.
+  // There's no need to store a reference if ammo is unlimited.
+  [@current_projectiles.append(p<>BP_Projectile)] when @gun_params.@max_projectiles_6_1113 > 0
+  
+  // return the spawned projectile
+  p
+]

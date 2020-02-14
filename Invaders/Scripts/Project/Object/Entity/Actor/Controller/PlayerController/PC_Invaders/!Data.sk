@@ -1,0 +1,21 @@
+// Number of lives remaining
+Integer !@player_lives
+
+// Reflects the state of the start button, which is anything that the Fire action is mapped to
+Boolean !@wants_start?
+
+// The player score
+Integer !@score
+
+// The high score
+Integer !@high_score
+
+// Used to signal to anyone watching that the game is over
+Boolean !@game_is_over
+
+// To grab coordinates
+BP_WorldSetup !@world_setup
+
+// To track a coroutine that is firing satellites, seemed like a good place to do this based on
+// lifecycle of the controller.
+InvokedCoroutine !@satelite_co

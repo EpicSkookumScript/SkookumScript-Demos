@@ -1,0 +1,13 @@
+()
+[
+  @idle_cue : GameLib.spawn_sound_at_location(,@laser_idle_cue, actor_location)
+  @laser.active_set(true)
+  @laser.emitter_enable_set("Beam".Name, false)
+
+  _wait(@laser_warmup_time)
+  @idle_cue.stop when @idle_cue.valid?
+ 
+  @firing_cue : GameLib.spawn_sound_at_location(,@laser_fire_cue, actor_location)
+  @laser.emitter_enable_set("Beam".Name, true)
+  enable_overlaps(true)
+]

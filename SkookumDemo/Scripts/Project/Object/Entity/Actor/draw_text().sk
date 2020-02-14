@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------------------
+// Draw text at player for a given duration and return after it goes away
+// 
+// Params:
+//   text:      text to display
+//   duration:  how long to display the text
+//   offset:    offset in actor space
+//   color:     text color
+//
+// Examples:  draw_text("Floating text!" 3.0 Vector3!xyz(0 0 100))
+//---------------------------------------------------------------------------------------
+
+( String  text,
+  Real    duration: 1.0,
+  Vector3 offset:   Vector3!up * Real.@@meter,
+  Color   color:    Color!white
+)
+  [
+  !world_offset: offset.rotate_by(transform.@rotation)
+  GameLib.player_controller.@my_hud.add_debug_text(text this duration world_offset world_offset color false false false Font!null 2.0 false)
+  ]

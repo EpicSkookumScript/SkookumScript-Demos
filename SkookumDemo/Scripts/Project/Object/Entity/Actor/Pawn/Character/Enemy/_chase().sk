@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------------------
+// Go berzerk and chase down target
+// 
+// # Params:
+//   target: target to chase down
+//
+// # Author(s): Conan Reis
+//---------------------------------------------------------------------------------------
+
+(Pawn target) 
+
+  [
+  _path_to_actor(target)
+  branch [target._boom]
+  _wait(.5)
+  ]  
+

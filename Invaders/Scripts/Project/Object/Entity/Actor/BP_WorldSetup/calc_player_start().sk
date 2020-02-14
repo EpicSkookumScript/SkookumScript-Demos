@@ -1,0 +1,8 @@
+(PlayerController pc) 
+[
+  if pc.valid?
+  [
+    // Player Start
+    GameLib.deproject_point_to_plane(pc, Vector2!xy(0.0, 0.85), @plane_dist, true; @game_coord_player_start)
+  ]
+]

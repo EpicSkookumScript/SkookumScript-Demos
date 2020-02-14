@@ -1,0 +1,7 @@
+(PlayerController pc) 
+[
+  if pc.valid?
+  [
+    GameLib.deproject_point_to_plane(pc, Vector2!xy(-1.0, 0.6), @plane_dist, true; @game_coord_game_over_line)
+  ]
+]

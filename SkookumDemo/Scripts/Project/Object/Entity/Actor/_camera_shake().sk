@@ -1,0 +1,22 @@
+//---------------------------------------------------------------------------------------
+// Shake player camera for specified duration.
+// 
+// Params:
+//   duration: shake duration in seconds
+//   scale:    amplitude of the shake from >0 to 1 and <1 stops shake.
+//
+// Notes:     Simple coroutine written entirely in script using _wait()
+// Examples:  Master.instance._camera_shake(3)
+//---------------------------------------------------------------------------------------
+
+( Real duration
+  Real scale: 1.0
+) 
+
+  [
+  _wait
+  CameraShake.default.@oscillation_duration := duration // This is a bit hokey - correct way is to create a specific class
+  CameraShake.default.@anim_scale := scale
+  GameLib.play_world_camera_shake(@@world CameraShake.static_class transform.@translation 100 5000 1.0)
+  _wait(duration)
+  ]

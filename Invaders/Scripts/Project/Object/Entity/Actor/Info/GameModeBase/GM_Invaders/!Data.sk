@@ -1,0 +1,11 @@
+// Reference to the world setup actor
+BP_WorldSetup !@world_setup
+
+// The core is the big glowing spinny thing in the center that the
+// player is protecting. Assume that this may sometimes be null
+// depending on the map
+BP_Core !@core
+
+// How many invasions have been spawned? Used to set difficulty
+Integer !@invasion_count
+

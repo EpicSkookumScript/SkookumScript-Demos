@@ -1,0 +1,23 @@
+// BP Shield Block New
+//
+// UE4 name of this class: BP_ShieldBlockNew_C
+
+// UE4 Asset Name: BP_ShieldBlockNew
+// UE4 Package Name: "/Game/Blueprints/Actors/BP_ShieldBlockNew"
+
+annotations: &reflected_data &name("BP_ShieldBlockNew_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")    PointerToUberGraphFrame !@uber_graph_frame   // Currently unsupported */
+&raw("PointLight")        PointLightComponent   !@point_light        // Point Light
+&raw("Audio")             AudioComponent        !@audio              // Audio
+&raw("Sphere")            SphereComponent       !@sphere             // Sphere
+&raw("Spline")            SplineComponent       !@spline             // Spline
+&raw("Nano")              PoseableMeshComponent !@nano               // Nano
+&raw("HealthComponent")   HealthComponent       !@health_component   // Health Component
+&raw("ExtensionDistance") Real                  !@extension_distance // Extension Distance
+&raw("MovementSpeed")     Real                  !@movement_speed     // Movement Speed
+&raw("FlyInSpeed")        Real                  !@fly_in_speed       // Fly in Speed
+
+$$ .

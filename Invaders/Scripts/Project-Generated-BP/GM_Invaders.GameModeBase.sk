@@ -1,0 +1,32 @@
+// GM Invaders
+//
+// UE4 name of this class: GM_Invaders_C
+
+// UE4 Asset Name: GM_Invaders
+// UE4 Package Name: "/Game/Blueprints/Game/GM_Invaders"
+
+annotations: &reflected_data &name("GM_Invaders_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")       PointerToUberGraphFrame !@uber_graph_frame       // Currently unsupported */
+&raw("DefaultSceneRoot")     SceneComponent !@default_scene_root     // Default Scene Root
+&raw("BackgroundColors")     List{Color}    !@background_colors      // Background Colors
+&raw("BackgroundCycleSpeed") Real           !@background_cycle_speed // Background Cycle Speed
+
+$$ @spawn_default_pawn_for
+// Called during RestartPlayer to actually spawn the player's pawn, when using a start spot
+// @param       new_player - Controller for whom this pawn is spawned
+// @param       start_spot - Actor at which to spawn pawn
+// @return      a pawn of the default pawn class
+//
+// UE4 name of this method: SpawnDefaultPawnFor
+// Blueprint category: Game
+
+&aka("SpawnDefaultPawnFor")
+
+(Controller new_player : Controller!null
+ Actor      start_spot : Actor!null
+) Pawn
+
+$$ .

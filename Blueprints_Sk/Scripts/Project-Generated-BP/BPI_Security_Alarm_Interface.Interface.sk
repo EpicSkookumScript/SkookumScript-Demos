@@ -1,0 +1,30 @@
+// Interface employed by security camera, alarm, door, button and monitor blueprints
+//
+// UE4 name of this class: BPI_Security_Alarm_Interface_C
+
+// UE4 Asset Name: BPI_Security_Alarm_Interface
+// UE4 Package Name: "/Game/Assets/Blueprints/BPI_Security_Alarm_Interface"
+
+annotations: &reflected_data &name("BPI_Security_Alarm_Interface_C")
+
+$$ @
+
+$$ @monitor_camera_swap
+// Monitor Camera Swap
+//
+// UE4 name of this method: MonitorCameraSwap
+
+&aka("MonitorCameraSwap")
+
+() 
+
+$$ @security_alarm_interface
+// Security Alarm Interface
+//
+// UE4 name of this method: Security Alarm Interface
+
+&aka("Security Alarm Interface")
+
+(Boolean send_alarm? : false) 
+
+$$ .

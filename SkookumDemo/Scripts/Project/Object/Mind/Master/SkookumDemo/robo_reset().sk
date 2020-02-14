@@ -1,0 +1,12 @@
+//---------------------------------------------------------------------------------------
+// Resets positions of robots
+//---------------------------------------------------------------------------------------
+
+() 
+
+  [
+  @'RoboChar1'.teleport_to_actor("TargetPoint1")
+  @'RoboChar2'.teleport_to_actor("TargetPoint2")
+  @'RoboChar3'.teleport_to_actor("TargetPoint3")
+  ]
+

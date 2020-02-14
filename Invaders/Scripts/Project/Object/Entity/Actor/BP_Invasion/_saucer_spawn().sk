@@ -1,0 +1,8 @@
+()
+[
+  loop
+  [
+    _wait(@@random.uniform_range(@saucer_delay_range.@x, @saucer_delay_range.@y))
+    spawn_saucer
+  ]
+]

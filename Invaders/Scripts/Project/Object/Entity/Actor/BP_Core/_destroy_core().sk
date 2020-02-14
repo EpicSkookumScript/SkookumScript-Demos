@@ -1,0 +1,8 @@
+()
+[
+  @core_co.abort when @core_co.valid?
+  @core_overload_cue.play
+  play_destroy
+  _wait(6)
+  
+]

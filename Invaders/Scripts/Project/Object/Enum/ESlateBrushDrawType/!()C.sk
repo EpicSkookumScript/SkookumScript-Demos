@@ -1,0 +1,12 @@
+// ESlateBrushDrawType
+// EnumPath: /Script/SlateCore.ESlateBrushDrawType
+
+()
+
+  [
+  @@no_draw_type: ESlateBrushDrawType!int(0)
+  @@none:         ESlateBrushDrawType!int(0)
+  @@box:          ESlateBrushDrawType!int(1)
+  @@border:       ESlateBrushDrawType!int(2)
+  @@image:        ESlateBrushDrawType!int(3)
+  ]

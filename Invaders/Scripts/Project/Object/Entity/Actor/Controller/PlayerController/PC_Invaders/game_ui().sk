@@ -1,0 +1,4 @@
+()
+[
+  @game_ui.add_to_player_screen
+]

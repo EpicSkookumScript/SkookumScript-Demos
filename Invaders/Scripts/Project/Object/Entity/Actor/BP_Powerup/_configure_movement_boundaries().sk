@@ -1,0 +1,10 @@
+()
+[
+  !world : BP_WorldSetup.instances_first
+  Debug.assert(world.valid?, "No BP_WorldSetup in level")
+  
+  // Wait until world setup is completed, the world boundaries aren't valid until this time
+  world.@world_setup_complete?._wait_true
+  
+  @game_coord_bottom := world.@game_coord_bl.@z
+]

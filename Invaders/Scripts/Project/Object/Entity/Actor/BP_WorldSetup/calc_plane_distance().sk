@@ -1,0 +1,10 @@
+(PlayerController pc)
+[
+  if pc.valid?
+  [
+    // Axis-aligned distance from the camera to the center of the playfield
+    !plane_dist : [@playfield_center.actor_location - pc.view_target.actor_location]
+    plane_dist.@z := 0
+    @plane_dist := plane_dist.length
+  ]
+]

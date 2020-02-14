@@ -1,0 +1,8 @@
+&blueprint
+()
+[
+  //spawn_player_ship
+  
+  @world_setup : BP_WorldSetup.instances_first
+  Debug.assert(@world_setup.valid? "BP_WorldSetup does does not exist in the level")
+]

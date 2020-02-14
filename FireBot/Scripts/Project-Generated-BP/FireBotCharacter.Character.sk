@@ -1,0 +1,7 @@
+// Fire Bot Character
+//
+// UE4 name of this class: FireBotCharacter
+
+annotations: &reflected_cpp &name("FireBotCharacter")
+
+$$ .

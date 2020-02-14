@@ -1,0 +1,43 @@
+(E_ShieldArm arm, Boolean reverse? : false)
+[
+  !bone_name : "".Name
+  !bone_forward : Vector3!
+  
+   case arm
+     E_ShieldArm.@@top
+     [
+       bone_name := "Arm_up".Name
+       bone_forward := Vector3!xyz(0 0 1)
+     ]
+     E_ShieldArm.@@bottom
+     [
+       bone_name := "Arm_down".Name
+       bone_forward := Vector3!xyz(0 0 -1)
+     ]
+     E_ShieldArm.@@left
+     [
+       bone_name := "Arm_left".Name
+       bone_forward := Vector3!xyz(0 1 0)
+     ]
+     E_ShieldArm.@@right
+     [
+       bone_name := "Arm_right".Name
+       bone_forward := Vector3!xyz(0 -1 0)
+     ]
+  if reverse?[bone_forward := bone_forward * -1]
+  
+  // Assume constant uniform scale
+  !scale : actor_scale_3d.@x
+  !loc : @nano.bone_location_by_name(bone_name, EBoneSpaces.@@component_space)
+  !dest : loc + [bone_forward * @extension_distance * scale]
+  
+  loop
+  [  
+    loc := @nano.bone_location_by_name(bone_name, EBoneSpaces.@@component_space)
+    !loc_new : MathLib.vinterp_to(loc, dest, GameLib.world_delta_seconds, @movement_speed)
+    @nano.bone_location_by_name_set(bone_name, loc_new, EBoneSpaces.@@component_space)
+    
+    [exit] when dest.equal?(loc_new)
+    _wait
+  ]
+]

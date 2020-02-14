@@ -1,0 +1,10 @@
+// Pawn is the base class of all actors that can be possessed by players or AI.
+// They are the physical representations of players and creatures in a level.
+// 
+// @see https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Pawn/
+//
+// UE4 name of this class: Pawn
+
+annotations: &reflected_cpp &name("Pawn")
+
+$$ .

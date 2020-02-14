@@ -1,0 +1,50 @@
+()
+[
+  // find a target
+  !target : find_target
+  
+  // No valid target, just fire and forget
+  if target.valid?.not
+  [
+    @sphere.physics_linear_velocity_set(actor_forward_vector * @velocity)
+  ]
+  else
+  [
+    branch
+    [
+      // Fire diagonally up to get over shields, guidance will kick in shortly
+      @sphere.physics_linear_velocity_set([[actor_forward_vector * 0.50] + [Vector3!xyz(-1 0 0) * 0.90]] * @velocity)
+      _wait(0.3)
+      
+      loop
+      [
+        [exit] when target.valid?.not
+        !loc : actor_location
+        !dest : target.actor_location
+        
+        // Desired velocity
+        !vel_desired : MathLib.normal(dest - @sphere.component_location) * @velocity
+        
+        // Direction we should steer
+        !steering : vel_desired - @sphere.physics_linear_velocity
+        
+        // Clamp to max force
+        steering := MathLib.clamp_vector_size(steering, -@force_max, @force_max)
+        
+        // New velocity
+        !vel_new : @sphere.physics_linear_velocity + steering
+        
+        // Clamp to max velocity
+        !vel_clamped : MathLib.clamp_vector_size(vel_new, -@velocity, @velocity)
+        
+        // Convert from desired velocity to force, T is time interval over which accelerate
+        // f = m * (Vf - Vi) / T
+        !force : [[vel_clamped - @sphere.physics_linear_velocity] * @sphere.mass] / GameLib.world_delta_seconds
+        @sphere.add_force(force)
+       // @sphere.physics_linear_velocity_set(vel_clamped)
+        
+        _wait
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,2 @@
+// The Z value of the bottom of the playing area
+Real !@game_coord_bottom

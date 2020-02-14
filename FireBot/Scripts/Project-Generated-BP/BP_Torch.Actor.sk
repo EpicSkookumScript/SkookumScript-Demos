@@ -1,0 +1,16 @@
+// BP Torch
+//
+// UE4 name of this class: BP_Torch_C
+
+// UE4 Asset Name: BP_Torch
+// UE4 Package Name: "/Game/Blueprints/BP_Torch"
+
+annotations: &reflected_data &name("BP_Torch_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")    PointerToUberGraphFrame !@uber_graph_frame    // Currently unsupported */
+&raw("BurnComponentBase") BurnComponentBase   !@burn_component_base // Burn Component Base
+&raw("StaticMesh")        StaticMeshComponent !@static_mesh         // Static Mesh
+
+$$ .

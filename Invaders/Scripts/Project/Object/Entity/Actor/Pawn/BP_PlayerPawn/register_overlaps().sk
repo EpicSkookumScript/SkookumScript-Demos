@@ -1,0 +1,28 @@
+()
+[
+  branch
+  [
+    @skeletal_mesh._on_component_begin_overlap_do
+    [
+      if other_actor.class_of?(BP_Powerup)
+      [
+        !p : other_actor<>BP_Powerup
+        if p.valid?
+        [
+          p.@powerup_sound.play when p.@powerup_sound.valid?
+          @gun_component.@gun_params := p.@powerup_params
+          p.destroy_sk_actor
+          
+          // fire satellites when we grab a powerup
+          // fire it from the player controller so that if the pawn gets killed
+          // the sats will continue on and we can make sure things are only firing
+          // one at a time.
+          if controller.class_of?(PC_Invaders)
+          [
+            controller<>PC_Invaders.fire_sats
+          ]
+        ]
+      ]
+    ]
+  ]
+]

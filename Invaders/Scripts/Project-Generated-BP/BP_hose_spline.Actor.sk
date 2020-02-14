@@ -1,0 +1,15 @@
+// BP Hose Spline
+//
+// UE4 name of this class: BP_hose_spline_C
+
+// UE4 Asset Name: BP_hose_spline
+// UE4 Package Name: "/Game/Models/Hose/BP_hose_spline"
+
+annotations: &reflected_data &name("BP_hose_spline_C")
+
+$$ @
+
+&raw("Spline")           SplineComponent !@spline             // Spline
+&raw("DefaultSceneRoot") SceneComponent  !@default_scene_root // Default Scene Root
+
+$$ .

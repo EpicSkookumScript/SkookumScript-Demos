@@ -1,0 +1,7 @@
+(; Boolean died?)
+[
+  died? : false
+  !pc : PC_Invaders.instances_first
+  pc._wait_pawn_null
+  died? := true
+]

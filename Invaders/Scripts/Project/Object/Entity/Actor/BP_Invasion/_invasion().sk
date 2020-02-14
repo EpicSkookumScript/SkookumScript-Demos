@@ -1,0 +1,20 @@
+()
+[
+  _fly_invaders_in
+  
+  loop
+  [
+    // Run the invasion 
+    // _invader_movement is the only coroutine that can exit based on @pause_invasion?
+    race
+    [
+      _invader_movement
+      _invaders_fire
+      _saucer_spawn
+      _update_invasion_difficulty
+    ]
+    
+    // Once the invasion is paused, wait for it to be unpaused
+    @pause_invasion?._wait_false
+  ]
+]

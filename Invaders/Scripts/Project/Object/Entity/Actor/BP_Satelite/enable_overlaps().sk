@@ -1,0 +1,4 @@
+(Boolean enable?)
+[
+  @laser_collision.@generate_overlap_events? := enable?
+]

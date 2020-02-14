@@ -1,0 +1,14 @@
+// Invaders
+//
+// UE4 name of this class: Invaders_C
+
+// UE4 Asset Name: Invaders
+// UE4 Package Name: "/Game/Maps/Invaders"
+
+annotations: &reflected_data &name("Invaders_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+
+$$ .

@@ -1,0 +1,7 @@
+()
+[
+  stop_all
+  
+  enable_overlaps(false)
+  GameLib.spawn_sound_at_location(,@laser_end_cue, actor_location)
+]

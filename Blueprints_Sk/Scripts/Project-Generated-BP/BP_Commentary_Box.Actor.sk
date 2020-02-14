@@ -1,0 +1,38 @@
+// Commentary box that expands to display text when approached
+//
+// UE4 name of this class: BP_Commentary_Box_C
+
+// UE4 Asset Name: BP_Commentary_Box
+// UE4 Package Name: "/Game/Assets/Blueprints/BP_Commentary_Box"
+
+annotations: &reflected_data &name("BP_Commentary_Box_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")                                       PointerToUberGraphFrame !@uber_graph_frame         // Currently unsupported */
+/* &raw("Trigger")                                              SphereComponent !@trigger                  // Currently unsupported */
+/* &raw("Pulse effect")                                         ParticleSystemComponent !@pulse_effect             // Currently unsupported */
+/* &raw("Bottom right corner")                                  StaticMeshComponent !@bottom_right_corner      // Currently unsupported */
+/* &raw("Top left corner")                                      StaticMeshComponent !@top_left_corner          // Currently unsupported */
+/* &raw("Top right corner")                                     StaticMeshComponent !@top_right_corner         // Currently unsupported */
+/* &raw("Bottom left corner")                                   StaticMeshComponent !@bottom_left_corner       // Currently unsupported */
+/* &raw("Info icon")                                            StaticMeshComponent !@info_icon                // Currently unsupported */
+/* &raw("Top Border")                                           StaticMeshComponent !@top_border               // Currently unsupported */
+/* &raw("Bottom Border")                                        StaticMeshComponent !@bottom_border            // Currently unsupported */
+/* &raw("Left Border")                                          StaticMeshComponent !@left_border              // Currently unsupported */
+/* &raw("Right border")                                         StaticMeshComponent !@right_border             // Currently unsupported */
+/* &raw("Background")                                           StaticMeshComponent !@background               // Currently unsupported */
+/* &raw("Base")                                                 ArrowComponent !@base                     // Currently unsupported */
+&raw("Simple_Curve_0_to_1_C39F97014DC08E9031D2AA99CBE46FF7") Real         !@simple_curve_0_to_1_c39f // Simple Curve 0 To 1 C39F97014DC08E9031D2AA99CBE46FF7
+/* &raw("Simple_Curve__Direction_C39F97014DC08E9031D2AA99CBE46FF7")ETimelineDirection !@simple_curve_direction_c39f // Currently unsupported */
+/* &raw("Simple Curve")                                         TimelineComponent !@simple_curve             // Currently unsupported */
+&raw("Number of lines")                                      Integer      !@number_of_lines          // Number Of Lines
+&raw("Longest line length")                                  Integer      !@longest_line_length      // Longest Line Length
+&raw("Border width padding")                                 Real         !@border_width_padding     // Slightly expands the text box borders
+&raw("Preview mode")                                         Boolean      !@preview_mode?            // Expand the commentary box by default. If false, the box will only expand when approached
+&raw("Lines")                                                List{String} !@lines                    // Input the text lines to use in the commentary box
+/* &raw("TextRenderComponents")                                 List{TextRenderComponent} !@text_render_components   // Currently unsupported */
+&raw("Trigger scale")                                        Real         !@trigger_scale            // Scales the proximity trigger that expands the box when overlapped by a player
+&raw("Disable particle effect")                              Boolean      !@disable_particle_effect? // Disable the pulse particle effect used when the commentary box is collapsed
+
+$$ .

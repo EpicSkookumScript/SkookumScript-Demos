@@ -1,0 +1,20 @@
+()
+[
+  branch
+  [
+    @laser_collision._on_component_begin_overlap_do
+    [
+      if other_actor.valid?
+      [
+        // Do damage to other actor
+        // Direction that hit came from is just the opposite of the direction of velocity
+        !hit_dir : MathLib.normal(@laser.component_location - other_actor.actor_location)
+        !hit : HitResult!fake(other_actor,, actor_location)
+        
+        // Get the instigator of this damage, the instigator is only set for bullets spawned
+        // by the player. Owner could be null if player has just died.
+        GameLib.apply_point_damage(other_actor, @damage, hit_dir, hit)
+      ]
+    ]
+  ]
+]

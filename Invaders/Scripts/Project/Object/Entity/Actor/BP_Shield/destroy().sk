@@ -1,0 +1,5 @@
+()
+[
+  @shield_actors%destroy_sk_actor
+  destroy_sk_actor
+]

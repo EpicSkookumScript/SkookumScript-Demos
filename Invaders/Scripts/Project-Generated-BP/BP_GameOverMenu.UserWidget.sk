@@ -1,0 +1,14 @@
+// BP Game Over Menu
+//
+// UE4 name of this class: BP_GameOverMenu_C
+
+// UE4 Asset Name: BP_GameOverMenu
+// UE4 Package Name: "/Game/UI/BP_GameOverMenu"
+
+annotations: &reflected_data &name("BP_GameOverMenu_C")
+
+$$ @
+
+&raw("GameOverEnter") WidgetAnimation !@game_over_enter // Game Over Enter
+
+$$ .

@@ -1,0 +1,30 @@
+// E Game Over Cause
+//
+// UE4 name of this enum: E_GameOverCause
+
+// UE4 Asset Name: E_GameOverCause
+// UE4 Package Name: "/Game/Blueprints/Data/E_GameOverCause"
+
+annotations: &reflected_data &name("E_GameOverCause")
+
+$$ @@
+
+E_GameOverCause !@@invaders_landed
+E_GameOverCause !@@lives_expired
+E_GameOverCause !@@player_death
+E_GameOverCause !@@e_max
+
+$$ @@!
+// E_GameOverCause
+// EnumPath: /Game/Blueprints/Data/E_GameOverCause.E_GameOverCause
+
+()
+
+  [
+  @@invaders_landed: E_GameOverCause!int(0)
+  @@lives_expired:   E_GameOverCause!int(1)
+  @@player_death:    E_GameOverCause!int(2)
+  @@e_max:           E_GameOverCause!int(3)
+  ]
+
+$$ .

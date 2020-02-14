@@ -1,0 +1,13 @@
+
+() 
+[
+  // Initialize variables
+  @invasion_co : branch _wait(-1)
+  @invader_touched_down : false
+  @world_setup : BP_WorldSetup!null
+  @invader_count : 0
+  @pause_invasion? : false
+  @moving_right? : true
+  @difficulty_mult : 1
+
+]

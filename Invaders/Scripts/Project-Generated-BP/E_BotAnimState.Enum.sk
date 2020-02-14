@@ -1,0 +1,30 @@
+// Bot Animation State
+//
+// UE4 name of this enum: E_BotAnimState
+
+// UE4 Asset Name: E_BotAnimState
+// UE4 Package Name: "/Game/Blueprints/Data/E_BotAnimState"
+
+annotations: &reflected_data &name("E_BotAnimState")
+
+$$ @@
+
+E_BotAnimState !@@ball
+E_BotAnimState !@@spin
+E_BotAnimState !@@attack
+E_BotAnimState !@@e_max
+
+$$ @@!
+// E_BotAnimState
+// EnumPath: /Game/Blueprints/Data/E_BotAnimState.E_BotAnimState
+
+()
+
+  [
+  @@ball:   E_BotAnimState!int(0)
+  @@spin:   E_BotAnimState!int(1)
+  @@attack: E_BotAnimState!int(2)
+  @@e_max:  E_BotAnimState!int(3)
+  ]
+
+$$ .

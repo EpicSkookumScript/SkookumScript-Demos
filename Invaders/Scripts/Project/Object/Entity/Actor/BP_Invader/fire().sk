@@ -1,0 +1,19 @@
+()
+[
+  if @gun_component.valid?
+  [
+    branch
+    [
+      animation_set(E_BotAnimState.@@attack)
+      _wait(0.5)
+      @gun_component.fire
+      animation_set(E_BotAnimState.@@spin)
+      
+      // The fire animation uses a curve to change color to red
+      // we need to restore the original color of the bot
+      // The firing animation is 0.667 seconds, so we wait until its over
+      _wait(0.5)
+      bot_color_set
+    ]
+  ]
+]

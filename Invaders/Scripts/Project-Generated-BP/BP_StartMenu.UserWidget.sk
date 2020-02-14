@@ -1,0 +1,14 @@
+// BP Start Menu
+//
+// UE4 name of this class: BP_StartMenu_C
+
+// UE4 Asset Name: BP_StartMenu
+// UE4 Package Name: "/Game/UI/BP_StartMenu"
+
+annotations: &reflected_data &name("BP_StartMenu_C")
+
+$$ @
+
+&raw("StartBlink") WidgetAnimation !@start_blink // Start Blink
+
+$$ .

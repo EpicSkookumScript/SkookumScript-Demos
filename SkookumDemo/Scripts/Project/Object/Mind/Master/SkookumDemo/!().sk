@@ -1,0 +1,15 @@
+//---------------------------------------------------------------------------------------
+// SkookumDemo mind instance constructor
+//---------------------------------------------------------------------------------------
+
+()
+
+  [
+  Debug.println("Member: SkookumDemo.!() - Startup mind instance constructor called.")
+  Master@!()  
+  @sentry?: false
+  
+  // Call default starting point when engine runtime is present - i.e. do not call in IDE
+  branch [_startup] when Debug.engine_present?
+  ]
+

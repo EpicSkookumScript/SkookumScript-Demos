@@ -1,0 +1,28 @@
+()
+[
+  branch
+  [
+    _on_actor_begin_overlap_do
+    [
+      if other_actor.valid?
+      [
+        // Do damage to other actor
+        // Direction that hit came from is just the opposite of the direction of velocity
+        !hit_dir : -MathLib.normal(@sphere.physics_linear_velocity)
+        !hit : HitResult!fake(other_actor,, actor_location)
+        
+        // Get the instigator of this damage, the instigator is only set for bullets spawned
+        // by the player. Owner could be null if player has just died.
+        !instigator : Controller!null
+        if owner.valid? and owner.@instigator.valid? and owner.@instigator.@controller.valid?
+        [
+          instigator : owner.@instigator.@controller
+        ]
+        GameLib.apply_point_damage(other_actor, @damage, hit_dir, hit, instigator, owner)
+        
+        // Destroy self
+        explode
+      ]
+    ]
+  ]
+]

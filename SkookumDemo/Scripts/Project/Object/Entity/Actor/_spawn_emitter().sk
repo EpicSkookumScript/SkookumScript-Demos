@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------------------
+// Spawn emitter at actor with optional offset and wait until it has completed.
+// 
+// # Params:
+//   emitter_type: name of emitter
+//   offset:       vector offset relative to actor rotation
+//
+// # Examples:
+//   actor._spawn_emitter(
+//     "/Game/ScriptLoaded/Particles/P_Explosion.P_Explosion"
+//     Vector3.@@dir_up * Real.@@meter)
+// # See:       World._spawn_emitter_player()
+// # Author(s): Conan Reis
+//---------------------------------------------------------------------------------------
+
+( String    vfx_name,
+  Vector3   offset: Vector3!
+) 
+
+  [
+  !vfx: ParticleSystem.load(vfx_name)
+  !vfx_component: GameLib.spawn_emitter_at_location(this vfx transform.@translation)
+  vfx_component._wait_until_destroyed
+  ]

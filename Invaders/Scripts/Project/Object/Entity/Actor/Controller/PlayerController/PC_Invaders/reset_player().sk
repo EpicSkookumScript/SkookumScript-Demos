@@ -1,0 +1,8 @@
+()
+[
+  // Score and lives
+  @score : 0
+  @game_ui.reset_displayed_score
+  @player_lives : @player_max_lives! // make a copy, not a reference
+  @game_is_over : false
+]

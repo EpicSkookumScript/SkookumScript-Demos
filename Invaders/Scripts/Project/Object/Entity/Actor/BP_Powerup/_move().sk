@@ -1,0 +1,13 @@
+()
+[
+  _configure_movement_boundaries
+  
+  // Move down the screen
+  loop
+  [
+    [exit] when actor_location.@z <= @game_coord_bottom
+    @invader_movement._move_down
+    _wait
+  ]
+  destroy_sk_actor
+]

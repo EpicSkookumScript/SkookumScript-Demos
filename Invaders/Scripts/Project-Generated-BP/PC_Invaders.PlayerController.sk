@@ -1,0 +1,22 @@
+// PC Invaders
+//
+// UE4 name of this class: PC_Invaders_C
+
+// UE4 Asset Name: PC_Invaders
+// UE4 Package Name: "/Game/Blueprints/Game/PC_Invaders"
+
+annotations: &reflected_data &name("PC_Invaders_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")  PointerToUberGraphFrame !@uber_graph_frame  // Currently unsupported */
+&raw("GameMusic")       AudioComponent  !@game_music        // Game Music
+&raw("StartMenu")       BP_StartMenu    !@start_menu        // Start Menu
+&raw("GameUI")          BP_GameUI       !@game_ui           // Game UI
+&raw("GameOverMenu")    BP_GameOverMenu !@game_over_menu    // Game Over Menu
+&raw("PlayerMaxLives")  Integer         !@player_max_lives  // Player Max Lives
+&raw("StartConfirmCue") SoundCue        !@start_confirm_cue // Start Confirm Cue
+&raw("RespawnDelay")    Real            !@respawn_delay     // Respawn Delay
+&raw("MusicStartMenu")  SoundCue        !@music_start_menu  // Music Start Menu
+
+$$ .

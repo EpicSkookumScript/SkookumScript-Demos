@@ -1,0 +1,44 @@
+()
+[
+  // Do a fancy fly-in using the spline in BP_Worldsetup, only do this is the spline has more than 2 points. If there are only 2 points
+  // then most likely the designer did not customize the entrance spline so we should just continue on.
+  if @world_setup.@player_entrance_spline.number_of_spline_points > 2
+  [
+    !spline_time : 0.0
+    !time_mult : 0.65
+    !loc_last : @world_setup.@player_entrance_spline.location_at_time(0.0, ESplineCoordinateSpace.@@world_, false)
+    loop
+    [
+      !loc : @world_setup.@player_entrance_spline.location_at_time(spline_time, ESplineCoordinateSpace.@@world_, false)
+      
+      // Get the direction that the spline is going in instead of the actual rotation of the spline
+      !rot: [loc - loc_last].RotationAngles
+      loc_last := loc
+      
+      actor_location_and_rotation_set(loc, rot)
+      [exit] when spline_time >= 1.0
+      
+      spline_time += time_mult * GameLib.world_delta_seconds
+      _wait
+    ]
+    
+    // Now that we're here, let's quickly align ourselves with the player start location
+    !dest_loc : @world_setup.@game_coord_player_start
+    !dest_rot : RotationAngles!yaw_pitch_roll(0 90 0)
+    loop
+    [
+      !new_loc : MathLib.vinterp_to_constant(actor_location, dest_loc, GameLib.world_delta_seconds, 900.0)
+      !new_rot : MathLib.rinterp_to_constant(actor_rotation, dest_rot, GameLib.world_delta_seconds, 900.0)
+      actor_location_and_rotation_set(new_loc, new_rot)
+      [exit] when MathLib.equal_equal_vector_vector(new_loc, dest_loc) and MathLib.equal_equal_rotator_rotator(new_rot, dest_rot)
+      _wait
+    ]
+    // Just to make sure we're now 100% aligned
+    actor_location_and_rotation_set(dest_loc, dest_rot)
+  ]
+
+  @health_component.death_subscribe(^[destroy_sk_actor])
+  @gun_component.fire_subscribe(^[fired])
+  register_overlaps
+  branch _firing 
+]

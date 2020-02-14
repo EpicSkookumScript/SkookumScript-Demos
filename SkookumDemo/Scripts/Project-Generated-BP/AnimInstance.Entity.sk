@@ -1,0 +1,7 @@
+// Anim Instance
+//
+// UE4 name of this class: AnimInstance
+
+annotations: &reflected_cpp &name("AnimInstance")
+
+$$ .

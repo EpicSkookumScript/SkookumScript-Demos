@@ -1,0 +1,5 @@
+()
+[
+  @invasion_co.abort when @invasion_co.valid?
+  @invasion_co : branch _invasion
+]

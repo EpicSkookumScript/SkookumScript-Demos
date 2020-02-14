@@ -1,0 +1,12 @@
+()
+[
+  _configure_movement_boundaries
+  
+  // Move right until we hit the boundary
+  loop
+  [
+    @invader_movement._move_horizontal(true; !success)
+    [exit] when success.not
+  ]
+  destroy_sk_actor
+]

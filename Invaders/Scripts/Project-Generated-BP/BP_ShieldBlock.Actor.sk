@@ -1,0 +1,16 @@
+// BP Shield Block
+//
+// UE4 name of this class: BP_ShieldBlock_C
+
+// UE4 Asset Name: BP_ShieldBlock
+// UE4 Package Name: "/Game/Blueprints/Actors/BP_ShieldBlock"
+
+annotations: &reflected_data &name("BP_ShieldBlock_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")  PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+&raw("HealthComponent") HealthComponent     !@health_component // Health Component
+&raw("Cube")            StaticMeshComponent !@cube             // Cube
+
+$$ .

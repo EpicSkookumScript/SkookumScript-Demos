@@ -1,0 +1,6 @@
+
+()
+[
+   _wait(@lifetime_max)
+   destroy_sk_actor
+]

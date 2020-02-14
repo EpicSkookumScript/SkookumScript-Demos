@@ -1,0 +1,30 @@
+// BP Demo Room Enum
+//
+// UE4 name of this enum: BP_DemoRoom_Enum
+
+// UE4 Asset Name: BP_DemoRoom_Enum
+// UE4 Package Name: "/Game/DemoRoom/BluePrint/BP_DemoRoom_Enum"
+
+annotations: &reflected_data &name("BP_DemoRoom_Enum")
+
+$$ @@
+
+BP_DemoRoom_Enum !@@standard
+BP_DemoRoom_Enum !@@roofwith_hole
+BP_DemoRoom_Enum !@@roof_open
+BP_DemoRoom_Enum !@@bp_demo_room_max
+
+$$ @@!
+// BP_DemoRoom_Enum
+// EnumPath: /Game/DemoRoom/BluePrint/BP_DemoRoom_Enum.BP_DemoRoom_Enum
+
+()
+
+  [
+  @@standard:         BP_DemoRoom_Enum!int(0)
+  @@roofwith_hole:    BP_DemoRoom_Enum!int(1)
+  @@roof_open:        BP_DemoRoom_Enum!int(2)
+  @@bp_demo_room_max: BP_DemoRoom_Enum!int(3)
+  ]
+
+$$ .

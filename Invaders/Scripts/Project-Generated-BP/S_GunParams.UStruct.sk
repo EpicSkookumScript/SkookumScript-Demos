@@ -1,0 +1,33 @@
+// S Gun Params
+//
+// UE4 name of this struct: S_GunParams
+
+// UE4 Asset Name: S_GunParams
+// UE4 Package Name: "/Game/Blueprints/Data/S_GunParams"
+
+annotations: &reflected_data &name("S_GunParams")
+
+$$ @
+
+&raw("ProjectileClass_3_42D52FAE43C8AAFD401CBB8CFA4559E8")             EntityClass     !@projectile_class_3_42d5               // Projectile Class
+&raw("MaxProjectiles_6_11136211448607340BB8AEA971865B45")              Integer         !@max_projectiles_6_1113                // Max Projectiles
+&raw("FiringDelay_9_692E3CA34CC5CB776A88469A9714DC13")                 Real            !@firing_delay_9_692e                   // Firing Delay
+&raw("FiringPattern_12_B2E7CBF748C2316D1383D88F24C6C0D3")              E_FiringPattern !@firing_pattern_12_b2e7                // Firing Pattern
+&raw("SpreadProjectileCount_15_448C1B8C4B38B51A821C5C94272391EF")      Integer         !@spread_projectile_count_15_448c       // Spread Projectile Count
+&raw("SpreadProjectileMaxDegrees_18_2946410A4A9636CB05015D9265D50EA8") Real            !@spread_projectile_max_degrees_18_2946 // Spread Projectile Max Degrees
+&raw("FiringSound_23_19E475874E63CA071D11EC955DB8C4BB")                SoundCue        !@firing_sound_23_19e4                  // Firing Sound
+&raw("FiringSoundEmpty_24_B26B720F4021F7F6C6CF168E8BEAA7E2")           SoundCue        !@firing_sound_empty_24_b26b            // Firing Sound Empty
+
+$$ @!
+() S_GunParams
+
+$$ @!copy
+(S_GunParams other) S_GunParams
+
+$$ @assign
+(S_GunParams other) S_GunParams
+
+$$ @!!
+() S_GunParams
+
+$$ .

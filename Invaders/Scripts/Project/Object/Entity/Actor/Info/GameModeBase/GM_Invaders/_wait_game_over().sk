@@ -1,0 +1,31 @@
+(;E_GameOverCause lose_reason)
+[
+  lose_reason : E_GameOverCause.@@e_max!
+  !pc : PC_Invaders.instances_first
+  !invasion : BP_Invasion.instances_first
+  
+  race
+  [
+    // The game can end if the player runs out of lives
+    pc.@game_is_over._wait_true(0)
+
+    // Or if the invaders touch down
+    invasion.@invader_touched_down._wait_true
+    
+    // The round can end if the player has lost a life
+    pc._wait_pawn_null
+  ]
+  
+  if pc.@game_is_over
+  [
+    lose_reason := E_GameOverCause.@@lives_expired
+  ]
+  invasion.@invader_touched_down
+  [
+    lose_reason := E_GameOverCause.@@invaders_landed
+  ]
+  else
+  [
+    lose_reason := E_GameOverCause.@@player_death 
+  ]
+]

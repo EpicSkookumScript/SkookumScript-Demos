@@ -1,0 +1,25 @@
+// Creates a fog sheet mesh with a customizable material
+//
+// UE4 name of this class: BP_FogSheet_C
+
+// UE4 Asset Name: BP_FogSheet
+// UE4 Package Name: "/Game/Assets/Blueprints/BP_FogSheet"
+
+annotations: &reflected_data &name("BP_FogSheet_C")
+
+$$ @
+
+/* &raw("FogSheet")                BillboardComponent !@fog_sheet                 // Currently unsupported */
+/* &raw("FogSheetMasterMaterial")  MaterialInstanceConstant !@fog_sheet_master_material // Currently unsupported */
+/* &raw("FogSheetMID")             MaterialInstanceDynamic !@fog_sheet_mid             // Currently unsupported */
+&raw("Color")                   Color   !@color                     // Fog color
+&raw("Brightness")              Real    !@brightness                // Fog brightness
+&raw("Size")                    Vector3 !@size                      // Scale of fog sheet mesh
+&raw("Opacity")                 Real    !@opacity                   // Fog opacity
+&raw("DepthFadeDistance")       Real    !@depth_fade_distance       // Distance to fade out when intersecting geometry
+&raw("NoiseProjectionDistance") Real    !@noise_projection_distance // Depth offset for fog noise
+&raw("NoiseSize")               Real    !@noise_size                // Scale of fog noise
+&raw("PanningSpeed")            Real    !@panning_speed             // Panning speed of fog noise
+&raw("FadeDistance")            Real    !@fade_distance             // Distance from camera to fade out
+
+$$ .

@@ -1,0 +1,2 @@
+// The currently displayed score on the scoreboard
+Real !@displayed_score

@@ -1,0 +1,18 @@
+// Invader Movement
+//
+// UE4 name of this class: InvaderMovement_C
+
+// UE4 Asset Name: InvaderMovement
+// UE4 Package Name: "/Game/Blueprints/Components/InvaderMovement"
+
+annotations: &reflected_data &name("InvaderMovement_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")   PointerToUberGraphFrame !@uber_graph_frame  // Currently unsupported */
+&raw("MovementSpeed")    Real !@movement_speed    // How fast to move
+&raw("LeftBoundary")     Real !@left_boundary     // The left boundary for Y
+&raw("RightBoundary")    Real !@right_boundary    // The right boundary for Y
+&raw("MovementDistance") Real !@movement_distance // How far to move per move
+
+$$ .

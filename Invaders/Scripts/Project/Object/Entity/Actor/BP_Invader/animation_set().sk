@@ -1,0 +1,4 @@
+(E_BotAnimState state)
+[
+  @invader_anim_state := state
+]

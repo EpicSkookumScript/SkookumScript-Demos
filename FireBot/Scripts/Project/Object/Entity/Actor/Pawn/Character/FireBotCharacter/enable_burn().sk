@@ -1,0 +1,11 @@
+//---------------------------------------------------------------------------------------
+// Enables/disables player's burn component.
+// Author: Shadi Dadenji
+//---------------------------------------------------------------------------------------
+
+(Boolean enable? : true) 
+  [
+  @fire_component.enable_burn(enable?)
+  ]
+
+

@@ -1,0 +1,12 @@
+// BP Invader Type 2
+//
+// UE4 name of this class: BP_InvaderType2_C
+
+// UE4 Asset Name: BP_InvaderType2
+// UE4 Package Name: "/Game/Blueprints/Actors/Invaders/BP_InvaderType2"
+
+annotations: &reflected_data &name("BP_InvaderType2_C")
+
+$$ @
+
+$$ .

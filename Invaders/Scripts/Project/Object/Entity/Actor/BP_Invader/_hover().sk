@@ -1,0 +1,13 @@
+(Real phi: 0.0)
+[
+  loop
+  [
+    !t : GameLib.time_seconds
+    !freq : 1.0
+    !mag : 8.0
+    !offset : mag * sin([6.0 * t * freq] + phi)
+    
+    @skeletal_mesh.relative_location_set(Vector3!xyz(0 0 offset))
+    _wait
+  ]
+]

@@ -1,0 +1,12 @@
+()
+[
+  // Detect if an invader has touched down.
+  !furthest_down : Actor.furthest_in_dir(@spawned_actors, Vector3!down)
+  if furthest_down.valid?
+  [
+    if furthest_down.actor_location.@z <= @world_setup.@game_coord_game_over_line.@z
+    [
+      @invader_touched_down := true
+    ]
+  ]
+]

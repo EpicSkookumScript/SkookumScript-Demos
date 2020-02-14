@@ -1,0 +1,22 @@
+()
+[
+  !start_music : GameLib.spawn_sound_2d(,@music_start_menu)
+  // Show the start menu 
+  @start_menu.add_to_player_screen
+  
+  // Play the start menu animation in a loop
+  @start_menu.play_animation(@start_menu.@start_blink,,0)
+  
+  // Wait for the user to press start button, but don't fire immediately if it's already held
+  @wants_start?._wait_false_true
+  
+  // Stop the animation and remove the start menu from the screen
+  @start_menu.stop_animation(@start_menu.@start_blink)
+  @start_menu.remove_from_parent
+  
+  // With auto-destroy true (default in spawn_sound_2d), fading out destroys the cue
+  start_music.fade_out(1.0)
+  
+  // Play a confirmation sound and wait until it's over
+  @start_confirm_cue._play
+]

@@ -1,0 +1,13 @@
+()
+[
+  // Bug work-around
+  _wait_for_pc
+  !pc : PC_Invaders.instances_first
+
+  loop
+  [
+    _start_game(pc)
+    _run_game(pc)
+    _restart_game(pc)
+  ]
+]

@@ -1,0 +1,24 @@
+// Spawns the traditional 11x5 group of space invaders based on the order that the classes are defined 
+// in the BP in @spawn_classes.
+()
+[
+  !down : Vector3!down
+  @spawn_classes.do_idx
+  [
+    // For every class in spawn_classes, spawn an 11x1 pattern of that class
+    // Calculate a new origin for each 11x1 group so that each group is spaced @spacing units
+    // below the previous group.
+    !origin : actor_location + [down * @spacing * idx>> * 0.8]
+    
+    // Spawn the 11x1 group with the desired horizontal spacing. 
+    // Set index 5 to be the origin point of the group, in a group of 11 this is the geometric center
+    // x x x x x O x x x x x
+    // 0 1 2 3 4 5 6 7 8 9 0
+    !spawned : @pattern_spawner.spawn_pattern(@spawn_pattern, item, @spacing, origin, 5, @spawn_scale)
+    
+    // Save all of the spawned actors so that the invasion is aware of them
+    @spawned_actors.append_list(spawned)
+  ]
+  
+  @invader_count := @spawned_actors.length
+]

@@ -1,0 +1,9 @@
+()
+[
+  branch
+  [
+    @anim_state := E_BotAnimState.@@attack!
+    _wait(0.01)
+    @anim_state := E_BotAnimState.@@ball!
+  ]
+]

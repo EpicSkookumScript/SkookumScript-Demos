@@ -1,0 +1,15 @@
+()
+[
+  // Only fire sats if they aren't already firing
+  if @satelite_co.valid?.not
+  [
+    @satelite_co : branch
+    [
+      if @world_setup.valid?
+      [
+        BP_Satelite.instances%_look_at(@world_setup.@sat_start.actor_location)
+        BP_Satelite.instances%_fire_and_track(@world_setup.@sat_end.actor_location)
+      ]
+    ]
+  ]
+]

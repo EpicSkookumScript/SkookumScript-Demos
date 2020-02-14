@@ -1,0 +1,14 @@
+// TEST Guided Projectile
+//
+// UE4 name of this class: TEST_GuidedProjectile_C
+
+// UE4 Asset Name: TEST_GuidedProjectile
+// UE4 Package Name: "/Game/Maps/TEST_GuidedProjectile"
+
+annotations: &reflected_data &name("TEST_GuidedProjectile_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
+
+$$ .

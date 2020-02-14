@@ -1,0 +1,21 @@
+()
+[
+  loop
+  [
+    // Calculate difficulty so that after X invasions, it is at max difficulty
+    // This is subtracted as a constant alpha value below.
+    !diff : [@difficulty_mult>>Real / @invasion_count_max_difficulty>>] * @invasion_difficulty_mult
+
+    !new_count : @spawned_actors.select[item.valid?].length>>Real
+    
+    // Go from longest delay (Y) to shortest (X) as invaders die
+    !new_delay : Real.lerp(@movement_delay_range.@x, @movement_delay_range.@y, [new_count / @invader_count>>] - diff)
+    
+    // Go from slowest speed (Y) to fastest speed (x) as invaders die
+    !new_speed : Real.lerp(@movement_speed_range.@y, @movement_speed_range.@x, [new_count / @invader_count>>])
+
+    @movement_delay := new_delay
+    @invader_movement.@movement_speed := new_speed
+    _wait(0.1)
+  ]
+]

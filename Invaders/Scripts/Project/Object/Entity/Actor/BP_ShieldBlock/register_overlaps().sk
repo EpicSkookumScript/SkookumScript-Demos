@@ -1,0 +1,13 @@
+()
+[
+  branch
+  [
+    @cube._on_component_begin_overlap_do
+    [
+      if other_actor.class_of?(BP_Invader)
+      [
+        @health_component.death_broadcast
+      ]
+    ]
+  ]
+]

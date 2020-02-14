@@ -1,0 +1,15 @@
+// Hose Spline
+//
+// UE4 name of this class: hose_spline_C
+
+// UE4 Asset Name: hose_spline
+// UE4 Package Name: "/Game/Models/Hose/hose_spline"
+
+annotations: &reflected_data &name("hose_spline_C")
+
+$$ @
+
+&raw("Spline")           SplineComponent !@spline             // Spline
+&raw("DefaultSceneRoot") SceneComponent  !@default_scene_root // Default Scene Root
+
+$$ .

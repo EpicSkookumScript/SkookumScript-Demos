@@ -1,0 +1,41 @@
+// Alarm with flashing lights, to be connected to security camera blueprints
+//
+// UE4 name of this class: BP_Security_Flashing_Alarm_C
+
+// UE4 Asset Name: BP_Security_Flashing_Alarm
+// UE4 Package Name: "/Game/Assets/Blueprints/BP_Security_Flashing_Alarm"
+
+annotations: &reflected_data &name("BP_Security_Flashing_Alarm_C")
+
+$$ @
+
+/* &raw("UberGraphFrame")               PointerToUberGraphFrame !@uber_graph_frame              // Currently unsupported */
+/* &raw("OffLight")                     PointLightComponent !@off_light                     // Currently unsupported */
+/* &raw("SpotLight")                    SpotLightComponent !@spot_light                    // Currently unsupported */
+/* &raw("Alarm mesh")                   StaticMeshComponent !@alarm_mesh                    // Currently unsupported */
+&raw("Light Rotation Speed")         Real    !@light_rotation_speed          // Light Rotation Speed
+&raw("Test Alarm Material Settings") Boolean !@test_alarm_material_settings? // Test Alarm Material Settings
+&raw("Alarm Off Light Color")        Color   !@alarm_off_light_color         // Alarm Off Light Color
+&raw("Alarm On Light Color")         Color   !@alarm_on_light_color          // Alarm on Light Color
+&raw("Alarm State")                  Boolean !@alarm_state?                  // Alarm State
+/* &raw("Alarm Material")               MaterialInstanceDynamic !@alarm_material                // Currently unsupported */
+
+$$ @monitor_camera_swap
+// Monitor Camera Swap
+//
+// UE4 name of this method: MonitorCameraSwap
+
+&aka("MonitorCameraSwap")
+
+() 
+
+$$ @security_alarm_interface
+// Security Alarm Interface
+//
+// UE4 name of this method: Security Alarm Interface
+
+&aka("Security Alarm Interface")
+
+(Boolean send_alarm? : false) 
+
+$$ .

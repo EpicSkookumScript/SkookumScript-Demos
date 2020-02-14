@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------------------
+// Configure the movement boundaries so we know where the left and right screen edge are.  
+//---------------------------------------------------------------------------------------
+
+() 
+[
+  @world_setup : BP_WorldSetup.instances_first
+  Debug.assert(world.valid?, "No BP_WorldSetup in level")
+  
+  // Wait until world setup is completed, the world boundaries aren't valid until this time
+  @world_setup.@world_setup_complete?._wait_true
+  @invader_movement.boundaries_set(@world_setup.@movement_boundary.@x, @world_setup.@movement_boundary.@y)
+]

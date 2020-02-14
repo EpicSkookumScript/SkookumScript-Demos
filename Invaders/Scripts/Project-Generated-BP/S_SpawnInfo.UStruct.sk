@@ -1,0 +1,28 @@
+// S Spawn Info
+//
+// UE4 name of this struct: S_SpawnInfo
+
+// UE4 Asset Name: S_SpawnInfo
+// UE4 Package Name: "/Game/Blueprints/Data/S_SpawnInfo"
+
+annotations: &reflected_data &name("S_SpawnInfo")
+
+$$ @
+
+&raw("Class_6_3692D10A4327BE56448693876538955B")            EntityClass !@class_6_3692              // Class
+&raw("ScaleRange_5_12769F1E473BB291D6B72B940A49BE88")       Vector2     !@scale_range_5_1276        // Scale Range
+&raw("DisableCollision_8_E16762F447F9F04B3360F686CE54ABA9") Boolean     !@disable_collision_8_e167? // True to disable collision after spawn
+
+$$ @!
+() S_SpawnInfo
+
+$$ @!copy
+(S_SpawnInfo other) S_SpawnInfo
+
+$$ @assign
+(S_SpawnInfo other) S_SpawnInfo
+
+$$ @!!
+() S_SpawnInfo
+
+$$ .

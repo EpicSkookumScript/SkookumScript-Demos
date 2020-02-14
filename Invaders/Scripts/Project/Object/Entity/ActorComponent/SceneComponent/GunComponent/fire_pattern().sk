@@ -1,0 +1,28 @@
+(Vector3 dir)
+[
+  // These are some lovely auto-generated struct names :o
+  case @gun_params.@firing_pattern_12_b2e7 E_FiringPattern.@@straight
+  [
+    spawn_projectile(dir)
+  ]
+  E_FiringPattern.@@spread
+  [
+    //  1. Divide max angle by [num shots - 1] this is angle we need to cover with following shots
+    //  2. Shoot first shot at max angle
+    //  3. Increment subsequent shots by 1
+    if @gun_params.@spread_projectile_count_15_448c > 1
+    [
+      !angle_per_shot : @gun_params.@spread_projectile_max_degrees_18_2946 / [@gun_params.@spread_projectile_count_15_448c - 1]>>
+        
+      // First shot should be shot at max angle, since dir faces forward this means max angle / 2
+      dir := MathLib.rotate_angle_axis(dir, -@gun_params.@spread_projectile_max_degrees_18_2946 * 0.5, Vector3!forward)
+        
+      // Fire the number of projectiles specified
+      @gun_params.@spread_projectile_count_15_448c.do
+      [
+        spawn_projectile(dir)
+        dir := MathLib.rotate_angle_axis(dir, angle_per_shot, Vector3!forward)
+      ]
+    ]
+  ]
+]

@@ -1,0 +1,32 @@
+// E Shield Arm
+//
+// UE4 name of this enum: E_ShieldArm
+
+// UE4 Asset Name: E_ShieldArm
+// UE4 Package Name: "/Game/Blueprints/Data/E_ShieldArm"
+
+annotations: &reflected_data &name("E_ShieldArm")
+
+$$ @@
+
+E_ShieldArm !@@top
+E_ShieldArm !@@bottom
+E_ShieldArm !@@left
+E_ShieldArm !@@right
+E_ShieldArm !@@e_max
+
+$$ @@!
+// E_ShieldArm
+// EnumPath: /Game/Blueprints/Data/E_ShieldArm.E_ShieldArm
+
+()
+
+  [
+  @@top:    E_ShieldArm!int(0)
+  @@bottom: E_ShieldArm!int(1)
+  @@left:   E_ShieldArm!int(2)
+  @@right:  E_ShieldArm!int(3)
+  @@e_max:  E_ShieldArm!int(4)
+  ]
+
+$$ .

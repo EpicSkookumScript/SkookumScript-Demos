@@ -1,0 +1,6 @@
+&blueprint
+()
+[
+  // Spawn the shield pattern at the actors location and center the pattern at index 14.
+  @shield_actors := @pattern_spawner.spawn_pattern(@desired_pattern, @shield_class, @spacing, actor_location, 14, @shield_scale)
+]

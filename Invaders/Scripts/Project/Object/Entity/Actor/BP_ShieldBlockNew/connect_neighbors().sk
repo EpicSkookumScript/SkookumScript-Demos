@@ -1,0 +1,28 @@
+()
+[
+  // Look for neighbors on left, right, top, bottom
+  !loc : actor_location
+  !dist : 20.0
+  !hits : HitResult!
+  !l : {EObjectTypeQuery.@@object_type_query_10}
+  
+  !trace : (Vector3 dir, E_ShieldArm theirs, E_ShieldArm mine)
+  [
+    if SystemLib.line_trace_single_for_objects(, loc, loc + [dir * dist], l,, {this}, EDrawDebugTrace.@@none, out_hit: hits)
+    [
+      if hits.@actor.class_of?(BP_ShieldBlockNew)
+      [
+        if hits.@actor<>BP_ShieldBlockNew.request_connection(theirs)
+        [
+          branch[_extend_arm(mine)]
+        ]
+      ]
+    ]
+  ]
+  
+  trace(-actor_right_vector, E_ShieldArm.@@left, E_ShieldArm.@@right)
+  trace(actor_right_vector, E_ShieldArm.@@right, E_ShieldArm.@@left)
+  trace(actor_up_vector, E_ShieldArm.@@bottom, E_ShieldArm.@@top)
+  trace(-actor_up_vector, E_ShieldArm.@@top, E_ShieldArm.@@bottom)
+      
+]

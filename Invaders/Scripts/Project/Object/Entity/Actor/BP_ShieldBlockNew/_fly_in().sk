@@ -1,0 +1,16 @@
+()
+[
+  actor_hidden_in_game_set(false)
+  !val : 0.0
+  loop
+  [
+    val := MathLib.finterp_to_constant(val, 1.0, GameLib.world_delta_seconds, @fly_in_speed)
+    !loc : @spline.location_at_time(val, ESplineCoordinateSpace.@@world_)
+    actor_location_set(loc)
+    [exit] when val.equal?(1.0)
+    _wait
+  ]
+  @audio.stop
+  @spline.clear_spline_points
+  connect_neighbors
+]

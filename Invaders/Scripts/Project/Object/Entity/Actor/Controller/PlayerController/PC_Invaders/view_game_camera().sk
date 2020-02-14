@@ -1,0 +1,8 @@
+()
+[
+  !cam : CameraActor.named("CameraActorGame".Name)
+  if cam.valid?
+  [
+    view_target_with_blend_set(cam, 0.5)
+  ]
+]

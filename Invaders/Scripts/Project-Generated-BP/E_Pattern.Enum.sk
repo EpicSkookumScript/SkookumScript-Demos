@@ -1,0 +1,40 @@
+// E Pattern
+//
+// UE4 name of this enum: E_Pattern
+
+// UE4 Asset Name: E_Pattern
+// UE4 Package Name: "/Game/Blueprints/Data/E_Pattern"
+
+annotations: &reflected_data &name("E_Pattern")
+
+$$ @@
+
+E_Pattern !@@11x_1
+E_Pattern !@@shield
+E_Pattern !@@enemy_1
+E_Pattern !@@enemy_2
+E_Pattern !@@enemy_3
+E_Pattern !@@player
+E_Pattern !@@powerup
+E_Pattern !@@none
+E_Pattern !@@e_max
+
+$$ @@!
+// E_Pattern
+// EnumPath: /Game/Blueprints/Data/E_Pattern.E_Pattern
+
+()
+
+  [
+  @@11x_1:   E_Pattern!int(0)
+  @@shield:  E_Pattern!int(1)
+  @@enemy_1: E_Pattern!int(2)
+  @@enemy_2: E_Pattern!int(3)
+  @@enemy_3: E_Pattern!int(4)
+  @@player:  E_Pattern!int(5)
+  @@powerup: E_Pattern!int(6)
+  @@none:    E_Pattern!int(7)
+  @@e_max:   E_Pattern!int(8)
+  ]
+
+$$ .

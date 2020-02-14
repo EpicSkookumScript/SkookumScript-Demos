@@ -1,0 +1,8 @@
+()
+[
+  @world_setup : BP_WorldSetup.instances_first
+  @core : BP_Core.instances_first
+  Debug.assert(@world_setup.valid? "BP_WorldSetup does not exist in level")
+
+  @invasion_count : 1
+]

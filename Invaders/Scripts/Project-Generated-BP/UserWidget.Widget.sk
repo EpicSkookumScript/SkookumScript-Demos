@@ -1,0 +1,7 @@
+// The user widget is extensible by users through the WidgetBlueprint.
+//
+// UE4 name of this class: UserWidget
+
+annotations: &reflected_cpp &name("UserWidget")
+
+$$ .

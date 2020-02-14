@@ -1,0 +1,12 @@
+// BP Enemy Projectile
+//
+// UE4 name of this class: BP_EnemyProjectile_C
+
+// UE4 Asset Name: BP_EnemyProjectile
+// UE4 Package Name: "/Game/Blueprints/Projectiles/BP_EnemyProjectile"
+
+annotations: &reflected_data &name("BP_EnemyProjectile_C")
+
+$$ @
+
+$$ .

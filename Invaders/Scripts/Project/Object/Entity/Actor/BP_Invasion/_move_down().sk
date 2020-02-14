@@ -1,0 +1,20 @@
+()
+[
+  // Find the furthest actor in the down direction from the list of spawned invaders
+  !furthest_actor : Actor!null
+  !dir : Vector3!down
+
+  if furthest_actor.null?
+  [
+    furthest_actor : Actor.furthest_in_dir(@spawned_actors, dir)      
+  ]
+
+  // If we found the furthest actor then move down one unit
+  if furthest_actor.valid?
+  [    
+    @invader_movement._move_down(furthest_actor.actor_location)
+    check_touchdown
+    _wait(@movement_delay)
+  ]
+  else[_wait]
+]

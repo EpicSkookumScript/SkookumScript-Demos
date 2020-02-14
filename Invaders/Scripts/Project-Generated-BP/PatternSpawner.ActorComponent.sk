@@ -1,0 +1,12 @@
+// Pattern Spawner
+//
+// UE4 name of this class: PatternSpawner_C
+
+// UE4 Asset Name: PatternSpawner
+// UE4 Package Name: "/Game/Blueprints/Components/PatternSpawner"
+
+annotations: &reflected_data &name("PatternSpawner_C")
+
+$$ @
+
+$$ .

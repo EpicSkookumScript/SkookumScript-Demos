@@ -1,0 +1,4 @@
+// True if the player wants to fire. It doesn't mean they'll get to.
+!@wants_to_fire?
+
+BP_WorldSetup !@world_setup

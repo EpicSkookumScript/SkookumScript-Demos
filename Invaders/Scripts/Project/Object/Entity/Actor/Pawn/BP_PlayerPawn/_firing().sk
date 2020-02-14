@@ -1,0 +1,15 @@
+()
+[
+  loop
+  [
+    // Wait until the player wants to fire
+    @wants_to_fire?._wait_true(0)
+    
+    // Fire the gun, this will complete once the gun has fired and the gun timeout
+    // has expired. Also, it's possible we couldn't fire because the maximum number
+    // of bullets has already been reached. This is why we get the return parameter
+    // fired? which tells us whether our call to _fire resulted in any bullets fired.
+    @gun_component._fire(;!fired?)
+    
+  ]
+]
