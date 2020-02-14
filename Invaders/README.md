@@ -6,7 +6,7 @@ If you would like to discuss aspects of the project feel free to reach out in th
 
 # Requirements
 * UE4 4.24.2
-* SkookumScript Plugin [from github](https://github.com/SkookumScript/SkookumScript-Plugin) or the UE4 Marketplace
+* SkookumScript Plugin [from github](https://github.com/EpicSkookumScript/SkookumScript-Plugin) or the UE4 Marketplace
 
 # Architecture
 ![Component Overview](https://raw.githubusercontent.com/error454/SkInvaders/master/Doc/class%20chart.png)
