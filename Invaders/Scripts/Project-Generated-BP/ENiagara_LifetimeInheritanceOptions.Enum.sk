@@ -1,0 +1,30 @@
+// ENiagara Lifetime Inheritance Options
+//
+// UE4 name of this enum: ENiagara_LifetimeInheritanceOptions
+
+// UE4 Asset Name: ENiagara_LifetimeInheritanceOptions
+// UE4 Package Name: "/Niagara/Enums/ENiagara_LifetimeInheritanceOptions"
+
+annotations: &reflected_data &name("ENiagara_LifetimeInheritanceOptions")
+
+$$ @@
+
+ENiagara_LifetimeInheritanceOptions !@@min
+ENiagara_LifetimeInheritanceOptions !@@max
+ENiagara_LifetimeInheritanceOptions !@@overwrite
+ENiagara_LifetimeInheritanceOptions !@@eniagara_max
+
+$$ @@!
+// ENiagara_LifetimeInheritanceOptions
+// EnumPath: /Niagara/Enums/ENiagara_LifetimeInheritanceOptions.ENiagara_LifetimeInheritanceOptions
+
+()
+
+  [
+  @@min:          ENiagara_LifetimeInheritanceOptions!int(0)
+  @@max:          ENiagara_LifetimeInheritanceOptions!int(1)
+  @@overwrite:    ENiagara_LifetimeInheritanceOptions!int(2)
+  @@eniagara_max: ENiagara_LifetimeInheritanceOptions!int(3)
+  ]
+
+$$ .

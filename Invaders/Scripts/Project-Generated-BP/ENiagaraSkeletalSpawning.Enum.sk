@@ -1,0 +1,30 @@
+// ENiagara Skeletal Spawning
+//
+// UE4 name of this enum: ENiagaraSkeletalSpawning
+
+// UE4 Asset Name: ENiagaraSkeletalSpawning
+// UE4 Package Name: "/Niagara/Enums/ENiagaraSkeletalSpawning"
+
+annotations: &reflected_data &name("ENiagaraSkeletalSpawning")
+
+$$ @@
+
+ENiagaraSkeletalSpawning !@@bones
+ENiagaraSkeletalSpawning !@@sockets
+ENiagaraSkeletalSpawning !@@bones_and_sockets
+ENiagaraSkeletalSpawning !@@eniagara_skeletal_spawning_max
+
+$$ @@!
+// ENiagaraSkeletalSpawning
+// EnumPath: /Niagara/Enums/ENiagaraSkeletalSpawning.ENiagaraSkeletalSpawning
+
+()
+
+  [
+  @@bones:                          ENiagaraSkeletalSpawning!int(0)
+  @@sockets:                        ENiagaraSkeletalSpawning!int(1)
+  @@bones_and_sockets:              ENiagaraSkeletalSpawning!int(2)
+  @@eniagara_skeletal_spawning_max: ENiagaraSkeletalSpawning!int(3)
+  ]
+
+$$ .

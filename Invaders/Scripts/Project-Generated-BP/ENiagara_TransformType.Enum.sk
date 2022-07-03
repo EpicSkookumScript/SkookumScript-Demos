@@ -1,0 +1,28 @@
+// ENiagara Transform Type
+//
+// UE4 name of this enum: ENiagara_TransformType
+
+// UE4 Asset Name: ENiagara_TransformType
+// UE4 Package Name: "/Niagara/Enums/Transforms/ENiagara_TransformType"
+
+annotations: &reflected_data &name("ENiagara_TransformType")
+
+$$ @@
+
+ENiagara_TransformType !@@default
+ENiagara_TransformType !@@custom_matrix
+ENiagara_TransformType !@@eniagara_max
+
+$$ @@!
+// ENiagara_TransformType
+// EnumPath: /Niagara/Enums/Transforms/ENiagara_TransformType.ENiagara_TransformType
+
+()
+
+  [
+  @@default:       ENiagara_TransformType!int(0)
+  @@custom_matrix: ENiagara_TransformType!int(1)
+  @@eniagara_max:  ENiagara_TransformType!int(2)
+  ]
+
+$$ .

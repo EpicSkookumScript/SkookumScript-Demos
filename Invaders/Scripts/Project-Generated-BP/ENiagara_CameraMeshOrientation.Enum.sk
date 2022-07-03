@@ -1,0 +1,28 @@
+// ENiagara Camera Mesh Orientation
+//
+// UE4 name of this enum: ENiagara_CameraMeshOrientation
+
+// UE4 Asset Name: ENiagara_CameraMeshOrientation
+// UE4 Package Name: "/Niagara/Enums/ENiagara_CameraMeshOrientation"
+
+annotations: &reflected_data &name("ENiagara_CameraMeshOrientation")
+
+$$ @@
+
+ENiagara_CameraMeshOrientation !@@camera_position
+ENiagara_CameraMeshOrientation !@@camera_plane
+ENiagara_CameraMeshOrientation !@@eniagara_max
+
+$$ @@!
+// ENiagara_CameraMeshOrientation
+// EnumPath: /Niagara/Enums/ENiagara_CameraMeshOrientation.ENiagara_CameraMeshOrientation
+
+()
+
+  [
+  @@camera_position: ENiagara_CameraMeshOrientation!int(0)
+  @@camera_plane:    ENiagara_CameraMeshOrientation!int(1)
+  @@eniagara_max:    ENiagara_CameraMeshOrientation!int(2)
+  ]
+
+$$ .

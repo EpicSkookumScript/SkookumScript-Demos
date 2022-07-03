@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.24",
+	"EngineAssociation": "4.27",
 	"Category": "Examples",
 	"Description": "An example project for the SkoookumScript language",
 	"Plugins": [

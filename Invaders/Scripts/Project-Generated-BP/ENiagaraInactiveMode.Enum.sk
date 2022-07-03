@@ -1,0 +1,30 @@
+// ENiagara Inactive Mode
+//
+// UE4 name of this enum: ENiagaraInactiveMode
+
+// UE4 Asset Name: ENiagaraInactiveMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraInactiveMode"
+
+annotations: &reflected_data &name("ENiagaraInactiveMode")
+
+$$ @@
+
+ENiagaraInactiveMode !@@complete_let_particles_finish_then_kill_emitter_
+ENiagaraInactiveMode !@@kill_emitter_and_particles_die_immediately_
+ENiagaraInactiveMode !@@continue_emitter_deactivates_but_doesn_t_die_until_system_does_
+ENiagaraInactiveMode !@@eniagara_inactive_mode_max
+
+$$ @@!
+// ENiagaraInactiveMode
+// EnumPath: /Niagara/Enums/ENiagaraInactiveMode.ENiagaraInactiveMode
+
+()
+
+  [
+  @@complete_let_particles_finish_then_kill_emitter_:                ENiagaraInactiveMode!int(0)
+  @@kill_emitter_and_particles_die_immediately_:                     ENiagaraInactiveMode!int(1)
+  @@continue_emitter_deactivates_but_doesn_t_die_until_system_does_: ENiagaraInactiveMode!int(2)
+  @@eniagara_inactive_mode_max:                                      ENiagaraInactiveMode!int(3)
+  ]
+
+$$ .

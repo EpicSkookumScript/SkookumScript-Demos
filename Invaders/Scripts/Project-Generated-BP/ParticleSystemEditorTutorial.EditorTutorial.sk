@@ -1,0 +1,12 @@
+// Particle System Editor Tutorial
+//
+// UE4 name of this class: ParticleSystemEditorTutorial_C
+
+// UE4 Asset Name: ParticleSystemEditorTutorial
+// UE4 Package Name: "/Engine/Tutorial/SubEditors/ParticleSystemEditorTutorial"
+
+annotations: &reflected_data &name("ParticleSystemEditorTutorial_C")
+
+$$ @
+
+$$ .

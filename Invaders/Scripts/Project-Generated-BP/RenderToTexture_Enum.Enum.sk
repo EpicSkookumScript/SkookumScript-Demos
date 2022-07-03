@@ -1,0 +1,42 @@
+// Render to Texture Enum
+//
+// UE4 name of this enum: RenderToTexture_Enum
+
+// UE4 Asset Name: RenderToTexture_Enum
+// UE4 Package Name: "/Engine/ArtTools/RenderToTexture/Enums/RenderToTexture_Enum"
+
+annotations: &reflected_data &name("RenderToTexture_Enum")
+
+$$ @@
+
+RenderToTexture_Enum !@@material
+RenderToTexture_Enum !@@3d_imposter_sprites
+RenderToTexture_Enum !@@unwrapped_mesh
+RenderToTexture_Enum !@@depth_map
+RenderToTexture_Enum !@@lightmaps
+RenderToTexture_Enum !@@lightmaps_2_sided
+RenderToTexture_Enum !@@flipbook_mesh_animation
+RenderToTexture_Enum !@@physics_ground_tiling_physics_drop_of_meshes
+RenderToTexture_Enum !@@tiling_material_from_hand_placed_meshes
+RenderToTexture_Enum !@@render_to_texture_max
+
+$$ @@!
+// RenderToTexture_Enum
+// EnumPath: /Engine/ArtTools/RenderToTexture/Enums/RenderToTexture_Enum.RenderToTexture_Enum
+
+()
+
+  [
+  @@material:                                     RenderToTexture_Enum!int(0)
+  @@3d_imposter_sprites:                          RenderToTexture_Enum!int(1)
+  @@unwrapped_mesh:                               RenderToTexture_Enum!int(2)
+  @@depth_map:                                    RenderToTexture_Enum!int(3)
+  @@lightmaps:                                    RenderToTexture_Enum!int(4)
+  @@lightmaps_2_sided:                            RenderToTexture_Enum!int(5)
+  @@flipbook_mesh_animation:                      RenderToTexture_Enum!int(6)
+  @@physics_ground_tiling_physics_drop_of_meshes: RenderToTexture_Enum!int(7)
+  @@tiling_material_from_hand_placed_meshes:      RenderToTexture_Enum!int(8)
+  @@render_to_texture_max:                        RenderToTexture_Enum!int(9)
+  ]
+
+$$ .

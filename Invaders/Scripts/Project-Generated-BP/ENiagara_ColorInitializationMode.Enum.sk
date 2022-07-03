@@ -1,0 +1,32 @@
+// ENiagara Color Initialization Mode
+//
+// UE4 name of this enum: ENiagara_ColorInitializationMode
+
+// UE4 Asset Name: ENiagara_ColorInitializationMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_ColorInitializationMode"
+
+annotations: &reflected_data &name("ENiagara_ColorInitializationMode")
+
+$$ @@
+
+ENiagara_ColorInitializationMode !@@unset
+ENiagara_ColorInitializationMode !@@direct_set
+ENiagara_ColorInitializationMode !@@random_range
+ENiagara_ColorInitializationMode !@@random_hue_saturation_value
+ENiagara_ColorInitializationMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_ColorInitializationMode
+// EnumPath: /Niagara/Enums/ENiagara_ColorInitializationMode.ENiagara_ColorInitializationMode
+
+()
+
+  [
+  @@unset:                       ENiagara_ColorInitializationMode!int(0)
+  @@direct_set:                  ENiagara_ColorInitializationMode!int(1)
+  @@random_range:                ENiagara_ColorInitializationMode!int(2)
+  @@random_hue_saturation_value: ENiagara_ColorInitializationMode!int(3)
+  @@eniagara_max:                ENiagara_ColorInitializationMode!int(4)
+  ]
+
+$$ .

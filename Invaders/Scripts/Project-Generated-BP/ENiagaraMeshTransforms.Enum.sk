@@ -1,0 +1,32 @@
+// ENiagara Mesh Transforms
+//
+// UE4 name of this enum: ENiagaraMeshTransforms
+
+// UE4 Asset Name: ENiagaraMeshTransforms
+// UE4 Package Name: "/Niagara/Enums/ENiagaraMeshTransforms"
+
+annotations: &reflected_data &name("ENiagaraMeshTransforms")
+
+$$ @@
+
+ENiagaraMeshTransforms !@@simulation
+ENiagaraMeshTransforms !@@world_
+ENiagaraMeshTransforms !@@local
+ENiagaraMeshTransforms !@@mesh
+ENiagaraMeshTransforms !@@eniagara_mesh_transforms_max
+
+$$ @@!
+// ENiagaraMeshTransforms
+// EnumPath: /Niagara/Enums/ENiagaraMeshTransforms.ENiagaraMeshTransforms
+
+()
+
+  [
+  @@simulation:                   ENiagaraMeshTransforms!int(0)
+  @@world_:                       ENiagaraMeshTransforms!int(1)
+  @@local:                        ENiagaraMeshTransforms!int(2)
+  @@mesh:                         ENiagaraMeshTransforms!int(3)
+  @@eniagara_mesh_transforms_max: ENiagaraMeshTransforms!int(4)
+  ]
+
+$$ .

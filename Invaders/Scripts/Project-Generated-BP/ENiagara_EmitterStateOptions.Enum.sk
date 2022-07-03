@@ -1,0 +1,30 @@
+// ENiagara Emitter State Options
+//
+// UE4 name of this enum: ENiagara_EmitterStateOptions
+
+// UE4 Asset Name: ENiagara_EmitterStateOptions
+// UE4 Package Name: "/Niagara/Enums/ENiagara_EmitterStateOptions"
+
+annotations: &reflected_data &name("ENiagara_EmitterStateOptions")
+
+$$ @@
+
+ENiagara_EmitterStateOptions !@@infinite
+ENiagara_EmitterStateOptions !@@once
+ENiagara_EmitterStateOptions !@@multiple
+ENiagara_EmitterStateOptions !@@eniagara_max
+
+$$ @@!
+// ENiagara_EmitterStateOptions
+// EnumPath: /Niagara/Enums/ENiagara_EmitterStateOptions.ENiagara_EmitterStateOptions
+
+()
+
+  [
+  @@infinite:     ENiagara_EmitterStateOptions!int(0)
+  @@once:         ENiagara_EmitterStateOptions!int(1)
+  @@multiple:     ENiagara_EmitterStateOptions!int(2)
+  @@eniagara_max: ENiagara_EmitterStateOptions!int(3)
+  ]
+
+$$ .

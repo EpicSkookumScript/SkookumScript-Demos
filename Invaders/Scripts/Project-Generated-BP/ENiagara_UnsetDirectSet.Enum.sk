@@ -1,0 +1,28 @@
+// ENiagara Unset Direct Set
+//
+// UE4 name of this enum: ENiagara_UnsetDirectSet
+
+// UE4 Asset Name: ENiagara_UnsetDirectSet
+// UE4 Package Name: "/Niagara/Enums/Ribbons/ENiagara_UnsetDirectSet"
+
+annotations: &reflected_data &name("ENiagara_UnsetDirectSet")
+
+$$ @@
+
+ENiagara_UnsetDirectSet !@@unset
+ENiagara_UnsetDirectSet !@@direct_set
+ENiagara_UnsetDirectSet !@@eniagara_max
+
+$$ @@!
+// ENiagara_UnsetDirectSet
+// EnumPath: /Niagara/Enums/Ribbons/ENiagara_UnsetDirectSet.ENiagara_UnsetDirectSet
+
+()
+
+  [
+  @@unset:        ENiagara_UnsetDirectSet!int(0)
+  @@direct_set:   ENiagara_UnsetDirectSet!int(1)
+  @@eniagara_max: ENiagara_UnsetDirectSet!int(2)
+  ]
+
+$$ .

@@ -1,0 +1,30 @@
+// ENiagara Torus Mode
+//
+// UE4 name of this enum: ENiagaraTorusMode
+
+// UE4 Asset Name: ENiagaraTorusMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraTorusMode"
+
+annotations: &reflected_data &name("ENiagaraTorusMode")
+
+$$ @@
+
+ENiagaraTorusMode !@@torus
+ENiagaraTorusMode !@@torus_knot
+ENiagaraTorusMode !@@ring
+ENiagaraTorusMode !@@eniagara_torus_mode_max
+
+$$ @@!
+// ENiagaraTorusMode
+// EnumPath: /Niagara/Enums/ENiagaraTorusMode.ENiagaraTorusMode
+
+()
+
+  [
+  @@torus:                   ENiagaraTorusMode!int(0)
+  @@torus_knot:              ENiagaraTorusMode!int(1)
+  @@ring:                    ENiagaraTorusMode!int(2)
+  @@eniagara_torus_mode_max: ENiagaraTorusMode!int(3)
+  ]
+
+$$ .

@@ -9,7 +9,6 @@ annotations: &reflected_data &name("InvaderMovement_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")   PointerToUberGraphFrame !@uber_graph_frame  // Currently unsupported */
 &raw("MovementSpeed")    Real !@movement_speed    // How fast to move
 &raw("LeftBoundary")     Real !@left_boundary     // The left boundary for Y
 &raw("RightBoundary")    Real !@right_boundary    // The right boundary for Y

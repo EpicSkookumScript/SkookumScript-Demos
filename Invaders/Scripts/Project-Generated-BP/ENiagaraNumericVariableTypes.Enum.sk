@@ -1,0 +1,36 @@
+// An enum that lists Niagara's common numeric data types.
+//
+// UE4 name of this enum: ENiagaraNumericVariableTypes
+
+// UE4 Asset Name: ENiagaraNumericVariableTypes
+// UE4 Package Name: "/Niagara/Enums/ENiagaraNumericVariableTypes"
+
+annotations: &reflected_data &name("ENiagaraNumericVariableTypes")
+
+$$ @@
+
+ENiagaraNumericVariableTypes !@@float
+ENiagaraNumericVariableTypes !@@vector_2d
+ENiagaraNumericVariableTypes !@@vector_3d
+ENiagaraNumericVariableTypes !@@vector_4d
+ENiagaraNumericVariableTypes !@@linear_color
+ENiagaraNumericVariableTypes !@@quaternion
+ENiagaraNumericVariableTypes !@@eniagara_numeric_variable_types_max
+
+$$ @@!
+// ENiagaraNumericVariableTypes
+// EnumPath: /Niagara/Enums/ENiagaraNumericVariableTypes.ENiagaraNumericVariableTypes
+
+()
+
+  [
+  @@float:                               ENiagaraNumericVariableTypes!int(0)
+  @@vector_2d:                           ENiagaraNumericVariableTypes!int(1)
+  @@vector_3d:                           ENiagaraNumericVariableTypes!int(2)
+  @@vector_4d:                           ENiagaraNumericVariableTypes!int(3)
+  @@linear_color:                        ENiagaraNumericVariableTypes!int(4)
+  @@quaternion:                          ENiagaraNumericVariableTypes!int(5)
+  @@eniagara_numeric_variable_types_max: ENiagaraNumericVariableTypes!int(6)
+  ]
+
+$$ .

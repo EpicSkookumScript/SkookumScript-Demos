@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_ProjectileSpline_C")
 
 $$ @
 
-/* &raw("SkookumScriptClassData")SkookumScriptClassDataComponent !@skookum_script_class_data // Currently unsupported */
 &raw("Spline") SplineComponent !@spline // Spline
 
 $$ .

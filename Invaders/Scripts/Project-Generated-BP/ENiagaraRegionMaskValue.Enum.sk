@@ -1,0 +1,32 @@
+// Data types interpolated between inner and outer values of the region
+//
+// UE4 name of this enum: ENiagaraRegionMaskValue
+
+// UE4 Asset Name: ENiagaraRegionMaskValue
+// UE4 Package Name: "/Niagara/Enums/Masks/ENiagaraRegionMaskValue"
+
+annotations: &reflected_data &name("ENiagaraRegionMaskValue")
+
+$$ @@
+
+ENiagaraRegionMaskValue !@@float
+ENiagaraRegionMaskValue !@@vector_2d
+ENiagaraRegionMaskValue !@@vector
+ENiagaraRegionMaskValue !@@linear_color
+ENiagaraRegionMaskValue !@@eniagara_region_mask_value_max
+
+$$ @@!
+// ENiagaraRegionMaskValue
+// EnumPath: /Niagara/Enums/Masks/ENiagaraRegionMaskValue.ENiagaraRegionMaskValue
+
+()
+
+  [
+  @@float:                          ENiagaraRegionMaskValue!int(0)
+  @@vector_2d:                      ENiagaraRegionMaskValue!int(1)
+  @@vector:                         ENiagaraRegionMaskValue!int(2)
+  @@linear_color:                   ENiagaraRegionMaskValue!int(3)
+  @@eniagara_region_mask_value_max: ENiagaraRegionMaskValue!int(4)
+  ]
+
+$$ .

@@ -1,0 +1,30 @@
+// ENiagara GPUCollision Type
+//
+// UE4 name of this enum: ENiagara_GPUCollisionType
+
+// UE4 Asset Name: ENiagara_GPUCollisionType
+// UE4 Package Name: "/Niagara/Enums/ENiagara_GPUCollisionType"
+
+annotations: &reflected_data &name("ENiagara_GPUCollisionType")
+
+$$ @@
+
+ENiagara_GPUCollisionType !@@gpu_depth_buffer
+ENiagara_GPUCollisionType !@@gpu_distance_fields
+ENiagara_GPUCollisionType !@@analytical_planes
+ENiagara_GPUCollisionType !@@eniagara_max
+
+$$ @@!
+// ENiagara_GPUCollisionType
+// EnumPath: /Niagara/Enums/ENiagara_GPUCollisionType.ENiagara_GPUCollisionType
+
+()
+
+  [
+  @@gpu_depth_buffer:    ENiagara_GPUCollisionType!int(0)
+  @@gpu_distance_fields: ENiagara_GPUCollisionType!int(1)
+  @@analytical_planes:   ENiagara_GPUCollisionType!int(2)
+  @@eniagara_max:        ENiagara_GPUCollisionType!int(3)
+  ]
+
+$$ .

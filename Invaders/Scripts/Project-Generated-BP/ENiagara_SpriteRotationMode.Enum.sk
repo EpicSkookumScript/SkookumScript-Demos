@@ -1,0 +1,32 @@
+// ENiagara Sprite Rotation Mode
+//
+// UE4 name of this enum: ENiagara_SpriteRotationMode
+
+// UE4 Asset Name: ENiagara_SpriteRotationMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_SpriteRotationMode"
+
+annotations: &reflected_data &name("ENiagara_SpriteRotationMode")
+
+$$ @@
+
+ENiagara_SpriteRotationMode !@@unset
+ENiagara_SpriteRotationMode !@@random_
+ENiagara_SpriteRotationMode !@@direct_angle_degrees_
+ENiagara_SpriteRotationMode !@@direct_normalized_angle_0_1_
+ENiagara_SpriteRotationMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_SpriteRotationMode
+// EnumPath: /Niagara/Enums/ENiagara_SpriteRotationMode.ENiagara_SpriteRotationMode
+
+()
+
+  [
+  @@unset:                        ENiagara_SpriteRotationMode!int(0)
+  @@random_:                      ENiagara_SpriteRotationMode!int(1)
+  @@direct_angle_degrees_:        ENiagara_SpriteRotationMode!int(2)
+  @@direct_normalized_angle_0_1_: ENiagara_SpriteRotationMode!int(3)
+  @@eniagara_max:                 ENiagara_SpriteRotationMode!int(4)
+  ]
+
+$$ .

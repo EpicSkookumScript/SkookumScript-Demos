@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_VolumeSpawner_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
 &raw("TextRender") TextRenderComponent !@text_render // Text Render
 &raw("Box")        BoxComponent        !@box         // Box
 &raw("SpawnInfo")  List{S_SpawnInfo}   !@spawn_info  // Spawn Info

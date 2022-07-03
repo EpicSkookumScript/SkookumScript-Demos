@@ -9,24 +9,7 @@ annotations: &reflected_data &name("SK_bot_Skeleton_AnimBlueprint_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")                                                  PointerToUberGraphFrame   !@uber_graph_frame                       // Currently unsupported */
-&raw("AnimGraphNode_Root_920602E045D43202842D4F84A6D7770F")             AnimNode_Root             !@anim_graph_node_root_9206              // Anim Graph Node Root 920602E045D43202842D4F84A6D7770F
-&raw("AnimGraphNode_TransitionResult_A66F7B464A24CB96D829819D770D0B89") AnimNode_TransitionResult !@anim_graph_node_transition_result_a66f // Anim Graph Node Transition Result A66F7B464A24CB96D829819D770D0B89
-&raw("AnimGraphNode_TransitionResult_BB828E2040675F812D18D983E5D56480") AnimNode_TransitionResult !@anim_graph_node_transition_result_bb82 // Anim Graph Node Transition Result BB828E2040675F812D18D983E5D56480
-&raw("AnimGraphNode_TransitionResult_16F4C23E492A47AD23E69A8BD0C0289D") AnimNode_TransitionResult !@anim_graph_node_transition_result_16f4 // Anim Graph Node Transition Result 16F4C23E492A47AD23E69A8BD0C0289D
-&raw("AnimGraphNode_TransitionResult_AC2ECA784A5E88CDCAF0D2805E75507F") AnimNode_TransitionResult !@anim_graph_node_transition_result_ac2e // Anim Graph Node Transition Result AC2ECA784A5E88CDCAF0D2805E75507F
-&raw("AnimGraphNode_TransitionResult_4F92EADF4A594CE67B56F5A78DA356F1") AnimNode_TransitionResult !@anim_graph_node_transition_result_4f92 // Anim Graph Node Transition Result 4F92EADF4A594CE67B56F5A78DA356F1
-&raw("AnimGraphNode_StateResult_5F19F6B74626B07B33850C8EFF421682")      AnimNode_StateResult      !@anim_graph_node_state_result_5f19      // Anim Graph Node State Result 5F19F6B74626B07B33850C8EFF421682
-&raw("AnimGraphNode_ApplyAdditive_CE7CDD564D73C5D5469806AB47FDC0B8")    AnimNode_ApplyAdditive    !@anim_graph_node_apply_additive_ce7c    // Anim Graph Node Apply Additive CE7CDD564D73C5D5469806AB47FDC0B8
-&raw("AnimGraphNode_SequencePlayer_DFBD9264471F47C1D05AC8AC21312D58")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_dfbd   // Anim Graph Node Sequence Player DFBD9264471F47C1D05AC8AC21312D58
-&raw("AnimGraphNode_SequencePlayer_6D811EAF4001BB44004227AE5F27E949")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_6d81   // Anim Graph Node Sequence Player 6D811EAF4001BB44004227AE5F27E949
-&raw("AnimGraphNode_StateResult_6E3C2B9E4DECB7A9BEB8BAA220258DDC")      AnimNode_StateResult      !@anim_graph_node_state_result_6e3c      // Anim Graph Node State Result 6E3C2B9E4DECB7A9BEB8BAA220258DDC
-&raw("AnimGraphNode_SequencePlayer_C9E3AA7444691D99830B6DA852854D06")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_c9e3   // Anim Graph Node Sequence Player C9E3AA7444691D99830B6DA852854D06
-&raw("AnimGraphNode_StateResult_C2AF272348DD1B18800D35B575ADFA2E")      AnimNode_StateResult      !@anim_graph_node_state_result_c2af      // Anim Graph Node State Result C2AF272348DD1B18800D35B575ADFA2E
-&raw("AnimGraphNode_SequencePlayer_3F6FC6A24C45F5C51D327BA4B6BF1109")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_3f6f   // Anim Graph Node Sequence Player 3F6FC6A24C45F5C51D327BA4B6BF1109
-&raw("AnimGraphNode_StateResult_3370C13D4B857EBF01FB83905007BBC0")      AnimNode_StateResult      !@anim_graph_node_state_result_3370      // Anim Graph Node State Result 3370C13D4B857EBF01FB83905007BBC0
-&raw("AnimGraphNode_StateMachine_CB605FFE4BE08FF65D9AF982260B7FEA")     AnimNode_StateMachine     !@anim_graph_node_state_machine_cb60     // Anim Graph Node State Machine CB605FFE4BE08FF65D9AF982260B7FEA
-&raw("BotAnim")                                                         E_BotAnimState            !@bot_anim                               // Bot Anim
+&raw("BotAnim") E_BotAnimState !@bot_anim // Bot Anim
 
 $$ @anim_graph
 // Anim Graph

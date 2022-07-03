@@ -9,7 +9,6 @@ annotations: &reflected_data &name("PC_Invaders_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")  PointerToUberGraphFrame !@uber_graph_frame  // Currently unsupported */
 &raw("GameMusic")       AudioComponent  !@game_music        // Game Music
 &raw("StartMenu")       BP_StartMenu    !@start_menu        // Start Menu
 &raw("GameUI")          BP_GameUI       !@game_ui           // Game UI

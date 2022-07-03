@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_Satelite_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")   PointerToUberGraphFrame !@uber_graph_frame   // Currently unsupported */
 &raw("LaserCollision")   BoxComponent            !@laser_collision    // Laser Collision
 &raw("Laser")            ParticleSystemComponent !@laser              // Laser
 &raw("PoseableMesh")     PoseableMeshComponent   !@poseable_mesh      // Poseable Mesh

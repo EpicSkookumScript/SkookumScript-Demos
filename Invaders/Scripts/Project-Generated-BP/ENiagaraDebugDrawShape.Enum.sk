@@ -1,0 +1,32 @@
+// The type of shape to use for the region
+//
+// UE4 name of this enum: ENiagaraDebugDrawShape
+
+// UE4 Asset Name: ENiagaraDebugDrawShape
+// UE4 Package Name: "/Niagara/Enums/Masks/ENiagaraDebugDrawShape"
+
+annotations: &reflected_data &name("ENiagaraDebugDrawShape")
+
+$$ @@
+
+ENiagaraDebugDrawShape !@@sphere
+ENiagaraDebugDrawShape !@@box
+ENiagaraDebugDrawShape !@@plane
+ENiagaraDebugDrawShape !@@slab
+ENiagaraDebugDrawShape !@@eniagara_debug_draw_shape_max
+
+$$ @@!
+// ENiagaraDebugDrawShape
+// EnumPath: /Niagara/Enums/Masks/ENiagaraDebugDrawShape.ENiagaraDebugDrawShape
+
+()
+
+  [
+  @@sphere:                        ENiagaraDebugDrawShape!int(0)
+  @@box:                           ENiagaraDebugDrawShape!int(1)
+  @@plane:                         ENiagaraDebugDrawShape!int(2)
+  @@slab:                          ENiagaraDebugDrawShape!int(3)
+  @@eniagara_debug_draw_shape_max: ENiagaraDebugDrawShape!int(4)
+  ]
+
+$$ .

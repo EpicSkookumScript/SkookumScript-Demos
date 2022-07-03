@@ -1,0 +1,34 @@
+// Methods for defining the rotation of a transform.
+//
+// UE4 name of this enum: ENiagara_RotationDefinitionApproach
+
+// UE4 Asset Name: ENiagara_RotationDefinitionApproach
+// UE4 Package Name: "/Niagara/Enums/ENiagara_RotationDefinitionApproach"
+
+annotations: &reflected_data &name("ENiagara_RotationDefinitionApproach")
+
+$$ @@
+
+ENiagara_RotationDefinitionApproach !@@euler
+ENiagara_RotationDefinitionApproach !@@quaternion
+ENiagara_RotationDefinitionApproach !@@axis_angle_
+ENiagara_RotationDefinitionApproach !@@basis_vectors
+ENiagara_RotationDefinitionApproach !@@matrix
+ENiagara_RotationDefinitionApproach !@@eniagara_max
+
+$$ @@!
+// ENiagara_RotationDefinitionApproach
+// EnumPath: /Niagara/Enums/ENiagara_RotationDefinitionApproach.ENiagara_RotationDefinitionApproach
+
+()
+
+  [
+  @@euler:         ENiagara_RotationDefinitionApproach!int(0)
+  @@quaternion:    ENiagara_RotationDefinitionApproach!int(1)
+  @@axis_angle_:   ENiagara_RotationDefinitionApproach!int(2)
+  @@basis_vectors: ENiagara_RotationDefinitionApproach!int(3)
+  @@matrix:        ENiagara_RotationDefinitionApproach!int(4)
+  @@eniagara_max:  ENiagara_RotationDefinitionApproach!int(5)
+  ]
+
+$$ .

@@ -1,0 +1,28 @@
+// ENiagara SUb UVAnimation Mode
+//
+// UE4 name of this enum: ENiagaraSUbUVAnimationMode
+
+// UE4 Asset Name: ENiagaraSUbUVAnimationMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraSUbUVAnimationMode"
+
+annotations: &reflected_data &name("ENiagaraSUbUVAnimationMode")
+
+$$ @@
+
+ENiagaraSUbUVAnimationMode !@@linear
+ENiagaraSUbUVAnimationMode !@@random_
+ENiagaraSUbUVAnimationMode !@@eniagara_sub_uvanimation_mode_max
+
+$$ @@!
+// ENiagaraSUbUVAnimationMode
+// EnumPath: /Niagara/Enums/ENiagaraSUbUVAnimationMode.ENiagaraSUbUVAnimationMode
+
+()
+
+  [
+  @@linear:                            ENiagaraSUbUVAnimationMode!int(0)
+  @@random_:                           ENiagaraSUbUVAnimationMode!int(1)
+  @@eniagara_sub_uvanimation_mode_max: ENiagaraSUbUVAnimationMode!int(2)
+  ]
+
+$$ .

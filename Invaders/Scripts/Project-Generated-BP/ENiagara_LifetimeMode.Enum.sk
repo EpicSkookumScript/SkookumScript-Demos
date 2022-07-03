@@ -1,0 +1,28 @@
+// ENiagara Lifetime Mode
+//
+// UE4 name of this enum: ENiagara_LifetimeMode
+
+// UE4 Asset Name: ENiagara_LifetimeMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_LifetimeMode"
+
+annotations: &reflected_data &name("ENiagara_LifetimeMode")
+
+$$ @@
+
+ENiagara_LifetimeMode !@@direct_set
+ENiagara_LifetimeMode !@@random_
+ENiagara_LifetimeMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_LifetimeMode
+// EnumPath: /Niagara/Enums/ENiagara_LifetimeMode.ENiagara_LifetimeMode
+
+()
+
+  [
+  @@direct_set:   ENiagara_LifetimeMode!int(0)
+  @@random_:      ENiagara_LifetimeMode!int(1)
+  @@eniagara_max: ENiagara_LifetimeMode!int(2)
+  ]
+
+$$ .

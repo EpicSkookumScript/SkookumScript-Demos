@@ -1,0 +1,28 @@
+// ENiagara Timeline Mode
+//
+// UE4 name of this enum: ENiagara_TimelineMode
+
+// UE4 Asset Name: ENiagara_TimelineMode
+// UE4 Package Name: "/Niagara/Enums/Utility/ENiagara_TImelineMode"
+
+annotations: &reflected_data &name("ENiagara_TimelineMode")
+
+$$ @@
+
+ENiagara_TimelineMode !@@automatic_rewind
+ENiagara_TimelineMode !@@manual_rewind
+ENiagara_TimelineMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_TimelineMode
+// EnumPath: /Niagara/Enums/Utility/ENiagara_TImelineMode.ENiagara_TimelineMode
+
+()
+
+  [
+  @@automatic_rewind: ENiagara_TimelineMode!int(0)
+  @@manual_rewind:    ENiagara_TimelineMode!int(1)
+  @@eniagara_max:     ENiagara_TimelineMode!int(2)
+  ]
+
+$$ .

@@ -1,0 +1,30 @@
+// ENiagara Skel Sampling Filtering Mode
+//
+// UE4 name of this enum: ENiagaraSkelSamplingFilteringMode
+
+// UE4 Asset Name: ENiagaraSkelSamplingFilteringMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraSkelSamplingFilteringMode"
+
+annotations: &reflected_data &name("ENiagaraSkelSamplingFilteringMode")
+
+$$ @@
+
+ENiagaraSkelSamplingFilteringMode !@@all
+ENiagaraSkelSamplingFilteringMode !@@filtered
+ENiagaraSkelSamplingFilteringMode !@@unfiltered
+ENiagaraSkelSamplingFilteringMode !@@eniagara_skel_sampling_filtering_mode_max
+
+$$ @@!
+// ENiagaraSkelSamplingFilteringMode
+// EnumPath: /Niagara/Enums/ENiagaraSkelSamplingFilteringMode.ENiagaraSkelSamplingFilteringMode
+
+()
+
+  [
+  @@all:                                       ENiagaraSkelSamplingFilteringMode!int(0)
+  @@filtered:                                  ENiagaraSkelSamplingFilteringMode!int(1)
+  @@unfiltered:                                ENiagaraSkelSamplingFilteringMode!int(2)
+  @@eniagara_skel_sampling_filtering_mode_max: ENiagaraSkelSamplingFilteringMode!int(3)
+  ]
+
+$$ .

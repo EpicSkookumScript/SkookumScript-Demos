@@ -1,0 +1,32 @@
+// ENiagara Vertex Sampling Mode
+//
+// UE4 name of this enum: ENiagaraVertexSamplingMode
+
+// UE4 Asset Name: ENiagaraVertexSamplingMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraVertexSamplingMode"
+
+annotations: &reflected_data &name("ENiagaraVertexSamplingMode")
+
+$$ @@
+
+ENiagaraVertexSamplingMode !@@random_all_vertices_
+ENiagaraVertexSamplingMode !@@random_sampling_regions_
+ENiagaraVertexSamplingMode !@@direct_all_vertices_
+ENiagaraVertexSamplingMode !@@direct_sampling_regions_
+ENiagaraVertexSamplingMode !@@eniagara_vertex_sampling_mode_max
+
+$$ @@!
+// ENiagaraVertexSamplingMode
+// EnumPath: /Niagara/Enums/ENiagaraVertexSamplingMode.ENiagaraVertexSamplingMode
+
+()
+
+  [
+  @@random_all_vertices_:              ENiagaraVertexSamplingMode!int(0)
+  @@random_sampling_regions_:          ENiagaraVertexSamplingMode!int(1)
+  @@direct_all_vertices_:              ENiagaraVertexSamplingMode!int(2)
+  @@direct_sampling_regions_:          ENiagaraVertexSamplingMode!int(3)
+  @@eniagara_vertex_sampling_mode_max: ENiagaraVertexSamplingMode!int(4)
+  ]
+
+$$ .

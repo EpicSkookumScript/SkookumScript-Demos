@@ -1,0 +1,30 @@
+// ENiagara Mass Initialization Mode
+//
+// UE4 name of this enum: ENiagara_MassInitializationMode
+
+// UE4 Asset Name: ENiagara_MassInitializationMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_MassInitializationMode"
+
+annotations: &reflected_data &name("ENiagara_MassInitializationMode")
+
+$$ @@
+
+ENiagara_MassInitializationMode !@@unset_mass_of_1_
+ENiagara_MassInitializationMode !@@direct_set
+ENiagara_MassInitializationMode !@@random_
+ENiagara_MassInitializationMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_MassInitializationMode
+// EnumPath: /Niagara/Enums/ENiagara_MassInitializationMode.ENiagara_MassInitializationMode
+
+()
+
+  [
+  @@unset_mass_of_1_: ENiagara_MassInitializationMode!int(0)
+  @@direct_set:       ENiagara_MassInitializationMode!int(1)
+  @@random_:          ENiagara_MassInitializationMode!int(2)
+  @@eniagara_max:     ENiagara_MassInitializationMode!int(3)
+  ]
+
+$$ .

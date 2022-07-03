@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_PlayerPawn_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")  PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
 &raw("Thruster_Right")  ParticleSystemComponent !@thruster_right   // Thruster Right
 &raw("Thruster_Left")   ParticleSystemComponent !@thruster_left    // Thruster Left
 &raw("SkeletalMesh")    SkeletalMeshComponent   !@skeletal_mesh    // Skeletal Mesh

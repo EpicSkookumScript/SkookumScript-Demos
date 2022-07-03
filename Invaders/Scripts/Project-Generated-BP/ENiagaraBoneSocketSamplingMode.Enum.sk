@@ -1,0 +1,28 @@
+// ENiagara Bone Socket Sampling Mode
+//
+// UE4 name of this enum: ENiagaraBoneSocketSamplingMode
+
+// UE4 Asset Name: ENiagaraBoneSocketSamplingMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraBoneSocketSamplingMode"
+
+annotations: &reflected_data &name("ENiagaraBoneSocketSamplingMode")
+
+$$ @@
+
+ENiagaraBoneSocketSamplingMode !@@random_filtered_bone_or_sockets_
+ENiagaraBoneSocketSamplingMode !@@direct_filtered_bone_or_sockets_
+ENiagaraBoneSocketSamplingMode !@@eniagara_bone_socket_sampling_mode_max
+
+$$ @@!
+// ENiagaraBoneSocketSamplingMode
+// EnumPath: /Niagara/Enums/ENiagaraBoneSocketSamplingMode.ENiagaraBoneSocketSamplingMode
+
+()
+
+  [
+  @@random_filtered_bone_or_sockets_:       ENiagaraBoneSocketSamplingMode!int(0)
+  @@direct_filtered_bone_or_sockets_:       ENiagaraBoneSocketSamplingMode!int(1)
+  @@eniagara_bone_socket_sampling_mode_max: ENiagaraBoneSocketSamplingMode!int(2)
+  ]
+
+$$ .

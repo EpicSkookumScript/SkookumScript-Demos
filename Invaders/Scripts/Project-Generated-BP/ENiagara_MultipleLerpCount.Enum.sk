@@ -1,0 +1,32 @@
+// ENiagara Multiple Lerp Count
+//
+// UE4 name of this enum: ENiagara_MultipleLerpCount
+
+// UE4 Asset Name: ENiagara_MultipleLerpCount
+// UE4 Package Name: "/Niagara/Enums/ENiagara_MultipleLerpCount"
+
+annotations: &reflected_data &name("ENiagara_MultipleLerpCount")
+
+$$ @@
+
+ENiagara_MultipleLerpCount !@@2
+ENiagara_MultipleLerpCount !@@3
+ENiagara_MultipleLerpCount !@@4
+ENiagara_MultipleLerpCount !@@5
+ENiagara_MultipleLerpCount !@@eniagara_max
+
+$$ @@!
+// ENiagara_MultipleLerpCount
+// EnumPath: /Niagara/Enums/ENiagara_MultipleLerpCount.ENiagara_MultipleLerpCount
+
+()
+
+  [
+  @@2:            ENiagara_MultipleLerpCount!int(0)
+  @@3:            ENiagara_MultipleLerpCount!int(1)
+  @@4:            ENiagara_MultipleLerpCount!int(2)
+  @@5:            ENiagara_MultipleLerpCount!int(3)
+  @@eniagara_max: ENiagara_MultipleLerpCount!int(4)
+  ]
+
+$$ .

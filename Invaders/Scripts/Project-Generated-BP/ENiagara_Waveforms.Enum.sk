@@ -1,0 +1,50 @@
+// ENiagara Waveforms
+//
+// UE4 name of this enum: ENiagara_Waveforms
+
+// UE4 Asset Name: ENiagara_Waveforms
+// UE4 Package Name: "/Niagara/Enums/ENiagara_Waveforms"
+
+annotations: &reflected_data &name("ENiagara_Waveforms")
+
+$$ @@
+
+ENiagara_Waveforms !@@sine
+ENiagara_Waveforms !@@cosine
+ENiagara_Waveforms !@@compound_sin_cos
+ENiagara_Waveforms !@@pendulum
+ENiagara_Waveforms !@@square
+ENiagara_Waveforms !@@pulse
+ENiagara_Waveforms !@@triangle
+ENiagara_Waveforms !@@sawtooth
+ENiagara_Waveforms !@@random_
+ENiagara_Waveforms !@@random_blend
+ENiagara_Waveforms !@@random_spline
+ENiagara_Waveforms !@@random_spline_smooth
+ENiagara_Waveforms !@@random_spline_segmented
+ENiagara_Waveforms !@@eniagara_max
+
+$$ @@!
+// ENiagara_Waveforms
+// EnumPath: /Niagara/Enums/ENiagara_Waveforms.ENiagara_Waveforms
+
+()
+
+  [
+  @@sine:                    ENiagara_Waveforms!int(0)
+  @@cosine:                  ENiagara_Waveforms!int(1)
+  @@compound_sin_cos:        ENiagara_Waveforms!int(2)
+  @@pendulum:                ENiagara_Waveforms!int(3)
+  @@square:                  ENiagara_Waveforms!int(4)
+  @@pulse:                   ENiagara_Waveforms!int(5)
+  @@triangle:                ENiagara_Waveforms!int(6)
+  @@sawtooth:                ENiagara_Waveforms!int(7)
+  @@random_:                 ENiagara_Waveforms!int(8)
+  @@random_blend:            ENiagara_Waveforms!int(9)
+  @@random_spline:           ENiagara_Waveforms!int(10)
+  @@random_spline_smooth:    ENiagara_Waveforms!int(11)
+  @@random_spline_segmented: ENiagara_Waveforms!int(12)
+  @@eniagara_max:            ENiagara_Waveforms!int(13)
+  ]
+
+$$ .

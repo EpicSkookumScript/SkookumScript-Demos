@@ -1,0 +1,28 @@
+// ENiagara Simulation Target
+//
+// UE4 name of this enum: ENiagaraSimulationTarget
+
+// UE4 Asset Name: ENiagaraSimulationTarget
+// UE4 Package Name: "/Niagara/Enums/ENiagaraSimulationTarget"
+
+annotations: &reflected_data &name("ENiagaraSimulationTarget")
+
+$$ @@
+
+ENiagaraSimulationTarget !@@cpu_sim
+ENiagaraSimulationTarget !@@gpucompute_sim
+ENiagaraSimulationTarget !@@eniagara_simulation_target_max
+
+$$ @@!
+// ENiagaraSimulationTarget
+// EnumPath: /Niagara/Enums/ENiagaraSimulationTarget.ENiagaraSimulationTarget
+
+()
+
+  [
+  @@cpu_sim:                        ENiagaraSimulationTarget!int(0)
+  @@gpucompute_sim:                 ENiagaraSimulationTarget!int(1)
+  @@eniagara_simulation_target_max: ENiagaraSimulationTarget!int(2)
+  ]
+
+$$ .

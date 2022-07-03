@@ -1,0 +1,30 @@
+// ECascade Niagara Two Vector Channels
+//
+// UE4 name of this enum: ECascadeNiagaraTwoVectorChannels
+
+// UE4 Asset Name: ECascadeNiagaraTwoVectorChannels
+// UE4 Package Name: "/Niagara/Enums/CascadeConversion/ECascadeNiagaraTwoVectorChannels"
+
+annotations: &reflected_data &name("ECascadeNiagaraTwoVectorChannels")
+
+$$ @@
+
+ECascadeNiagaraTwoVectorChannels !@@xy
+ECascadeNiagaraTwoVectorChannels !@@yz
+ECascadeNiagaraTwoVectorChannels !@@xz
+ECascadeNiagaraTwoVectorChannels !@@ecascade_niagara_two_vector_channels_max
+
+$$ @@!
+// ECascadeNiagaraTwoVectorChannels
+// EnumPath: /Niagara/Enums/CascadeConversion/ECascadeNiagaraTwoVectorChannels.ECascadeNiagaraTwoVectorChannels
+
+()
+
+  [
+  @@xy:                                       ECascadeNiagaraTwoVectorChannels!int(0)
+  @@yz:                                       ECascadeNiagaraTwoVectorChannels!int(1)
+  @@xz:                                       ECascadeNiagaraTwoVectorChannels!int(2)
+  @@ecascade_niagara_two_vector_channels_max: ECascadeNiagaraTwoVectorChannels!int(3)
+  ]
+
+$$ .

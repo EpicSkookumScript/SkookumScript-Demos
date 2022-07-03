@@ -1,0 +1,12 @@
+// Level Blueprint Editor Overview
+//
+// UE4 name of this class: LevelBlueprintEditorOverview_C
+
+// UE4 Asset Name: LevelBlueprintEditorOverview
+// UE4 Package Name: "/Engine/Tutorial/BlueprintTutorials/LevelBlueprintEditorOverview"
+
+annotations: &reflected_data &name("LevelBlueprintEditorOverview_C")
+
+$$ @
+
+$$ .

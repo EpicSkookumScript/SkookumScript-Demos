@@ -1,0 +1,28 @@
+// Compare Values
+//
+// UE4 name of this enum: CompareValues
+
+// UE4 Asset Name: CompareValues
+// UE4 Package Name: "/Niagara/Enums/Comparison/CompareValues"
+
+annotations: &reflected_data &name("CompareValues")
+
+$$ @@
+
+CompareValues !@@return_largest
+CompareValues !@@return_smallest
+CompareValues !@@compare_values_max
+
+$$ @@!
+// CompareValues
+// EnumPath: /Niagara/Enums/Comparison/CompareValues.CompareValues
+
+()
+
+  [
+  @@return_largest:     CompareValues!int(0)
+  @@return_smallest:    CompareValues!int(1)
+  @@compare_values_max: CompareValues!int(2)
+  ]
+
+$$ .

@@ -1,0 +1,28 @@
+// ENiagara Randomness Evaluation
+//
+// UE4 name of this enum: ENiagaraRandomnessEvaluation
+
+// UE4 Asset Name: ENiagaraRandomnessEvaluation
+// UE4 Package Name: "/Niagara/Enums/ENiagaraRandomnessEvaluation"
+
+annotations: &reflected_data &name("ENiagaraRandomnessEvaluation")
+
+$$ @@
+
+ENiagaraRandomnessEvaluation !@@spawn_only
+ENiagaraRandomnessEvaluation !@@every_frame
+ENiagaraRandomnessEvaluation !@@eniagara_randomness_evaluation_max
+
+$$ @@!
+// ENiagaraRandomnessEvaluation
+// EnumPath: /Niagara/Enums/ENiagaraRandomnessEvaluation.ENiagaraRandomnessEvaluation
+
+()
+
+  [
+  @@spawn_only:                         ENiagaraRandomnessEvaluation!int(0)
+  @@every_frame:                        ENiagaraRandomnessEvaluation!int(1)
+  @@eniagara_randomness_evaluation_max: ENiagaraRandomnessEvaluation!int(2)
+  ]
+
+$$ .

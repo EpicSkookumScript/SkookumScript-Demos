@@ -1,0 +1,12 @@
+// Blueprint Editor Tutorial
+//
+// UE4 name of this class: BlueprintEditorTutorial_C
+
+// UE4 Asset Name: BlueprintEditorTutorial
+// UE4 Package Name: "/Engine/Tutorial/BlueprintTutorials/BlueprintEditorTutorial"
+
+annotations: &reflected_data &name("BlueprintEditorTutorial_C")
+
+$$ @
+
+$$ .

@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_ShieldBlockNew_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")    PointerToUberGraphFrame !@uber_graph_frame   // Currently unsupported */
 &raw("PointLight")        PointLightComponent   !@point_light        // Point Light
 &raw("Audio")             AudioComponent        !@audio              // Audio
 &raw("Sphere")            SphereComponent       !@sphere             // Sphere

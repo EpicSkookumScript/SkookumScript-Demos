@@ -9,6 +9,4 @@ annotations: &reflected_data &name("TEST_GuidedProjectile_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
-
 $$ .

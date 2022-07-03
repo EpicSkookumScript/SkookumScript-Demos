@@ -1,0 +1,28 @@
+// ENiagara Vertex Filtering Mode
+//
+// UE4 name of this enum: ENiagaraVertexFilteringMode
+
+// UE4 Asset Name: ENiagaraVertexFilteringMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraVertexFilteringMode"
+
+annotations: &reflected_data &name("ENiagaraVertexFilteringMode")
+
+$$ @@
+
+ENiagaraVertexFilteringMode !@@all
+ENiagaraVertexFilteringMode !@@filtered
+ENiagaraVertexFilteringMode !@@eniagara_vertex_filtering_mode_max
+
+$$ @@!
+// ENiagaraVertexFilteringMode
+// EnumPath: /Niagara/Enums/ENiagaraVertexFilteringMode.ENiagaraVertexFilteringMode
+
+()
+
+  [
+  @@all:                                ENiagaraVertexFilteringMode!int(0)
+  @@filtered:                           ENiagaraVertexFilteringMode!int(1)
+  @@eniagara_vertex_filtering_mode_max: ENiagaraVertexFilteringMode!int(2)
+  ]
+
+$$ .

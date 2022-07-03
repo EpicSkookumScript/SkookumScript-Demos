@@ -1,0 +1,30 @@
+// ENiagara Quaternion Derivation Technique
+//
+// UE4 name of this enum: ENiagaraQuaternionDerivationTechnique
+
+// UE4 Asset Name: ENiagaraQuaternionDerivationTechnique
+// UE4 Package Name: "/Niagara/Enums/ENiagaraQuaternionDerivationTechnique"
+
+annotations: &reflected_data &name("ENiagaraQuaternionDerivationTechnique")
+
+$$ @@
+
+ENiagaraQuaternionDerivationTechnique !@@x_vector
+ENiagaraQuaternionDerivationTechnique !@@x_and_y_vectors
+ENiagaraQuaternionDerivationTechnique !@@x_and_z_vectors
+ENiagaraQuaternionDerivationTechnique !@@eniagara_quaternion_derivation_technique_max
+
+$$ @@!
+// ENiagaraQuaternionDerivationTechnique
+// EnumPath: /Niagara/Enums/ENiagaraQuaternionDerivationTechnique.ENiagaraQuaternionDerivationTechnique
+
+()
+
+  [
+  @@x_vector:                                     ENiagaraQuaternionDerivationTechnique!int(0)
+  @@x_and_y_vectors:                              ENiagaraQuaternionDerivationTechnique!int(1)
+  @@x_and_z_vectors:                              ENiagaraQuaternionDerivationTechnique!int(2)
+  @@eniagara_quaternion_derivation_technique_max: ENiagaraQuaternionDerivationTechnique!int(3)
+  ]
+
+$$ .
