@@ -1,0 +1,32 @@
+// ENiagara Boolean Logic Ops
+//
+// UE4 name of this enum: ENiagaraBooleanLogicOps
+
+// UE4 Asset Name: ENiagaraBooleanLogicOps
+// UE4 Package Name: "/Niagara/Enums/ENiagaraBooleanLogicOps"
+
+annotations: &reflected_data &name("ENiagaraBooleanLogicOps")
+
+$$ @@
+
+ENiagaraBooleanLogicOps !@@greater_than
+ENiagaraBooleanLogicOps !@@greater_than_or_equal_to
+ENiagaraBooleanLogicOps !@@equal_to
+ENiagaraBooleanLogicOps !@@not_equal_to
+ENiagaraBooleanLogicOps !@@eniagara_boolean_logic_ops_max
+
+$$ @@!
+// ENiagaraBooleanLogicOps
+// EnumPath: /Niagara/Enums/ENiagaraBooleanLogicOps.ENiagaraBooleanLogicOps
+
+()
+
+  [
+  @@greater_than:                   ENiagaraBooleanLogicOps!int(0)
+  @@greater_than_or_equal_to:       ENiagaraBooleanLogicOps!int(1)
+  @@equal_to:                       ENiagaraBooleanLogicOps!int(2)
+  @@not_equal_to:                   ENiagaraBooleanLogicOps!int(3)
+  @@eniagara_boolean_logic_ops_max: ENiagaraBooleanLogicOps!int(4)
+  ]
+
+$$ .

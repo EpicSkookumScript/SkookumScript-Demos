@@ -1,0 +1,40 @@
+// ENiagara Audio Param Type
+//
+// UE4 name of this enum: ENiagara_AudioParamType
+
+// UE4 Asset Name: ENiagara_AudioParamType
+// UE4 Package Name: "/Niagara/Enums/ENiagara_AudioParamType"
+
+annotations: &reflected_data &name("ENiagara_AudioParamType")
+
+$$ @@
+
+ENiagara_AudioParamType !@@volume
+ENiagara_AudioParamType !@@pitch
+ENiagara_AudioParamType !@@location
+ENiagara_AudioParamType !@@rotation
+ENiagara_AudioParamType !@@boolean_parameter
+ENiagara_AudioParamType !@@float_parameter
+ENiagara_AudioParamType !@@integer_parameter
+ENiagara_AudioParamType !@@paused_state
+ENiagara_AudioParamType !@@eniagara_max
+
+$$ @@!
+// ENiagara_AudioParamType
+// EnumPath: /Niagara/Enums/ENiagara_AudioParamType.ENiagara_AudioParamType
+
+()
+
+  [
+  @@volume:            ENiagara_AudioParamType!int(0)
+  @@pitch:             ENiagara_AudioParamType!int(1)
+  @@location:          ENiagara_AudioParamType!int(2)
+  @@rotation:          ENiagara_AudioParamType!int(3)
+  @@boolean_parameter: ENiagara_AudioParamType!int(4)
+  @@float_parameter:   ENiagara_AudioParamType!int(5)
+  @@integer_parameter: ENiagara_AudioParamType!int(6)
+  @@paused_state:      ENiagara_AudioParamType!int(7)
+  @@eniagara_max:      ENiagara_AudioParamType!int(8)
+  ]
+
+$$ .

@@ -1,0 +1,28 @@
+// ENiagara Transform Base Options
+//
+// UE4 name of this enum: ENiagara_TransformBaseOptions
+
+// UE4 Asset Name: ENiagara_TransformBaseOptions
+// UE4 Package Name: "/Niagara/Enums/ENiagara_TransformBaseOptions"
+
+annotations: &reflected_data &name("ENiagara_TransformBaseOptions")
+
+$$ @@
+
+ENiagara_TransformBaseOptions !@@transform_vector
+ENiagara_TransformBaseOptions !@@transform_position
+ENiagara_TransformBaseOptions !@@eniagara_max
+
+$$ @@!
+// ENiagara_TransformBaseOptions
+// EnumPath: /Niagara/Enums/ENiagara_TransformBaseOptions.ENiagara_TransformBaseOptions
+
+()
+
+  [
+  @@transform_vector:   ENiagara_TransformBaseOptions!int(0)
+  @@transform_position: ENiagara_TransformBaseOptions!int(1)
+  @@eniagara_max:       ENiagara_TransformBaseOptions!int(2)
+  ]
+
+$$ .

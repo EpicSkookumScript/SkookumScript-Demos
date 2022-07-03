@@ -1,0 +1,28 @@
+// ENiagara Offset Mode
+//
+// UE4 name of this enum: ENiagara_OffsetMode
+
+// UE4 Asset Name: ENiagara_OffsetMode
+// UE4 Package Name: "/Niagara/Enums/Transforms/ENiagara_OffsetMode"
+
+annotations: &reflected_data &name("ENiagara_OffsetMode")
+
+$$ @@
+
+ENiagara_OffsetMode !@@default
+ENiagara_OffsetMode !@@none
+ENiagara_OffsetMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_OffsetMode
+// EnumPath: /Niagara/Enums/Transforms/ENiagara_OffsetMode.ENiagara_OffsetMode
+
+()
+
+  [
+  @@default:      ENiagara_OffsetMode!int(0)
+  @@none:         ENiagara_OffsetMode!int(1)
+  @@eniagara_max: ENiagara_OffsetMode!int(2)
+  ]
+
+$$ .

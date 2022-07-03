@@ -1,0 +1,28 @@
+// ENiagara Grid Placement Type
+//
+// UE4 name of this enum: ENiagaraGridPlacementType
+
+// UE4 Asset Name: ENiagaraGridPlacementType
+// UE4 Package Name: "/Niagara/Enums/ENiagaraGridPlacementType"
+
+annotations: &reflected_data &name("ENiagaraGridPlacementType")
+
+$$ @@
+
+ENiagaraGridPlacementType !@@padding_per_cell_
+ENiagaraGridPlacementType !@@bounding_box_size
+ENiagaraGridPlacementType !@@eniagara_grid_placement_type_max
+
+$$ @@!
+// ENiagaraGridPlacementType
+// EnumPath: /Niagara/Enums/ENiagaraGridPlacementType.ENiagaraGridPlacementType
+
+()
+
+  [
+  @@padding_per_cell_:                ENiagaraGridPlacementType!int(0)
+  @@bounding_box_size:                ENiagaraGridPlacementType!int(1)
+  @@eniagara_grid_placement_type_max: ENiagaraGridPlacementType!int(2)
+  ]
+
+$$ .

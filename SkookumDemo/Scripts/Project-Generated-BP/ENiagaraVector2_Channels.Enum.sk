@@ -1,0 +1,28 @@
+// ENiagara Vector 2 Channels
+//
+// UE4 name of this enum: ENiagaraVector2_Channels
+
+// UE4 Asset Name: ENiagaraVector2_Channels
+// UE4 Package Name: "/Niagara/Enums/ENiagaraVector2_Channels"
+
+annotations: &reflected_data &name("ENiagaraVector2_Channels")
+
+$$ @@
+
+ENiagaraVector2_Channels !@@x
+ENiagaraVector2_Channels !@@y
+ENiagaraVector2_Channels !@@eniagara_vector_2_max
+
+$$ @@!
+// ENiagaraVector2_Channels
+// EnumPath: /Niagara/Enums/ENiagaraVector2_Channels.ENiagaraVector2_Channels
+
+()
+
+  [
+  @@x:                     ENiagaraVector2_Channels!int(0)
+  @@y:                     ENiagaraVector2_Channels!int(1)
+  @@eniagara_vector_2_max: ENiagaraVector2_Channels!int(2)
+  ]
+
+$$ .

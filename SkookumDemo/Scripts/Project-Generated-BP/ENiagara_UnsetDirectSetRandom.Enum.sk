@@ -1,0 +1,30 @@
+// ENiagara Unset Direct Set Random
+//
+// UE4 name of this enum: ENiagara_UnsetDirectSetRandom
+
+// UE4 Asset Name: ENiagara_UnsetDirectSetRandom
+// UE4 Package Name: "/Niagara/Enums/Ribbons/ENiagara_UnsetDirectSetRandom"
+
+annotations: &reflected_data &name("ENiagara_UnsetDirectSetRandom")
+
+$$ @@
+
+ENiagara_UnsetDirectSetRandom !@@unset
+ENiagara_UnsetDirectSetRandom !@@direct_set
+ENiagara_UnsetDirectSetRandom !@@random_
+ENiagara_UnsetDirectSetRandom !@@eniagara_max
+
+$$ @@!
+// ENiagara_UnsetDirectSetRandom
+// EnumPath: /Niagara/Enums/Ribbons/ENiagara_UnsetDirectSetRandom.ENiagara_UnsetDirectSetRandom
+
+()
+
+  [
+  @@unset:        ENiagara_UnsetDirectSetRandom!int(0)
+  @@direct_set:   ENiagara_UnsetDirectSetRandom!int(1)
+  @@random_:      ENiagara_UnsetDirectSetRandom!int(2)
+  @@eniagara_max: ENiagara_UnsetDirectSetRandom!int(3)
+  ]
+
+$$ .

@@ -1,0 +1,30 @@
+// ENiagara Timeline Authority
+//
+// UE4 name of this enum: ENiagara_TimelineAuthority
+
+// UE4 Asset Name: ENiagara_TimelineAuthority
+// UE4 Package Name: "/Niagara/Enums/Utility/ENiagara_TimelineAuthority"
+
+annotations: &reflected_data &name("ENiagara_TimelineAuthority")
+
+$$ @@
+
+ENiagara_TimelineAuthority !@@play_is_the_authority
+ENiagara_TimelineAuthority !@@rewind_is_the_authority
+ENiagara_TimelineAuthority !@@pause
+ENiagara_TimelineAuthority !@@eniagara_max
+
+$$ @@!
+// ENiagara_TimelineAuthority
+// EnumPath: /Niagara/Enums/Utility/ENiagara_TimelineAuthority.ENiagara_TimelineAuthority
+
+()
+
+  [
+  @@play_is_the_authority:   ENiagara_TimelineAuthority!int(0)
+  @@rewind_is_the_authority: ENiagara_TimelineAuthority!int(1)
+  @@pause:                   ENiagara_TimelineAuthority!int(2)
+  @@eniagara_max:            ENiagara_TimelineAuthority!int(3)
+  ]
+
+$$ .

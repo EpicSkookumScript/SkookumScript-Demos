@@ -1,0 +1,28 @@
+// ENiagara Scale Mode
+//
+// UE4 name of this enum: ENiagara_ScaleMode
+
+// UE4 Asset Name: ENiagara_ScaleMode
+// UE4 Package Name: "/Niagara/Enums/Transforms/ENiagara_ScaleMode"
+
+annotations: &reflected_data &name("ENiagara_ScaleMode")
+
+$$ @@
+
+ENiagara_ScaleMode !@@default
+ENiagara_ScaleMode !@@none
+ENiagara_ScaleMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_ScaleMode
+// EnumPath: /Niagara/Enums/Transforms/ENiagara_ScaleMode.ENiagara_ScaleMode
+
+()
+
+  [
+  @@default:      ENiagara_ScaleMode!int(0)
+  @@none:         ENiagara_ScaleMode!int(1)
+  @@eniagara_max: ENiagara_ScaleMode!int(2)
+  ]
+
+$$ .

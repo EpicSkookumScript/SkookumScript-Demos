@@ -1,0 +1,12 @@
+// Level Editor Attract
+//
+// UE4 name of this class: LevelEditorAttract_C
+
+// UE4 Asset Name: LevelEditorAttract
+// UE4 Package Name: "/Engine/Tutorial/Basics/LevelEditorAttract"
+
+annotations: &reflected_data &name("LevelEditorAttract_C")
+
+$$ @
+
+$$ .

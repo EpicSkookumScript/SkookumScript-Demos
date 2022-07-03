@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.24",
+	"EngineAssociation": "4.27",
 	"Category": "SkookumScript",
 	"Description": "Skookum Demo - simple game level demonstrating the power of the SkookumScript programming language.",
 	"Plugins": [

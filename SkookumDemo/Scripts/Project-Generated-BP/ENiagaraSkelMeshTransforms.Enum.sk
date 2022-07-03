@@ -1,0 +1,34 @@
+// ENiagara Skel Mesh Transforms
+//
+// UE4 name of this enum: ENiagaraSkelMeshTransforms
+
+// UE4 Asset Name: ENiagaraSkelMeshTransforms
+// UE4 Package Name: "/Niagara/Enums/ENiagaraSkelMeshTransforms"
+
+annotations: &reflected_data &name("ENiagaraSkelMeshTransforms")
+
+$$ @@
+
+ENiagaraSkelMeshTransforms !@@simulation
+ENiagaraSkelMeshTransforms !@@world_
+ENiagaraSkelMeshTransforms !@@local
+ENiagaraSkelMeshTransforms !@@sampled_mesh
+ENiagaraSkelMeshTransforms !@@mesh_particle
+ENiagaraSkelMeshTransforms !@@eniagara_skel_mesh_transforms_max
+
+$$ @@!
+// ENiagaraSkelMeshTransforms
+// EnumPath: /Niagara/Enums/ENiagaraSkelMeshTransforms.ENiagaraSkelMeshTransforms
+
+()
+
+  [
+  @@simulation:                        ENiagaraSkelMeshTransforms!int(0)
+  @@world_:                            ENiagaraSkelMeshTransforms!int(1)
+  @@local:                             ENiagaraSkelMeshTransforms!int(2)
+  @@sampled_mesh:                      ENiagaraSkelMeshTransforms!int(3)
+  @@mesh_particle:                     ENiagaraSkelMeshTransforms!int(4)
+  @@eniagara_skel_mesh_transforms_max: ENiagaraSkelMeshTransforms!int(5)
+  ]
+
+$$ .

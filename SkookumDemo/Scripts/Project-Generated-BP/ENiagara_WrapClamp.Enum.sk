@@ -1,0 +1,28 @@
+// ENiagara Wrap Clamp
+//
+// UE4 name of this enum: ENiagara_WrapClamp
+
+// UE4 Asset Name: ENiagara_WrapClamp
+// UE4 Package Name: "/Niagara/Enums/ENiagara_WrapClamp"
+
+annotations: &reflected_data &name("ENiagara_WrapClamp")
+
+$$ @@
+
+ENiagara_WrapClamp !@@clamp
+ENiagara_WrapClamp !@@wrap
+ENiagara_WrapClamp !@@eniagara_max
+
+$$ @@!
+// ENiagara_WrapClamp
+// EnumPath: /Niagara/Enums/ENiagara_WrapClamp.ENiagara_WrapClamp
+
+()
+
+  [
+  @@clamp:        ENiagara_WrapClamp!int(0)
+  @@wrap:         ENiagara_WrapClamp!int(1)
+  @@eniagara_max: ENiagara_WrapClamp!int(2)
+  ]
+
+$$ .

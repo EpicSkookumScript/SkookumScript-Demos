@@ -1,0 +1,14 @@
+// PROTO BP Blueprint 0
+//
+// UE4 name of this class: PROTO_BP_Blueprint_0_C
+
+// UE4 Asset Name: PROTO_BP_Blueprint_0
+// UE4 Package Name: "/Engine/Transient"
+
+annotations: &reflected_data &name("PROTO_BP_Blueprint_0_C")
+
+$$ @
+
+&raw("DefaultSceneRoot") SceneComponent !@default_scene_root // Default Scene Root
+
+$$ .

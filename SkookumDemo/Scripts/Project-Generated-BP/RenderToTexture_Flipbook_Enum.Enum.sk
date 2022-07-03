@@ -1,0 +1,30 @@
+// Render to Texture Flipbook Enum
+//
+// UE4 name of this enum: RenderToTexture_Flipbook_Enum
+
+// UE4 Asset Name: RenderToTexture_Flipbook_Enum
+// UE4 Package Name: "/Engine/ArtTools/RenderToTexture/Enums/RenderToTexture_Flipbook_Enum"
+
+annotations: &reflected_data &name("RenderToTexture_Flipbook_Enum")
+
+$$ @@
+
+RenderToTexture_Flipbook_Enum !@@simple_mesh_rotation
+RenderToTexture_Flipbook_Enum !@@material_instance_interpolation
+RenderToTexture_Flipbook_Enum !@@both_mesh_rotation_and_material_instance_interpolation
+RenderToTexture_Flipbook_Enum !@@render_to_texture_flipbook_max
+
+$$ @@!
+// RenderToTexture_Flipbook_Enum
+// EnumPath: /Engine/ArtTools/RenderToTexture/Enums/RenderToTexture_Flipbook_Enum.RenderToTexture_Flipbook_Enum
+
+()
+
+  [
+  @@simple_mesh_rotation:                                   RenderToTexture_Flipbook_Enum!int(0)
+  @@material_instance_interpolation:                        RenderToTexture_Flipbook_Enum!int(1)
+  @@both_mesh_rotation_and_material_instance_interpolation: RenderToTexture_Flipbook_Enum!int(2)
+  @@render_to_texture_flipbook_max:                         RenderToTexture_Flipbook_Enum!int(3)
+  ]
+
+$$ .

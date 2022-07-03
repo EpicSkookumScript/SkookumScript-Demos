@@ -1,0 +1,30 @@
+// Niagara Units
+//
+// UE4 name of this enum: Niagara_Units
+
+// UE4 Asset Name: Niagara_Units
+// UE4 Package Name: "/Niagara/Enums/Niagara_Units"
+
+annotations: &reflected_data &name("Niagara_Units")
+
+$$ @@
+
+Niagara_Units !@@centimeters
+Niagara_Units !@@meters
+Niagara_Units !@@kilometers
+Niagara_Units !@@niagara_max
+
+$$ @@!
+// Niagara_Units
+// EnumPath: /Niagara/Enums/Niagara_Units.Niagara_Units
+
+()
+
+  [
+  @@centimeters: Niagara_Units!int(0)
+  @@meters:      Niagara_Units!int(1)
+  @@kilometers:  Niagara_Units!int(2)
+  @@niagara_max: Niagara_Units!int(3)
+  ]
+
+$$ .

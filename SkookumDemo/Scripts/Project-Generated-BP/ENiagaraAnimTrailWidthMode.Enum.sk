@@ -1,0 +1,28 @@
+// ENiagara Anim Trail Width Mode
+//
+// UE4 name of this enum: ENiagaraAnimTrailWidthMode
+
+// UE4 Asset Name: ENiagaraAnimTrailWidthMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraAnimTrailWidthMode"
+
+annotations: &reflected_data &name("ENiagaraAnimTrailWidthMode")
+
+$$ @@
+
+ENiagaraAnimTrailWidthMode !@@auto
+ENiagaraAnimTrailWidthMode !@@manual
+ENiagaraAnimTrailWidthMode !@@eniagara_anim_trail_width_mode_max
+
+$$ @@!
+// ENiagaraAnimTrailWidthMode
+// EnumPath: /Niagara/Enums/ENiagaraAnimTrailWidthMode.ENiagaraAnimTrailWidthMode
+
+()
+
+  [
+  @@auto:                               ENiagaraAnimTrailWidthMode!int(0)
+  @@manual:                             ENiagaraAnimTrailWidthMode!int(1)
+  @@eniagara_anim_trail_width_mode_max: ENiagaraAnimTrailWidthMode!int(2)
+  ]
+
+$$ .

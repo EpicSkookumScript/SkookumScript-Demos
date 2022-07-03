@@ -1,0 +1,28 @@
+// Order of operations when transforming the region
+//
+// UE4 name of this enum: ENiagaraRegionTransformOrder
+
+// UE4 Asset Name: ENiagaraRegionTransformOrder
+// UE4 Package Name: "/Niagara/Enums/ENiagaraRegionTransformOrder"
+
+annotations: &reflected_data &name("ENiagaraRegionTransformOrder")
+
+$$ @@
+
+ENiagaraRegionTransformOrder !@@offset_rotation
+ENiagaraRegionTransformOrder !@@rotation_offset
+ENiagaraRegionTransformOrder !@@eniagara_region_transform_order_max
+
+$$ @@!
+// ENiagaraRegionTransformOrder
+// EnumPath: /Niagara/Enums/ENiagaraRegionTransformOrder.ENiagaraRegionTransformOrder
+
+()
+
+  [
+  @@offset_rotation:                     ENiagaraRegionTransformOrder!int(0)
+  @@rotation_offset:                     ENiagaraRegionTransformOrder!int(1)
+  @@eniagara_region_transform_order_max: ENiagaraRegionTransformOrder!int(2)
+  ]
+
+$$ .

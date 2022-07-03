@@ -9,7 +9,6 @@ annotations: &reflected_data &name("Example_Map_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")          PointerToUberGraphFrame !@uber_graph_frame        // Currently unsupported */
 &raw("Obstacle start location") Vector3 !@obstacle_start_location // Obstacle Start Location
 
 $$ .

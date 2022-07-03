@@ -1,0 +1,28 @@
+// ENiagara Timeline Output Mode
+//
+// UE4 name of this enum: ENiagara_TimelineOutputMode
+
+// UE4 Asset Name: ENiagara_TimelineOutputMode
+// UE4 Package Name: "/Niagara/Enums/Utility/ENiagara_TimelineOutputMode"
+
+annotations: &reflected_data &name("ENiagara_TimelineOutputMode")
+
+$$ @@
+
+ENiagara_TimelineOutputMode !@@array
+ENiagara_TimelineOutputMode !@@curve
+ENiagara_TimelineOutputMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_TimelineOutputMode
+// EnumPath: /Niagara/Enums/Utility/ENiagara_TimelineOutputMode.ENiagara_TimelineOutputMode
+
+()
+
+  [
+  @@array:        ENiagara_TimelineOutputMode!int(0)
+  @@curve:        ENiagara_TimelineOutputMode!int(1)
+  @@eniagara_max: ENiagara_TimelineOutputMode!int(2)
+  ]
+
+$$ .

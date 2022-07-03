@@ -1,0 +1,36 @@
+// ENiagara Waveform Blend Mode
+//
+// UE4 name of this enum: ENiagara_WaveformBlendMode
+
+// UE4 Asset Name: ENiagara_WaveformBlendMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_WaveformBlendMode"
+
+annotations: &reflected_data &name("ENiagara_WaveformBlendMode")
+
+$$ @@
+
+ENiagara_WaveformBlendMode !@@add
+ENiagara_WaveformBlendMode !@@subtract
+ENiagara_WaveformBlendMode !@@multiply
+ENiagara_WaveformBlendMode !@@max
+ENiagara_WaveformBlendMode !@@min
+ENiagara_WaveformBlendMode !@@interpolate
+ENiagara_WaveformBlendMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_WaveformBlendMode
+// EnumPath: /Niagara/Enums/ENiagara_WaveformBlendMode.ENiagara_WaveformBlendMode
+
+()
+
+  [
+  @@add:          ENiagara_WaveformBlendMode!int(0)
+  @@subtract:     ENiagara_WaveformBlendMode!int(1)
+  @@multiply:     ENiagara_WaveformBlendMode!int(2)
+  @@max:          ENiagara_WaveformBlendMode!int(3)
+  @@min:          ENiagara_WaveformBlendMode!int(4)
+  @@interpolate:  ENiagara_WaveformBlendMode!int(5)
+  @@eniagara_max: ENiagara_WaveformBlendMode!int(6)
+  ]
+
+$$ .

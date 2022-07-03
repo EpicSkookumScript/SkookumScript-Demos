@@ -1,0 +1,32 @@
+// EInt Types
+//
+// UE4 name of this enum: EIntTypes
+
+// UE4 Asset Name: EIntTypes
+// UE4 Package Name: "/Engine/ArtTools/RenderToTexture/Enums/EIntTypes"
+
+annotations: &reflected_data &name("EIntTypes")
+
+$$ @@
+
+EIntTypes !@@int
+EIntTypes !@@int_2
+EIntTypes !@@int_3
+EIntTypes !@@int_4
+EIntTypes !@@eint_types_max
+
+$$ @@!
+// EIntTypes
+// EnumPath: /Engine/ArtTools/RenderToTexture/Enums/EIntTypes.EIntTypes
+
+()
+
+  [
+  @@int:            EIntTypes!int(0)
+  @@int_2:          EIntTypes!int(1)
+  @@int_3:          EIntTypes!int(2)
+  @@int_4:          EIntTypes!int(3)
+  @@eint_types_max: EIntTypes!int(4)
+  ]
+
+$$ .

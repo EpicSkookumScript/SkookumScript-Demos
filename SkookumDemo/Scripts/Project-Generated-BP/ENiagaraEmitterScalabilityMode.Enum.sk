@@ -1,0 +1,30 @@
+// ENiagara Emitter Scalability Mode
+//
+// UE4 name of this enum: ENiagaraEmitterScalabilityMode
+
+// UE4 Asset Name: ENiagaraEmitterScalabilityMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraEmitterScalabilityMode"
+
+annotations: &reflected_data &name("ENiagaraEmitterScalabilityMode")
+
+$$ @@
+
+ENiagaraEmitterScalabilityMode !@@system
+ENiagaraEmitterScalabilityMode !@@self
+ENiagaraEmitterScalabilityMode !@@none
+ENiagaraEmitterScalabilityMode !@@eniagara_emitter_scalability_mode_max
+
+$$ @@!
+// ENiagaraEmitterScalabilityMode
+// EnumPath: /Niagara/Enums/ENiagaraEmitterScalabilityMode.ENiagaraEmitterScalabilityMode
+
+()
+
+  [
+  @@system:                                ENiagaraEmitterScalabilityMode!int(0)
+  @@self:                                  ENiagaraEmitterScalabilityMode!int(1)
+  @@none:                                  ENiagaraEmitterScalabilityMode!int(2)
+  @@eniagara_emitter_scalability_mode_max: ENiagaraEmitterScalabilityMode!int(3)
+  ]
+
+$$ .

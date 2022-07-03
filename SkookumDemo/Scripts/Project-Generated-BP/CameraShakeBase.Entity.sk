@@ -1,0 +1,10 @@
+// Base class for a camera shake. A camera shake contains a root shake "pattern" which is
+// the object that contains the actual logic driving how the camera is shaken. Keeping the two
+// separate makes it possible to completely change how a shake works without having to create
+// a completely different asset.
+//
+// UE4 name of this class: CameraShakeBase
+
+annotations: &reflected_cpp &name("CameraShakeBase")
+
+$$ .

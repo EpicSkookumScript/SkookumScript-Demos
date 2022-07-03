@@ -1,0 +1,32 @@
+// ENiagara Triangle Sampling Mode
+//
+// UE4 name of this enum: ENiagaraTriangleSamplingMode
+
+// UE4 Asset Name: ENiagaraTriangleSamplingMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraTriangleSamplingMode"
+
+annotations: &reflected_data &name("ENiagaraTriangleSamplingMode")
+
+$$ @@
+
+ENiagaraTriangleSamplingMode !@@random_all_triangles_
+ENiagaraTriangleSamplingMode !@@random_sampling_regions_
+ENiagaraTriangleSamplingMode !@@direct_all_triangles_
+ENiagaraTriangleSamplingMode !@@direct_sampling_regions_
+ENiagaraTriangleSamplingMode !@@eniagara_triangle_sampling_mode_max
+
+$$ @@!
+// ENiagaraTriangleSamplingMode
+// EnumPath: /Niagara/Enums/ENiagaraTriangleSamplingMode.ENiagaraTriangleSamplingMode
+
+()
+
+  [
+  @@random_all_triangles_:               ENiagaraTriangleSamplingMode!int(0)
+  @@random_sampling_regions_:            ENiagaraTriangleSamplingMode!int(1)
+  @@direct_all_triangles_:               ENiagaraTriangleSamplingMode!int(2)
+  @@direct_sampling_regions_:            ENiagaraTriangleSamplingMode!int(3)
+  @@eniagara_triangle_sampling_mode_max: ENiagaraTriangleSamplingMode!int(4)
+  ]
+
+$$ .

@@ -1,0 +1,30 @@
+// ENiagara Scale Color Mode
+//
+// UE4 name of this enum: ENiagaraScaleColorMode
+
+// UE4 Asset Name: ENiagaraScaleColorMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraScaleColorMode"
+
+annotations: &reflected_data &name("ENiagaraScaleColorMode")
+
+$$ @@
+
+ENiagaraScaleColorMode !@@rgb_and_alpha_separately
+ENiagaraScaleColorMode !@@rgba_together
+ENiagaraScaleColorMode !@@rgba_linear_color_curve
+ENiagaraScaleColorMode !@@eniagara_scale_color_mode_max
+
+$$ @@!
+// ENiagaraScaleColorMode
+// EnumPath: /Niagara/Enums/ENiagaraScaleColorMode.ENiagaraScaleColorMode
+
+()
+
+  [
+  @@rgb_and_alpha_separately:      ENiagaraScaleColorMode!int(0)
+  @@rgba_together:                 ENiagaraScaleColorMode!int(1)
+  @@rgba_linear_color_curve:       ENiagaraScaleColorMode!int(2)
+  @@eniagara_scale_color_mode_max: ENiagaraScaleColorMode!int(3)
+  ]
+
+$$ .

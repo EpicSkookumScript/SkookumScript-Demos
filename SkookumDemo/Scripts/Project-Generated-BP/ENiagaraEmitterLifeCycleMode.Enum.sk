@@ -1,0 +1,28 @@
+// ENiagara Emitter Life Cycle Mode
+//
+// UE4 name of this enum: ENiagaraEmitterLifeCycleMode
+
+// UE4 Asset Name: ENiagaraEmitterLifeCycleMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraEmitterLifeCycleMode"
+
+annotations: &reflected_data &name("ENiagaraEmitterLifeCycleMode")
+
+$$ @@
+
+ENiagaraEmitterLifeCycleMode !@@system
+ENiagaraEmitterLifeCycleMode !@@self
+ENiagaraEmitterLifeCycleMode !@@eniagara_emitter_life_cycle_mode_max
+
+$$ @@!
+// ENiagaraEmitterLifeCycleMode
+// EnumPath: /Niagara/Enums/ENiagaraEmitterLifeCycleMode.ENiagaraEmitterLifeCycleMode
+
+()
+
+  [
+  @@system:                               ENiagaraEmitterLifeCycleMode!int(0)
+  @@self:                                 ENiagaraEmitterLifeCycleMode!int(1)
+  @@eniagara_emitter_life_cycle_mode_max: ENiagaraEmitterLifeCycleMode!int(2)
+  ]
+
+$$ .

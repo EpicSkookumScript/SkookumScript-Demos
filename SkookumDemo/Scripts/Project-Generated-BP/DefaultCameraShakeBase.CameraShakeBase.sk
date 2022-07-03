@@ -1,0 +1,7 @@
+// Like UCameraShakeBase but with a perlin noise shake pattern by default, for convenience.
+//
+// UE4 name of this class: DefaultCameraShakeBase
+
+annotations: &reflected_cpp &name("DefaultCameraShakeBase")
+
+$$ .

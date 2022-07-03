@@ -1,0 +1,28 @@
+// Render to Texture Imposter Enum
+//
+// UE4 name of this enum: RenderToTexture_Imposter_Enum
+
+// UE4 Asset Name: RenderToTexture_Imposter_Enum
+// UE4 Package Name: "/Engine/ArtTools/RenderToTexture/Enums/RenderToTexture_Imposter_Enum"
+
+annotations: &reflected_data &name("RenderToTexture_Imposter_Enum")
+
+$$ @@
+
+RenderToTexture_Imposter_Enum !@@full_3d_imposter
+RenderToTexture_Imposter_Enum !@@single_rotation_axis
+RenderToTexture_Imposter_Enum !@@render_to_texture_imposter_max
+
+$$ @@!
+// RenderToTexture_Imposter_Enum
+// EnumPath: /Engine/ArtTools/RenderToTexture/Enums/RenderToTexture_Imposter_Enum.RenderToTexture_Imposter_Enum
+
+()
+
+  [
+  @@full_3d_imposter:               RenderToTexture_Imposter_Enum!int(0)
+  @@single_rotation_axis:           RenderToTexture_Imposter_Enum!int(1)
+  @@render_to_texture_imposter_max: RenderToTexture_Imposter_Enum!int(2)
+  ]
+
+$$ .

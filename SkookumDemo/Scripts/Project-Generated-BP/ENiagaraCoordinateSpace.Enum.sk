@@ -1,0 +1,30 @@
+// This is a legacy asset and should be redirected in practice.
+//
+// UE4 name of this enum: ENiagaraCoordinateSpace
+
+// UE4 Asset Name: ENiagaraCoordinateSpace
+// UE4 Package Name: "/Niagara/Enums/ENiagaraCoordinateSpace"
+
+annotations: &reflected_data &name("ENiagaraCoordinateSpace")
+
+$$ @@
+
+ENiagaraCoordinateSpace !@@simulation
+ENiagaraCoordinateSpace !@@world_
+ENiagaraCoordinateSpace !@@local
+ENiagaraCoordinateSpace !@@eniagara_coordinate_space_0_max
+
+$$ @@!
+// ENiagaraCoordinateSpace
+// EnumPath: /Niagara/Enums/ENiagaraCoordinateSpace.ENiagaraCoordinateSpace
+
+()
+
+  [
+  @@simulation:                      ENiagaraCoordinateSpace!int(0)
+  @@world_:                          ENiagaraCoordinateSpace!int(1)
+  @@local:                           ENiagaraCoordinateSpace!int(2)
+  @@eniagara_coordinate_space_0_max: ENiagaraCoordinateSpace!int(3)
+  ]
+
+$$ .

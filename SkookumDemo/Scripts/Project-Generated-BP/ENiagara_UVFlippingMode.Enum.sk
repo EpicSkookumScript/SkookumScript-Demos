@@ -1,0 +1,34 @@
+// ENiagara UVFlipping Mode
+//
+// UE4 name of this enum: ENiagara_UVFlippingMode
+
+// UE4 Asset Name: ENiagara_UVFlippingMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_UVFlippingMode"
+
+annotations: &reflected_data &name("ENiagara_UVFlippingMode")
+
+$$ @@
+
+ENiagara_UVFlippingMode !@@unset
+ENiagara_UVFlippingMode !@@random_x
+ENiagara_UVFlippingMode !@@random_y
+ENiagara_UVFlippingMode !@@random_x_y
+ENiagara_UVFlippingMode !@@custom
+ENiagara_UVFlippingMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_UVFlippingMode
+// EnumPath: /Niagara/Enums/ENiagara_UVFlippingMode.ENiagara_UVFlippingMode
+
+()
+
+  [
+  @@unset:        ENiagara_UVFlippingMode!int(0)
+  @@random_x:     ENiagara_UVFlippingMode!int(1)
+  @@random_y:     ENiagara_UVFlippingMode!int(2)
+  @@random_x_y:   ENiagara_UVFlippingMode!int(3)
+  @@custom:       ENiagara_UVFlippingMode!int(4)
+  @@eniagara_max: ENiagara_UVFlippingMode!int(5)
+  ]
+
+$$ .
