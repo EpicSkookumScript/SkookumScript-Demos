@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_FPS_CharacterPawn_C")
 
 $$ @
 
-/* &raw("UberGraphFrame") PointerToUberGraphFrame !@uber_graph_frame  // Currently unsupported */
 &raw("BaseTurnRate")   Real !@base_turn_rate    // Base Turn Rate
 &raw("BaseLookUpRate") Real !@base_look_up_rate // Base Look Up Rate
 

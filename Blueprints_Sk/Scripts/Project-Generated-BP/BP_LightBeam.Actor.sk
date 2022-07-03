@@ -9,18 +9,18 @@ annotations: &reflected_data &name("BP_LightBeam_C")
 
 $$ @
 
-/* &raw("UISprite")               BillboardComponent !@uisprite                // Currently unsupported */
-/* &raw("GodRayMesh")             StaticMeshComponent !@god_ray_mesh            // Currently unsupported */
-/* &raw("Light")                  Actor   !@light                   // Currently unsupported */
-&raw("Width")                  Real    !@width                   // Beam width
-&raw("Length")                 Real    !@length                  // Beam length
-/* &raw("MID")                    MaterialInstanceDynamic !@mid                     // Currently unsupported */
-&raw("Color")                  Color   !@color                   // Beam color
-&raw("Brightness")             Real    !@brightness              // Beam brightness
-&raw("Fade distance")          Real    !@fade_distance           // Distance from camera to fade out
-&raw("Animated")               Boolean !@animated?               // Use animated light beam material
-/* &raw("RandomTime")             RandomStream !@random_time             // Currently unsupported */
-&raw("SpotLight")              Boolean !@spot_light?             // Use cone-shaped falloff texture
-&raw("Use light for rotation") Boolean !@use_light_for_rotation? // Use the light specified in the "Light" field to determine beam rotation
+&raw("UISprite")               BillboardComponent      !@uisprite                // UISprite
+&raw("GodRayMesh")             StaticMeshComponent     !@god_ray_mesh            // God Ray Mesh
+&raw("Light")                  Actor                   !@light                   // Select a light actor to derive rotation from
+&raw("Width")                  Real                    !@width                   // Beam width
+&raw("Length")                 Real                    !@length                  // Beam length
+&raw("MID")                    MaterialInstanceDynamic !@mid                     // MID
+&raw("Color")                  Color                   !@color                   // Beam color
+&raw("Brightness")             Real                    !@brightness              // Beam brightness
+&raw("Fade distance")          Real                    !@fade_distance           // Distance from camera to fade out
+&raw("Animated")               Boolean                 !@animated?               // Use animated light beam material
+&raw("RandomTime")             RandomStream            !@random_time             // Random Time
+&raw("SpotLight")              Boolean                 !@spot_light?             // Use cone-shaped falloff texture
+&raw("Use light for rotation") Boolean                 !@use_light_for_rotation? // Use the light specified in the "Light" field to determine beam rotation
 
 $$ .

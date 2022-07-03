@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_Butterfly_Sk_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")                                                 PointerToUberGraphFrame !@uber_graph_frame                   // Currently unsupported */
 &raw("FlightTarget")                                                   ArrowComponent          !@flight_target                      // Flight Target
 &raw("Sprite2")                                                        BillboardComponent      !@sprite_2                           // Sprite 2
 &raw("Audio_Ground")                                                   AudioComponent          !@audio_ground                       // Audio Ground
@@ -21,16 +20,12 @@ $$ @
 &raw("Base")                                                           ArrowComponent          !@base                               // Base
 &raw("Actor Base")                                                     ArrowComponent          !@actor_base                         // Actor Base
 &raw("Landing_Curve_0_to_1_8B6545844847064B6AE0A284EBD3627D")          Real                    !@landing_curve_0_to_1_8b65          // Landing Curve 0 To 1 8B6545844847064B6AE0A284EBD3627D
-/* &raw("Landing_Curve__Direction_8B6545844847064B6AE0A284EBD3627D")      ETimelineDirection      !@landing_curve_direction_8b65       // Currently unsupported */
 &raw("Landing Curve")                                                  TimelineComponent       !@landing_curve                      // Landing Curve
 &raw("Flight_Curve_Flapping_Motion_D9AA5F6E42D085F582071F9C91E1502A")  Real                    !@flight_curve_flapping_motion_d9aa  // Flight Curve Flapping Motion D9AA5F6E42D085F582071F9C91E1502A
-/* &raw("Flight_Curve__Direction_D9AA5F6E42D085F582071F9C91E1502A")       ETimelineDirection      !@flight_curve_direction_d9aa        // Currently unsupported */
 &raw("Flight Curve")                                                   TimelineComponent       !@flight_curve                       // Flight Curve
 &raw("Resting_Curve_Flapping_Motion_F7CC42C643CF3F152CFB53918317E87F") Real                    !@resting_curve_flapping_motion_f7cc // Resting Curve Flapping Motion F7CC42C643CF3F152CFB53918317E87F
-/* &raw("Resting_Curve__Direction_F7CC42C643CF3F152CFB53918317E87F")      ETimelineDirection      !@resting_curve_direction_f7cc       // Currently unsupported */
 &raw("Resting Curve")                                                  TimelineComponent       !@resting_curve                      // Resting Curve
 &raw("Pulse_Curve_Pulse_475BBD5847A4B5F068C0C890C0E62FDC")             Real                    !@pulse_curve_pulse_475b             // Pulse Curve Pulse 475BBD5847A4B5F068C0C890C0E62FDC
-/* &raw("Pulse_Curve__Direction_475BBD5847A4B5F068C0C890C0E62FDC")        ETimelineDirection      !@pulse_curve_direction_475b         // Currently unsupported */
 &raw("Pulse Curve")                                                    TimelineComponent       !@pulse_curve                        // Pulse Curve
 &raw("Attractor Location")                                             Vector3                 !@attractor_location                 // Location the butterfly will gravitate towards while flying
 &raw("Delta seconds")                                                  Real                    !@delta_seconds                      // Delta Seconds

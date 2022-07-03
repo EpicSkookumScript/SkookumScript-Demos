@@ -9,23 +9,23 @@ annotations: &reflected_data &name("BP_Random_Foliage_C")
 
 $$ @
 
-/* &raw("Radius visualization")  BoxComponent    !@radius_visualization   // Currently unsupported */
-/* &raw("Center")                BillboardComponent !@center                 // Currently unsupported */
-&raw("Number of meshes")      Integer         !@number_of_meshes       // How many meshes to try to spawn
-&raw("Radius")                Real            !@radius                 // How far to spread out the meshes
-&raw("Spawn point")           Vector3         !@spawn_point            // Spawn Point
-&raw("Collision trace range") Real            !@collision_trace_range  // Vertical distance to check for surfaces to align to or obstacles
-/* &raw("Meshes to spawn")       List{StaticMesh} !@meshes_to_spawn        // Currently unsupported */
-&raw("Vertical offset")       Real            !@vertical_offset        // Adjust how much meshes will sink into the ground. Useful in "align to surface" mode where meshes spawn on a rounded surface
-&raw("Align to surface")      Boolean         !@align_to_surface?      // Align meshes to surfaces detected by the collision trace. Meshes will rotate to match the surface angles. If false, meshes will not spawn where they encounter an obstacle
-&raw("Scale max")             Real            !@scale_max              // Maxiumum size for meshes
-&raw("Scale min")             Real            !@scale_min              // Minimum size for meshes
-&raw("Cluster around center") Boolean         !@cluster_around_center? // Whether to cluster around the center point or spread evenly
-&raw("Scale falloff")         Boolean         !@scale_falloff?         // In enabled, meshes will be smaller towards the edges of the radius
-&raw("Transform array")       List{Transform} !@transform_array        // Transform Array
-/* &raw("Random seed")           RandomStream    !@random_seed            // Currently unsupported */
-/* &raw("Instanced meshes")      List{InstancedStaticMeshComponent} !@instanced_meshes       // Currently unsupported */
-/* &raw("NewVar")                Actor           !@new_var                // Currently unsupported */
-&raw("NewVar0")               String          !@new_var_0              // New Var 0
+&raw("Radius visualization")  BoxComponent                       !@radius_visualization   // Radius Visualization
+&raw("Center")                BillboardComponent                 !@center                 // Center
+&raw("Number of meshes")      Integer                            !@number_of_meshes       // How many meshes to try to spawn
+&raw("Radius")                Real                               !@radius                 // How far to spread out the meshes
+&raw("Spawn point")           Vector3                            !@spawn_point            // Spawn Point
+&raw("Collision trace range") Real                               !@collision_trace_range  // Vertical distance to check for surfaces to align to or obstacles
+&raw("Meshes to spawn")       List{StaticMesh}                   !@meshes_to_spawn        // Types of meshes that can be spawned at random
+&raw("Vertical offset")       Real                               !@vertical_offset        // Adjust how much meshes will sink into the ground. Useful in "align to surface" mode where meshes spawn on a rounded surface
+&raw("Align to surface")      Boolean                            !@align_to_surface?      // Align meshes to surfaces detected by the collision trace. Meshes will rotate to match the surface angles. If false, meshes will not spawn where they encounter an obstacle
+&raw("Scale max")             Real                               !@scale_max              // Maxiumum size for meshes
+&raw("Scale min")             Real                               !@scale_min              // Minimum size for meshes
+&raw("Cluster around center") Boolean                            !@cluster_around_center? // Whether to cluster around the center point or spread evenly
+&raw("Scale falloff")         Boolean                            !@scale_falloff?         // In enabled, meshes will be smaller towards the edges of the radius
+&raw("Transform array")       List{Transform}                    !@transform_array        // Transform Array
+&raw("Random seed")           RandomStream                       !@random_seed            // Randomized values are derived from this number. Use different numbers to randomize the mesh locations
+&raw("Instanced meshes")      List{InstancedStaticMeshComponent} !@instanced_meshes       // Array containing one of each mesh type to use as instance templates
+&raw("NewVar")                Actor                              !@new_var                // New Var
+&raw("NewVar0")               String                             !@new_var_0              // New Var 0
 
 $$ .

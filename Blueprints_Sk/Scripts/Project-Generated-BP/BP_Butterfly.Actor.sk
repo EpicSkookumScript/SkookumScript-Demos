@@ -9,43 +9,38 @@ annotations: &reflected_data &name("BP_Butterfly_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")                                                     PointerToUberGraphFrame !@uber_graph_frame                       // Currently unsupported */
-/* &raw("Flight target")                                                      ArrowComponent !@flight_target                          // Currently unsupported */
-/* &raw("Sprite2")                                                            BillboardComponent !@sprite_2                               // Currently unsupported */
-/* &raw("Audio_Ground")                                                       AudioComponent !@audio_ground                           // Currently unsupported */
-/* &raw("Audio_Flight")                                                       AudioComponent !@audio_flight                           // Currently unsupported */
-/* &raw("Trail")                                                              ParticleSystemComponent !@trail                                  // Currently unsupported */
-/* &raw("Right Wing")                                                         StaticMeshComponent !@right_wing                             // Currently unsupported */
-/* &raw("Left Wing")                                                          StaticMeshComponent !@left_wing                              // Currently unsupported */
-/* &raw("Body")                                                               StaticMeshComponent !@body                                   // Currently unsupported */
-/* &raw("Butterfly base")                                                     ArrowComponent !@butterfly_base                         // Currently unsupported */
-/* &raw("Actor Base")                                                         ArrowComponent !@actor_base                             // Currently unsupported */
-&raw("Pulse_Pulse_71BC8F3F4D2DFD83B18EBC89D59FCD28")                       Real           !@pulse_pulse_71bc                       // Pulse Pulse 71BC8F3F4D2DFD83B18EBC89D59FCD28
-/* &raw("Pulse__Direction_71BC8F3F4D2DFD83B18EBC89D59FCD28")                  ETimelineDirection !@pulse_direction_71bc                   // Currently unsupported */
-/* &raw("Pulse")                                                              TimelineComponent !@pulse                                  // Currently unsupported */
-&raw("Butterfly_Resting_Flapping_Motion_96D01C4D45C603D99287B499F3A8EA19") Real           !@butterfly_resting_flapping_motion_96d0 // Butterfly Resting Flapping Motion 96D01C4D45C603D99287B499F3A8EA19
-/* &raw("Butterfly_Resting__Direction_96D01C4D45C603D99287B499F3A8EA19")      ETimelineDirection !@butterfly_resting_direction_96d0       // Currently unsupported */
-/* &raw("Butterfly Resting")                                                  TimelineComponent !@butterfly_resting                      // Currently unsupported */
-&raw("Butterfly_Landing_0_to_1_1B4FE5DF46AD1EE8C8F60C8E58594EE5")          Real           !@butterfly_landing_0_to_1_1b4f          // Butterfly Landing 0 To 1 1B4FE5DF46AD1EE8C8F60C8E58594EE5
-/* &raw("Butterfly_Landing__Direction_1B4FE5DF46AD1EE8C8F60C8E58594EE5")      ETimelineDirection !@butterfly_landing_direction_1b4f       // Currently unsupported */
-/* &raw("Butterfly Landing")                                                  TimelineComponent !@butterfly_landing                      // Currently unsupported */
-&raw("Butterfly_Flight_Flapping_Motion_ADC700944B2EBD6C66A23AA6DB561373")  Real           !@butterfly_flight_flapping_motion_adc7  // Butterfly Flight Flapping Motion ADC700944B2EBD6C66A23AA6DB561373
-/* &raw("Butterfly_Flight__Direction_ADC700944B2EBD6C66A23AA6DB561373")       ETimelineDirection !@butterfly_flight_direction_adc7        // Currently unsupported */
-/* &raw("Butterfly Flight")                                                   TimelineComponent !@butterfly_flight                       // Currently unsupported */
-&raw("Attractor Location")                                                 Vector3        !@attractor_location                     // Location the butterfly will gravitate towards while flying
-/* &raw("Surface")                                                            Actor          !@surface                                // Currently unsupported */
-&raw("Flying forward")                                                     Boolean        !@flying_forward?                        // Flying Forward
-&raw("Delta seconds")                                                      Real           !@delta_seconds                          // Delta Seconds
-&raw("Landing start rot")                                                  RotationAngles !@landing_start_rot                      // Landing Start Rot
-&raw("Landing Start")                                                      Vector3        !@landing_start                          // Landing Start
-&raw("Collision on")                                                       Boolean        !@collision_on?                          // Collision On
-&raw("Max flight range")                                                   Real           !@max_flight_range                       // Distance from attractor location the butterfly can fly
-&raw("Forward speed")                                                      Real           !@forward_speed                          // Forward Speed
-&raw("Upward speed")                                                       Real           !@upward_speed                           // Upward Speed
-&raw("Time in flight")                                                     Integer        !@time_in_flight                         // Time In Flight
-/* &raw("Wing Material")                                                      MaterialInstanceDynamic !@wing_material                          // Currently unsupported */
-&raw("Wing color")                                                         Color          !@wing_color                             // Choose a color for the butterfly wings
-/* &raw("Flying Soundcue")                                                    SoundBase      !@flying_soundcue                        // Currently unsupported */
-/* &raw("Resting Soundcue")                                                   SoundBase      !@resting_soundcue                       // Currently unsupported */
+&raw("Flight target")                                                      ArrowComponent          !@flight_target                          // Flight Target
+&raw("Sprite2")                                                            BillboardComponent      !@sprite_2                               // Sprite 2
+&raw("Audio_Ground")                                                       AudioComponent          !@audio_ground                           // Audio Ground
+&raw("Audio_Flight")                                                       AudioComponent          !@audio_flight                           // Audio Flight
+&raw("Trail")                                                              ParticleSystemComponent !@trail                                  // Trail
+&raw("Right Wing")                                                         StaticMeshComponent     !@right_wing                             // Right Wing
+&raw("Left Wing")                                                          StaticMeshComponent     !@left_wing                              // Left Wing
+&raw("Body")                                                               StaticMeshComponent     !@body                                   // Body
+&raw("Butterfly base")                                                     ArrowComponent          !@butterfly_base                         // Butterfly Base
+&raw("Actor Base")                                                         ArrowComponent          !@actor_base                             // Actor Base
+&raw("Pulse_Pulse_71BC8F3F4D2DFD83B18EBC89D59FCD28")                       Real                    !@pulse_pulse_71bc                       // Pulse Pulse 71BC8F3F4D2DFD83B18EBC89D59FCD28
+&raw("Pulse")                                                              TimelineComponent       !@pulse                                  // Pulse
+&raw("Butterfly_Resting_Flapping_Motion_96D01C4D45C603D99287B499F3A8EA19") Real                    !@butterfly_resting_flapping_motion_96d0 // Butterfly Resting Flapping Motion 96D01C4D45C603D99287B499F3A8EA19
+&raw("Butterfly Resting")                                                  TimelineComponent       !@butterfly_resting                      // Butterfly Resting
+&raw("Butterfly_Landing_0_to_1_1B4FE5DF46AD1EE8C8F60C8E58594EE5")          Real                    !@butterfly_landing_0_to_1_1b4f          // Butterfly Landing 0 To 1 1B4FE5DF46AD1EE8C8F60C8E58594EE5
+&raw("Butterfly Landing")                                                  TimelineComponent       !@butterfly_landing                      // Butterfly Landing
+&raw("Butterfly_Flight_Flapping_Motion_ADC700944B2EBD6C66A23AA6DB561373")  Real                    !@butterfly_flight_flapping_motion_adc7  // Butterfly Flight Flapping Motion ADC700944B2EBD6C66A23AA6DB561373
+&raw("Butterfly Flight")                                                   TimelineComponent       !@butterfly_flight                       // Butterfly Flight
+&raw("Attractor Location")                                                 Vector3                 !@attractor_location                     // Location the butterfly will gravitate towards while flying
+&raw("Surface")                                                            Actor                   !@surface                                // Surface
+&raw("Flying forward")                                                     Boolean                 !@flying_forward?                        // Flying Forward
+&raw("Delta seconds")                                                      Real                    !@delta_seconds                          // Delta Seconds
+&raw("Landing start rot")                                                  RotationAngles          !@landing_start_rot                      // Landing Start Rot
+&raw("Landing Start")                                                      Vector3                 !@landing_start                          // Landing Start
+&raw("Collision on")                                                       Boolean                 !@collision_on?                          // Collision On
+&raw("Max flight range")                                                   Real                    !@max_flight_range                       // Distance from attractor location the butterfly can fly
+&raw("Forward speed")                                                      Real                    !@forward_speed                          // Forward Speed
+&raw("Upward speed")                                                       Real                    !@upward_speed                           // Upward Speed
+&raw("Time in flight")                                                     Integer                 !@time_in_flight                         // Time In Flight
+&raw("Wing Material")                                                      MaterialInstanceDynamic !@wing_material                          // Wing Material
+&raw("Wing color")                                                         Color                   !@wing_color                             // Choose a color for the butterfly wings
+&raw("Flying Soundcue")                                                    SoundBase               !@flying_soundcue                        // Set flight looping soundcue
+&raw("Resting Soundcue")                                                   SoundBase               !@resting_soundcue                       // Set ground looping soundcue
 
 $$ .

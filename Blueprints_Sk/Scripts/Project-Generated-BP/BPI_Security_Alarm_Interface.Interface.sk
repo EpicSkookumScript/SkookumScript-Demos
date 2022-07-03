@@ -9,6 +9,16 @@ annotations: &reflected_data &name("BPI_Security_Alarm_Interface_C")
 
 $$ @
 
+$$ @scene_capture_activation
+// Scene Capture Activation
+//
+// UE4 name of this method: Scene capture activation
+
+&aka("Scene capture activation")
+
+(Boolean               activation?     : false
+ TextureRenderTarget2D capture_texture : TextureRenderTarget2D!null) 
+
 $$ @monitor_camera_swap
 // Monitor Camera Swap
 //

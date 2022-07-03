@@ -1,0 +1,30 @@
+// Toggles the behavior of the random number generator.
+//
+// UE4 name of this enum: ENiagaraRandomnessMode
+
+// UE4 Asset Name: ENiagaraRandomnessMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraRandomnessMode"
+
+annotations: &reflected_data &name("ENiagaraRandomnessMode")
+
+$$ @@
+
+ENiagaraRandomnessMode !@@simulation_defaults
+ENiagaraRandomnessMode !@@determinisitic
+ENiagaraRandomnessMode !@@non_deterministic
+ENiagaraRandomnessMode !@@eniagara_randomness_mode_max
+
+$$ @@!
+// ENiagaraRandomnessMode
+// EnumPath: /Niagara/Enums/ENiagaraRandomnessMode.ENiagaraRandomnessMode
+
+()
+
+  [
+  @@simulation_defaults:          ENiagaraRandomnessMode!int(0)
+  @@determinisitic:               ENiagaraRandomnessMode!int(1)
+  @@non_deterministic:            ENiagaraRandomnessMode!int(2)
+  @@eniagara_randomness_mode_max: ENiagaraRandomnessMode!int(3)
+  ]
+
+$$ .

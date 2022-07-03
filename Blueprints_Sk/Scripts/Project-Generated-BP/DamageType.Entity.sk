@@ -1,0 +1,13 @@
+// A DamageType is intended to define and describe a particular form of damage and to provide an avenue
+// for customizing responses to damage from various sources.
+// 
+// For example, a game could make a DamageType_Fire set it up to ignite the damaged actor.
+// 
+// DamageTypes are never instanced and should be treated as immutable data holders with static code
+// functionality.  They should never be stateful.
+//
+// UE4 name of this class: DamageType
+
+annotations: &reflected_cpp &name("DamageType")
+
+$$ .

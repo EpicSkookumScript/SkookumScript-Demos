@@ -9,9 +9,18 @@ annotations: &reflected_data &name("BP_BlueprintExamples_GameMode_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
-/* &raw("Audio_Music")AudioComponent !@audio_music  // Currently unsupported */
-&raw("AlarmState") Boolean !@alarm_state? // Alarm State
+&raw("Audio_Music") AudioComponent !@audio_music  // Audio Music
+&raw("AlarmState")  Boolean        !@alarm_state? // Alarm State
+
+$$ @scene_capture_activation
+// Scene Capture Activation
+//
+// UE4 name of this method: Scene capture activation
+
+&aka("Scene capture activation")
+
+(Boolean               activation?     : false
+ TextureRenderTarget2D capture_texture : TextureRenderTarget2D!null) 
 
 $$ @security_alarm_interface
 // Security Alarm Interface

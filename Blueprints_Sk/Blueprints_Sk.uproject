@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.24",
+	"EngineAssociation": "4.27",
 	"Category": "SkookumScript",
 	"Description": "Modified version of original 'Blueprints' demo project using SkookumScript to replace the butterfly Blueprint.",
 	"Plugins": [
