@@ -1,0 +1,36 @@
+// ENiagara Timeline Output
+//
+// UE4 name of this enum: ENiagara_TimelineOutput
+
+// UE4 Asset Name: ENiagara_TimelineOutput
+// UE4 Package Name: "/Niagara/Enums/Utility/ENiagara_TimelineOutput"
+
+annotations: &reflected_data &name("ENiagara_TimelineOutput")
+
+$$ @@
+
+ENiagara_TimelineOutput !@@none
+ENiagara_TimelineOutput !@@float
+ENiagara_TimelineOutput !@@vector_2d
+ENiagara_TimelineOutput !@@vector
+ENiagara_TimelineOutput !@@linear_color
+ENiagara_TimelineOutput !@@integer
+ENiagara_TimelineOutput !@@eniagara_max
+
+$$ @@!
+// ENiagara_TimelineOutput
+// EnumPath: /Niagara/Enums/Utility/ENiagara_TimelineOutput.ENiagara_TimelineOutput
+
+()
+
+  [
+  @@none:         ENiagara_TimelineOutput!int(0)
+  @@float:        ENiagara_TimelineOutput!int(1)
+  @@vector_2d:    ENiagara_TimelineOutput!int(2)
+  @@vector:       ENiagara_TimelineOutput!int(3)
+  @@linear_color: ENiagara_TimelineOutput!int(4)
+  @@integer:      ENiagara_TimelineOutput!int(5)
+  @@eniagara_max: ENiagara_TimelineOutput!int(6)
+  ]
+
+$$ .

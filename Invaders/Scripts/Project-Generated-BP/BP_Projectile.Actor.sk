@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_Projectile_C")
 
 $$ @
 
-/* &raw("UberGraphFrame") PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
 &raw("PointLight")     PointLightComponent     !@point_light     // Point Light
 &raw("ParticleSystem") ParticleSystemComponent !@particle_system // Particle System
 &raw("Sphere")         SphereComponent         !@sphere          // Sphere

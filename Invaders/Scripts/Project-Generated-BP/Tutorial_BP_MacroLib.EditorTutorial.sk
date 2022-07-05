@@ -1,0 +1,12 @@
+// Tutorial BP Macro Lib
+//
+// UE4 name of this class: Tutorial_BP_MacroLib_C
+
+// UE4 Asset Name: Tutorial_BP_MacroLib
+// UE4 Package Name: "/Engine/Tutorial/BlueprintTutorials/TutorialAssets/Tutorial_BP_MacroLib"
+
+annotations: &reflected_data &name("Tutorial_BP_MacroLib_C")
+
+$$ @
+
+$$ .

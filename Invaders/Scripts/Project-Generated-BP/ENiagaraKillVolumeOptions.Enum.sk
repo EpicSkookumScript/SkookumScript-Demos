@@ -1,0 +1,34 @@
+// ENiagara Kill Volume Options
+//
+// UE4 name of this enum: ENiagaraKillVolumeOptions
+
+// UE4 Asset Name: ENiagaraKillVolumeOptions
+// UE4 Package Name: "/Niagara/Enums/ENiagaraKillVolumeOptions"
+
+annotations: &reflected_data &name("ENiagaraKillVolumeOptions")
+
+$$ @@
+
+ENiagaraKillVolumeOptions !@@sphere
+ENiagaraKillVolumeOptions !@@box
+ENiagaraKillVolumeOptions !@@plane
+ENiagaraKillVolumeOptions !@@slab
+ENiagaraKillVolumeOptions !@@cone
+ENiagaraKillVolumeOptions !@@eniagara_kill_volume_options_max
+
+$$ @@!
+// ENiagaraKillVolumeOptions
+// EnumPath: /Niagara/Enums/ENiagaraKillVolumeOptions.ENiagaraKillVolumeOptions
+
+()
+
+  [
+  @@sphere:                           ENiagaraKillVolumeOptions!int(0)
+  @@box:                              ENiagaraKillVolumeOptions!int(1)
+  @@plane:                            ENiagaraKillVolumeOptions!int(2)
+  @@slab:                             ENiagaraKillVolumeOptions!int(3)
+  @@cone:                             ENiagaraKillVolumeOptions!int(4)
+  @@eniagara_kill_volume_options_max: ENiagaraKillVolumeOptions!int(5)
+  ]
+
+$$ .

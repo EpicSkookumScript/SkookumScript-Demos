@@ -9,16 +9,25 @@ annotations: &reflected_data &name("BP_Security_Flashing_Alarm_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")               PointerToUberGraphFrame !@uber_graph_frame              // Currently unsupported */
-/* &raw("OffLight")                     PointLightComponent !@off_light                     // Currently unsupported */
-/* &raw("SpotLight")                    SpotLightComponent !@spot_light                    // Currently unsupported */
-/* &raw("Alarm mesh")                   StaticMeshComponent !@alarm_mesh                    // Currently unsupported */
-&raw("Light Rotation Speed")         Real    !@light_rotation_speed          // Light Rotation Speed
-&raw("Test Alarm Material Settings") Boolean !@test_alarm_material_settings? // Test Alarm Material Settings
-&raw("Alarm Off Light Color")        Color   !@alarm_off_light_color         // Alarm Off Light Color
-&raw("Alarm On Light Color")         Color   !@alarm_on_light_color          // Alarm on Light Color
-&raw("Alarm State")                  Boolean !@alarm_state?                  // Alarm State
-/* &raw("Alarm Material")               MaterialInstanceDynamic !@alarm_material                // Currently unsupported */
+&raw("OffLight")                     PointLightComponent     !@off_light                     // Off Light
+&raw("SpotLight")                    SpotLightComponent      !@spot_light                    // Spot Light
+&raw("Alarm mesh")                   StaticMeshComponent     !@alarm_mesh                    // Alarm Mesh
+&raw("Light Rotation Speed")         Real                    !@light_rotation_speed          // Light Rotation Speed
+&raw("Test Alarm Material Settings") Boolean                 !@test_alarm_material_settings? // Test Alarm Material Settings
+&raw("Alarm Off Light Color")        Color                   !@alarm_off_light_color         // Alarm Off Light Color
+&raw("Alarm On Light Color")         Color                   !@alarm_on_light_color          // Alarm on Light Color
+&raw("Alarm State")                  Boolean                 !@alarm_state?                  // Alarm State
+&raw("Alarm Material")               MaterialInstanceDynamic !@alarm_material                // Alarm Material
+
+$$ @scene_capture_activation
+// Scene Capture Activation
+//
+// UE4 name of this method: Scene capture activation
+
+&aka("Scene capture activation")
+
+(Boolean               activation?     : false
+ TextureRenderTarget2D capture_texture : TextureRenderTarget2D!null) 
 
 $$ @monitor_camera_swap
 // Monitor Camera Swap

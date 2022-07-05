@@ -1,0 +1,28 @@
+// ENiagara Attribute Sampling Apply Output
+//
+// UE4 name of this enum: ENiagara_AttributeSamplingApplyOutput
+
+// UE4 Asset Name: ENiagara_AttributeSamplingApplyOutput
+// UE4 Package Name: "/Niagara/Enums/ENiagara_AttributeSamplingApplyOutput"
+
+annotations: &reflected_data &name("ENiagara_AttributeSamplingApplyOutput")
+
+$$ @@
+
+ENiagara_AttributeSamplingApplyOutput !@@apply
+ENiagara_AttributeSamplingApplyOutput !@@output
+ENiagara_AttributeSamplingApplyOutput !@@eniagara_max
+
+$$ @@!
+// ENiagara_AttributeSamplingApplyOutput
+// EnumPath: /Niagara/Enums/ENiagara_AttributeSamplingApplyOutput.ENiagara_AttributeSamplingApplyOutput
+
+()
+
+  [
+  @@apply:        ENiagara_AttributeSamplingApplyOutput!int(0)
+  @@output:       ENiagara_AttributeSamplingApplyOutput!int(1)
+  @@eniagara_max: ENiagara_AttributeSamplingApplyOutput!int(2)
+  ]
+
+$$ .

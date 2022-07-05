@@ -1,0 +1,32 @@
+// ENiagara Sub UVLookup Mode
+//
+// UE4 name of this enum: ENiagara_SubUVLookupMode
+
+// UE4 Asset Name: ENiagara_SubUVLookupMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_SubUVLookupMode"
+
+annotations: &reflected_data &name("ENiagara_SubUVLookupMode")
+
+$$ @@
+
+ENiagara_SubUVLookupMode !@@linear
+ENiagara_SubUVLookupMode !@@curve
+ENiagara_SubUVLookupMode !@@random_
+ENiagara_SubUVLookupMode !@@infinite
+ENiagara_SubUVLookupMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_SubUVLookupMode
+// EnumPath: /Niagara/Enums/ENiagara_SubUVLookupMode.ENiagara_SubUVLookupMode
+
+()
+
+  [
+  @@linear:       ENiagara_SubUVLookupMode!int(0)
+  @@curve:        ENiagara_SubUVLookupMode!int(1)
+  @@random_:      ENiagara_SubUVLookupMode!int(2)
+  @@infinite:     ENiagara_SubUVLookupMode!int(3)
+  @@eniagara_max: ENiagara_SubUVLookupMode!int(4)
+  ]
+
+$$ .

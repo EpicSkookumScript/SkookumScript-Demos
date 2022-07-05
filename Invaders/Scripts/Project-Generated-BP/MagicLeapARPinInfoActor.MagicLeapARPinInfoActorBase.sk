@@ -1,0 +1,49 @@
+// Renders the ID and state of a MagicLeapARPin
+//
+// UE4 name of this class: MagicLeapARPinInfoActor_C
+
+// UE4 Asset Name: MagicLeapARPinInfoActor
+// UE4 Package Name: "/MagicLeapPassableWorld/MagicLeapARPinInfoActor"
+
+annotations: &reflected_data &name("MagicLeapARPinInfoActor_C")
+
+$$ @
+
+&raw("Right")                 StaticMeshComponent !@right                   // Right
+&raw("Forward")               StaticMeshComponent !@forward                 // Forward
+&raw("Up")                    StaticMeshComponent !@up                      // Up
+&raw("ValidRadiusVisualizer") SphereComponent     !@valid_radius_visualizer // Valid Radius Visualizer
+&raw("AxisRoot")              SceneComponent      !@axis_root               // Axis Root
+&raw("VisualizerRoot")        SceneComponent      !@visualizer_root         // Visualizer Root
+&raw("TypeValue")             TextRenderComponent !@type_value              // Type Value
+&raw("TransErrValue")         TextRenderComponent !@trans_err_value         // Trans Err Value
+&raw("RotErrValue")           TextRenderComponent !@rot_err_value           // Rot Err Value
+&raw("ConfidenceValue")       TextRenderComponent !@confidence_value        // Confidence Value
+&raw("TransErrLabel")         TextRenderComponent !@trans_err_label         // Trans Err Label
+&raw("RotErrLabel")           TextRenderComponent !@rot_err_label           // Rot Err Label
+&raw("ConfidenceLabel")       TextRenderComponent !@confidence_label        // Confidence Label
+&raw("PinIDValue")            TextRenderComponent !@pin_idvalue             // Pin IDValue
+&raw("InfoRoot")              SceneComponent      !@info_root               // Info Root
+&raw("Root")                  SceneComponent      !@root                    // Root
+&raw("RotationSmoothSpeed")   Real                !@rotation_smooth_speed   // Rotation Smooth Speed
+
+$$ @update_pin_state
+// Update Pin State
+//
+// UE4 name of this method: UpdatePinState
+
+&aka("UpdatePinState")
+
+() 
+
+$$ @on_update_arpin_state
+// On Update ARPin State
+//
+// UE4 name of this method: OnUpdateARPinState
+// Blueprint category: ContentPersistence|MagicLeap
+
+&aka("OnUpdateARPinState")
+
+() 
+
+$$ .

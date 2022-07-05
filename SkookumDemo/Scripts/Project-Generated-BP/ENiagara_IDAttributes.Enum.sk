@@ -1,0 +1,30 @@
+// ENiagara IDAttributes
+//
+// UE4 name of this enum: ENiagara_IDAttributes
+
+// UE4 Asset Name: ENiagara_IDAttributes
+// UE4 Package Name: "/Niagara/Enums/ENiagara_IDAttributes"
+
+annotations: &reflected_data &name("ENiagara_IDAttributes")
+
+$$ @@
+
+ENiagara_IDAttributes !@@particles_unique_id
+ENiagara_IDAttributes !@@particles_id_index
+ENiagara_IDAttributes !@@particles_id_acquire_tag
+ENiagara_IDAttributes !@@eniagara_max
+
+$$ @@!
+// ENiagara_IDAttributes
+// EnumPath: /Niagara/Enums/ENiagara_IDAttributes.ENiagara_IDAttributes
+
+()
+
+  [
+  @@particles_unique_id:      ENiagara_IDAttributes!int(0)
+  @@particles_id_index:       ENiagara_IDAttributes!int(1)
+  @@particles_id_acquire_tag: ENiagara_IDAttributes!int(2)
+  @@eniagara_max:             ENiagara_IDAttributes!int(3)
+  ]
+
+$$ .

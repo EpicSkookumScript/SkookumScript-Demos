@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_ShieldBlock_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")  PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
 &raw("HealthComponent") HealthComponent     !@health_component // Health Component
 &raw("Cube")            StaticMeshComponent !@cube             // Cube
 

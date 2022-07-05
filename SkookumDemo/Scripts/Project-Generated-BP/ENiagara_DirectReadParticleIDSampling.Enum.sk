@@ -1,0 +1,30 @@
+// ENiagara Direct Read Particle IDSampling
+//
+// UE4 name of this enum: ENiagara_DirectReadParticleIDSampling
+
+// UE4 Asset Name: ENiagara_DirectReadParticleIDSampling
+// UE4 Package Name: "/Niagara/Enums/ENiagara_DirectReadParticleIDSampling"
+
+annotations: &reflected_data &name("ENiagara_DirectReadParticleIDSampling")
+
+$$ @@
+
+ENiagara_DirectReadParticleIDSampling !@@disabled
+ENiagara_DirectReadParticleIDSampling !@@apply_sampled_id_as_ribbon_id
+ENiagara_DirectReadParticleIDSampling !@@output_only
+ENiagara_DirectReadParticleIDSampling !@@eniagara_max
+
+$$ @@!
+// ENiagara_DirectReadParticleIDSampling
+// EnumPath: /Niagara/Enums/ENiagara_DirectReadParticleIDSampling.ENiagara_DirectReadParticleIDSampling
+
+()
+
+  [
+  @@disabled:                      ENiagara_DirectReadParticleIDSampling!int(0)
+  @@apply_sampled_id_as_ribbon_id: ENiagara_DirectReadParticleIDSampling!int(1)
+  @@output_only:                   ENiagara_DirectReadParticleIDSampling!int(2)
+  @@eniagara_max:                  ENiagara_DirectReadParticleIDSampling!int(3)
+  ]
+
+$$ .

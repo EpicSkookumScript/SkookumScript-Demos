@@ -1,0 +1,30 @@
+// ENiagara Expansion Mode
+//
+// UE4 name of this enum: ENiagaraExpansionMode
+
+// UE4 Asset Name: ENiagaraExpansionMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraExpansionMode"
+
+annotations: &reflected_data &name("ENiagaraExpansionMode")
+
+$$ @@
+
+ENiagaraExpansionMode !@@inside
+ENiagaraExpansionMode !@@centered
+ENiagaraExpansionMode !@@outside
+ENiagaraExpansionMode !@@eniagara_expansion_mode_max
+
+$$ @@!
+// ENiagaraExpansionMode
+// EnumPath: /Niagara/Enums/ENiagaraExpansionMode.ENiagaraExpansionMode
+
+()
+
+  [
+  @@inside:                      ENiagaraExpansionMode!int(0)
+  @@centered:                    ENiagaraExpansionMode!int(1)
+  @@outside:                     ENiagaraExpansionMode!int(2)
+  @@eniagara_expansion_mode_max: ENiagaraExpansionMode!int(3)
+  ]
+
+$$ .

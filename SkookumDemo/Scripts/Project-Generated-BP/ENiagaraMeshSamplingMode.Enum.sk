@@ -1,0 +1,28 @@
+// ENiagara Mesh Sampling Mode
+//
+// UE4 name of this enum: ENiagaraMeshSamplingMode
+
+// UE4 Asset Name: ENiagaraMeshSamplingMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraMeshSamplingMode"
+
+annotations: &reflected_data &name("ENiagaraMeshSamplingMode")
+
+$$ @@
+
+ENiagaraMeshSamplingMode !@@random_
+ENiagaraMeshSamplingMode !@@direct
+ENiagaraMeshSamplingMode !@@eniagara_mesh_sampling_mode_max
+
+$$ @@!
+// ENiagaraMeshSamplingMode
+// EnumPath: /Niagara/Enums/ENiagaraMeshSamplingMode.ENiagaraMeshSamplingMode
+
+()
+
+  [
+  @@random_:                         ENiagaraMeshSamplingMode!int(0)
+  @@direct:                          ENiagaraMeshSamplingMode!int(1)
+  @@eniagara_mesh_sampling_mode_max: ENiagaraMeshSamplingMode!int(2)
+  ]
+
+$$ .

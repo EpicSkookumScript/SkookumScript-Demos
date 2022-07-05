@@ -1,0 +1,32 @@
+// ENiagara Scale Sprite Size
+//
+// UE4 name of this enum: ENiagara_ScaleSpriteSize
+
+// UE4 Asset Name: ENiagara_ScaleSpriteSize
+// UE4 Package Name: "/Niagara/Enums/SpriteRenderer/ENiagara_ScaleSpriteSize"
+
+annotations: &reflected_data &name("ENiagara_ScaleSpriteSize")
+
+$$ @@
+
+ENiagara_ScaleSpriteSize !@@uniform
+ENiagara_ScaleSpriteSize !@@uniform_curve
+ENiagara_ScaleSpriteSize !@@non_uniform
+ENiagara_ScaleSpriteSize !@@non_uniform_curve
+ENiagara_ScaleSpriteSize !@@eniagara_max
+
+$$ @@!
+// ENiagara_ScaleSpriteSize
+// EnumPath: /Niagara/Enums/SpriteRenderer/ENiagara_ScaleSpriteSize.ENiagara_ScaleSpriteSize
+
+()
+
+  [
+  @@uniform:           ENiagara_ScaleSpriteSize!int(0)
+  @@uniform_curve:     ENiagara_ScaleSpriteSize!int(1)
+  @@non_uniform:       ENiagara_ScaleSpriteSize!int(2)
+  @@non_uniform_curve: ENiagara_ScaleSpriteSize!int(3)
+  @@eniagara_max:      ENiagara_ScaleSpriteSize!int(4)
+  ]
+
+$$ .

@@ -1,0 +1,12 @@
+// Static Mesh Editor Tutorial
+//
+// UE4 name of this class: StaticMeshEditorTutorial_C
+
+// UE4 Asset Name: StaticMeshEditorTutorial
+// UE4 Package Name: "/Engine/Tutorial/SubEditors/StaticMeshEditorTutorial"
+
+annotations: &reflected_data &name("StaticMeshEditorTutorial_C")
+
+$$ @
+
+$$ .

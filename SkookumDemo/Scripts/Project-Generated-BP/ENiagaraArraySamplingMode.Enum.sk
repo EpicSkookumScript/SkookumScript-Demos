@@ -1,0 +1,30 @@
+// ENiagara Array Sampling Mode
+//
+// UE4 name of this enum: ENiagaraArraySamplingMode
+
+// UE4 Asset Name: ENiagaraArraySamplingMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraArraySamplingMode"
+
+annotations: &reflected_data &name("ENiagaraArraySamplingMode")
+
+$$ @@
+
+ENiagaraArraySamplingMode !@@random_
+ENiagaraArraySamplingMode !@@direct_set
+ENiagaraArraySamplingMode !@@interpolate
+ENiagaraArraySamplingMode !@@eniagara_array_sampling_mode_max
+
+$$ @@!
+// ENiagaraArraySamplingMode
+// EnumPath: /Niagara/Enums/ENiagaraArraySamplingMode.ENiagaraArraySamplingMode
+
+()
+
+  [
+  @@random_:                          ENiagaraArraySamplingMode!int(0)
+  @@direct_set:                       ENiagaraArraySamplingMode!int(1)
+  @@interpolate:                      ENiagaraArraySamplingMode!int(2)
+  @@eniagara_array_sampling_mode_max: ENiagaraArraySamplingMode!int(3)
+  ]
+
+$$ .

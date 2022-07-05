@@ -1,0 +1,30 @@
+// ENiagara Angle Input
+//
+// UE4 name of this enum: ENiagara_AngleInput
+
+// UE4 Asset Name: ENiagara_AngleInput
+// UE4 Package Name: "/Niagara/Enums/Angles/ENiagara_AngleInput"
+
+annotations: &reflected_data &name("ENiagara_AngleInput")
+
+$$ @@
+
+ENiagara_AngleInput !@@degrees
+ENiagara_AngleInput !@@normalized_angle_0_1_
+ENiagara_AngleInput !@@radians
+ENiagara_AngleInput !@@eniagara_max
+
+$$ @@!
+// ENiagara_AngleInput
+// EnumPath: /Niagara/Enums/Angles/ENiagara_AngleInput.ENiagara_AngleInput
+
+()
+
+  [
+  @@degrees:               ENiagara_AngleInput!int(0)
+  @@normalized_angle_0_1_: ENiagara_AngleInput!int(1)
+  @@radians:               ENiagara_AngleInput!int(2)
+  @@eniagara_max:          ENiagara_AngleInput!int(3)
+  ]
+
+$$ .

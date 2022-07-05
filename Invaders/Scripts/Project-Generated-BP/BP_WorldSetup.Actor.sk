@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_WorldSetup_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")       PointerToUberGraphFrame !@uber_graph_frame       // Currently unsupported */
 &raw("PlayerEntranceSpline") SplineComponent !@player_entrance_spline // Player Entrance Spline
 &raw("DefaultSceneRoot")     SceneComponent  !@default_scene_root     // Default Scene Root
 &raw("EnableDebug")          Boolean         !@enable_debug?          // Enable Debug

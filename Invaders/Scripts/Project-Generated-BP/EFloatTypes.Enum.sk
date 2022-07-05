@@ -1,0 +1,32 @@
+// EFloat Types
+//
+// UE4 name of this enum: EFloatTypes
+
+// UE4 Asset Name: EFloatTypes
+// UE4 Package Name: "/Engine/ArtTools/RenderToTexture/Enums/EFloatTypes"
+
+annotations: &reflected_data &name("EFloatTypes")
+
+$$ @@
+
+EFloatTypes !@@float
+EFloatTypes !@@float_2
+EFloatTypes !@@float_3
+EFloatTypes !@@float_4
+EFloatTypes !@@efloat_types_max
+
+$$ @@!
+// EFloatTypes
+// EnumPath: /Engine/ArtTools/RenderToTexture/Enums/EFloatTypes.EFloatTypes
+
+()
+
+  [
+  @@float:            EFloatTypes!int(0)
+  @@float_2:          EFloatTypes!int(1)
+  @@float_3:          EFloatTypes!int(2)
+  @@float_4:          EFloatTypes!int(3)
+  @@efloat_types_max: EFloatTypes!int(4)
+  ]
+
+$$ .

@@ -1,0 +1,28 @@
+// ENiagara CPUCollision Type
+//
+// UE4 name of this enum: ENiagara_CPUCollisionType
+
+// UE4 Asset Name: ENiagara_CPUCollisionType
+// UE4 Package Name: "/Niagara/Enums/ENiagara_CPUCollisionType"
+
+annotations: &reflected_data &name("ENiagara_CPUCollisionType")
+
+$$ @@
+
+ENiagara_CPUCollisionType !@@ray_traced
+ENiagara_CPUCollisionType !@@analytical_planes
+ENiagara_CPUCollisionType !@@eniagara_max
+
+$$ @@!
+// ENiagara_CPUCollisionType
+// EnumPath: /Niagara/Enums/ENiagara_CPUCollisionType.ENiagara_CPUCollisionType
+
+()
+
+  [
+  @@ray_traced:        ENiagara_CPUCollisionType!int(0)
+  @@analytical_planes: ENiagara_CPUCollisionType!int(1)
+  @@eniagara_max:      ENiagara_CPUCollisionType!int(2)
+  ]
+
+$$ .

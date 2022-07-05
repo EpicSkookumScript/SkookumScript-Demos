@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_Invasion_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")             PointerToUberGraphFrame !@uber_graph_frame              // Currently unsupported */
 &raw("InvaderMovement")            InvaderMovement   !@invader_movement              // Invader Movement
 &raw("PatternSpawner")             PatternSpawner    !@pattern_spawner               // Pattern Spawner
 &raw("DefaultSceneRoot")           SceneComponent    !@default_scene_root            // Default Scene Root

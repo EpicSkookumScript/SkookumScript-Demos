@@ -1,0 +1,42 @@
+// Render to Texture Function Library
+//
+// UE4 name of this class: RenderToTextureFunctionLibrary_C
+
+// UE4 Asset Name: RenderToTextureFunctionLibrary
+// UE4 Package Name: "/Engine/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary"
+
+annotations: &reflected_data &name("RenderToTextureFunctionLibrary_C")
+
+$$ @
+
+$$ @@canvas_material_scale_and_position_set
+// Set Canvas Material Scale And Position
+//
+// UE4 name of this method: Set Canvas Material Scale and Position
+
+&aka("Set Canvas Material Scale and Position")
+
+(Vector2 size            : Vector2!
+ Vector2 position        : Vector2!
+ Real    scale           : 0.0
+ Entity  world_context   : Entity!null
+ Vector2 screen_position : Vector2!
+ Vector2 screen_size     : Vector2!) 
+
+$$ @@array_to_hlsl_int_array
+// Array To HLSL Int Array
+//
+// UE4 name of this method: Array to HLSL Int Array
+
+&aka("Array to HLSL Int Array")
+
+(EIntTypes     type          : EIntTypes.@@int
+ String        variable_name : ""
+ List{Integer} int           : List{Integer}!
+ List{Vector2} int_2         : List{Vector2}!
+ List{Vector3} int_3         : List{Vector3}!
+ List{Color}   int_4         : List{Color}!
+ Entity        world_context : Entity!null
+ String        string        : "") 
+
+$$ .

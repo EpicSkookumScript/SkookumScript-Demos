@@ -9,10 +9,8 @@ annotations: &reflected_data &name("BP_Saucer_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")  PointerToUberGraphFrame !@uber_graph_frame // Currently unsupported */
 &raw("SK_saucer")       SkeletalMeshComponent !@sk_saucer        // SK Saucer
 &raw("Audio")           AudioComponent        !@audio            // Audio
-/* &raw("SkookumScriptClassData")SkookumScriptClassDataComponent !@skookum_script_class_data // Currently unsupported */
 &raw("Scene")           SceneComponent        !@scene            // Scene
 &raw("InvaderMovement") InvaderMovement       !@invader_movement // Invader Movement
 &raw("HealthComponent") HealthComponent       !@health_component // Health Component

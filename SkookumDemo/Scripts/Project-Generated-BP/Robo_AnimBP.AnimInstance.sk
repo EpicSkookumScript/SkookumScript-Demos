@@ -9,23 +9,8 @@ annotations: &reflected_data &name("Robo_AnimBP_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")                                                  PointerToUberGraphFrame   !@uber_graph_frame                        // Currently unsupported */
-&raw("AnimGraphNode_Root_AF35223845F66BC935FAB9B7C25566A2")             AnimNode_Root             !@anim_graph_node_root_af35               // Anim Graph Node Root AF35223845F66BC935FAB9B7C25566A2
-&raw("AnimGraphNode_TransitionResult_0CAB34614C62744C6A6A4E917949F322") AnimNode_TransitionResult !@anim_graph_node_transition_result_0cab  // Anim Graph Node Transition Result 0CAB34614C62744C6A6A4E917949F322
-&raw("AnimGraphNode_TransitionResult_9A8B6C0B430CD046D7842C9D69CD583C") AnimNode_TransitionResult !@anim_graph_node_transition_result_9a8b  // Anim Graph Node Transition Result 9A8B6C0B430CD046D7842C9D69CD583C
-&raw("AnimGraphNode_TransitionResult_0C5A0A6646FF70EEC4CBD296F9351AEA") AnimNode_TransitionResult !@anim_graph_node_transition_result_0c5a  // Anim Graph Node Transition Result 0C5A0A6646FF70EEC4CBD296F9351AEA
-&raw("AnimGraphNode_TransitionResult_68A2BE6E4287A656EE2E879EC2955B7A") AnimNode_TransitionResult !@anim_graph_node_transition_result_68a2  // Anim Graph Node Transition Result 68A2BE6E4287A656EE2E879EC2955B7A
-&raw("AnimGraphNode_BlendSpacePlayer_5B89DEDF483C3C1B0F6E9D8ED7C8548F") AnimNode_BlendSpacePlayer !@anim_graph_node_blend_space_player_5b89 // Anim Graph Node Blend Space Player 5B89DEDF483C3C1B0F6E9D8ED7C8548F
-&raw("AnimGraphNode_StateResult_B9C5E6704F72CBD0D3F54D837D6A731C")      AnimNode_StateResult      !@anim_graph_node_state_result_b9c5       // Anim Graph Node State Result B9C5E6704F72CBD0D3F54D837D6A731C
-&raw("AnimGraphNode_SequencePlayer_4452B5664273FF211DCDDA9A823D78DC")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_4452    // Anim Graph Node Sequence Player 4452B5664273FF211DCDDA9A823D78DC
-&raw("AnimGraphNode_StateResult_B1B50A8446CB59A88705FDA9F4843BE8")      AnimNode_StateResult      !@anim_graph_node_state_result_b1b5       // Anim Graph Node State Result B1B50A8446CB59A88705FDA9F4843BE8
-&raw("AnimGraphNode_SequencePlayer_8877C8454020768A740435B0981DAC77")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_8877    // Anim Graph Node Sequence Player 8877C8454020768A740435B0981DAC77
-&raw("AnimGraphNode_StateResult_DFB001D44CB2E980C81683B0A919E931")      AnimNode_StateResult      !@anim_graph_node_state_result_dfb0       // Anim Graph Node State Result DFB001D44CB2E980C81683B0A919E931
-&raw("AnimGraphNode_SequencePlayer_6049D20D499181EE284979850BE2B1C2")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_6049    // Anim Graph Node Sequence Player 6049D20D499181EE284979850BE2B1C2
-&raw("AnimGraphNode_StateResult_B87A0CFE499071988033D2BA39F6D433")      AnimNode_StateResult      !@anim_graph_node_state_result_b87a       // Anim Graph Node State Result B87A0CFE499071988033D2BA39F6D433
-&raw("AnimGraphNode_StateMachine_2F350AF3488315B1CCEA1CA7304723F7")     AnimNode_StateMachine     !@anim_graph_node_state_machine_2f35      // Anim Graph Node State Machine 2F350AF3488315B1CCEA1CA7304723F7
-&raw("IsInAir?")                                                        Boolean                   !@is_in_air?                              // Is in Air?
-&raw("Speed")                                                           Real                      !@speed                                   // Speed
+&raw("IsInAir?") Boolean !@is_in_air? // Is in Air?
+&raw("Speed")    Real    !@speed      // Speed
 
 $$ @anim_graph
 // Anim Graph

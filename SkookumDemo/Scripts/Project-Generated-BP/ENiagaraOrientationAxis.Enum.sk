@@ -1,0 +1,30 @@
+// This is a legacy asset and should be redirected in practice.
+//
+// UE4 name of this enum: ENiagaraOrientationAxis
+
+// UE4 Asset Name: ENiagaraOrientationAxis
+// UE4 Package Name: "/Niagara/Enums/ENiagaraOrientationAxis"
+
+annotations: &reflected_data &name("ENiagaraOrientationAxis")
+
+$$ @@
+
+ENiagaraOrientationAxis !@@x_axis
+ENiagaraOrientationAxis !@@y_axis
+ENiagaraOrientationAxis !@@z_axis
+ENiagaraOrientationAxis !@@eniagara_orientation_axis_0_max
+
+$$ @@!
+// ENiagaraOrientationAxis
+// EnumPath: /Niagara/Enums/ENiagaraOrientationAxis.ENiagaraOrientationAxis
+
+()
+
+  [
+  @@x_axis:                          ENiagaraOrientationAxis!int(0)
+  @@y_axis:                          ENiagaraOrientationAxis!int(1)
+  @@z_axis:                          ENiagaraOrientationAxis!int(2)
+  @@eniagara_orientation_axis_0_max: ENiagaraOrientationAxis!int(3)
+  ]
+
+$$ .

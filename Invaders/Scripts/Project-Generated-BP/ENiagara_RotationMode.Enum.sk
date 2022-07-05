@@ -1,0 +1,36 @@
+// ENiagara Rotation Mode
+//
+// UE4 name of this enum: ENiagara_RotationMode
+
+// UE4 Asset Name: ENiagara_RotationMode
+// UE4 Package Name: "/Niagara/Enums/Transforms/ENiagara_RotationMode"
+
+annotations: &reflected_data &name("ENiagara_RotationMode")
+
+$$ @@
+
+ENiagara_RotationMode !@@default
+ENiagara_RotationMode !@@axis_angle
+ENiagara_RotationMode !@@yaw_pitch_roll
+ENiagara_RotationMode !@@quaternion
+ENiagara_RotationMode !@@matrix
+ENiagara_RotationMode !@@none
+ENiagara_RotationMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_RotationMode
+// EnumPath: /Niagara/Enums/Transforms/ENiagara_RotationMode.ENiagara_RotationMode
+
+()
+
+  [
+  @@default:        ENiagara_RotationMode!int(0)
+  @@axis_angle:     ENiagara_RotationMode!int(1)
+  @@yaw_pitch_roll: ENiagara_RotationMode!int(2)
+  @@quaternion:     ENiagara_RotationMode!int(3)
+  @@matrix:         ENiagara_RotationMode!int(4)
+  @@none:           ENiagara_RotationMode!int(5)
+  @@eniagara_max:   ENiagara_RotationMode!int(6)
+  ]
+
+$$ .

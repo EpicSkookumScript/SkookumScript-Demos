@@ -1,0 +1,32 @@
+// Eniagara Alternate Renderer Modes
+//
+// UE4 name of this enum: EniagaraAlternateRendererModes
+
+// UE4 Asset Name: EniagaraAlternateRendererModes
+// UE4 Package Name: "/Niagara/Enums/EniagaraAlternateRendererModes"
+
+annotations: &reflected_data &name("EniagaraAlternateRendererModes")
+
+$$ @@
+
+EniagaraAlternateRendererModes !@@sprite
+EniagaraAlternateRendererModes !@@mesh
+EniagaraAlternateRendererModes !@@ribbon
+EniagaraAlternateRendererModes !@@light
+EniagaraAlternateRendererModes !@@eniagara_alternate_renderer_modes_max
+
+$$ @@!
+// EniagaraAlternateRendererModes
+// EnumPath: /Niagara/Enums/EniagaraAlternateRendererModes.EniagaraAlternateRendererModes
+
+()
+
+  [
+  @@sprite:                                EniagaraAlternateRendererModes!int(0)
+  @@mesh:                                  EniagaraAlternateRendererModes!int(1)
+  @@ribbon:                                EniagaraAlternateRendererModes!int(2)
+  @@light:                                 EniagaraAlternateRendererModes!int(3)
+  @@eniagara_alternate_renderer_modes_max: EniagaraAlternateRendererModes!int(4)
+  ]
+
+$$ .

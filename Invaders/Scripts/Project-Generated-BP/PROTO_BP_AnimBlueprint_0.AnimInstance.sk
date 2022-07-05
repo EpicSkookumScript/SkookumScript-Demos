@@ -1,0 +1,21 @@
+// PROTO BP Anim Blueprint 0
+//
+// UE4 name of this class: PROTO_BP_AnimBlueprint_0_C
+
+// UE4 Asset Name: PROTO_BP_AnimBlueprint_0
+// UE4 Package Name: "/Engine/Transient"
+
+annotations: &reflected_data &name("PROTO_BP_AnimBlueprint_0_C")
+
+$$ @
+
+$$ @anim_graph
+// Anim Graph
+//
+// UE4 name of this method: AnimGraph
+
+&aka("AnimGraph")
+
+(PoseLink anim_graph : PoseLink!) 
+
+$$ .

@@ -1,0 +1,28 @@
+// ENiagara Socket Sampling Mode
+//
+// UE4 name of this enum: ENiagaraSocketSamplingMode
+
+// UE4 Asset Name: ENiagaraSocketSamplingMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraSocketSamplingMode"
+
+annotations: &reflected_data &name("ENiagaraSocketSamplingMode")
+
+$$ @@
+
+ENiagaraSocketSamplingMode !@@random_filtered_sockets_
+ENiagaraSocketSamplingMode !@@direct_filtered_sockets_
+ENiagaraSocketSamplingMode !@@eniagara_socket_sampling_mode_max
+
+$$ @@!
+// ENiagaraSocketSamplingMode
+// EnumPath: /Niagara/Enums/ENiagaraSocketSamplingMode.ENiagaraSocketSamplingMode
+
+()
+
+  [
+  @@random_filtered_sockets_:          ENiagaraSocketSamplingMode!int(0)
+  @@direct_filtered_sockets_:          ENiagaraSocketSamplingMode!int(1)
+  @@eniagara_socket_sampling_mode_max: ENiagaraSocketSamplingMode!int(2)
+  ]
+
+$$ .

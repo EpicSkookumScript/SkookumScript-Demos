@@ -1,0 +1,30 @@
+// Play Audio Mode
+//
+// UE4 name of this enum: PlayAudioMode
+
+// UE4 Asset Name: PlayAudioMode
+// UE4 Package Name: "/Niagara/Enums/Audio/PlayAudioMode"
+
+annotations: &reflected_data &name("PlayAudioMode")
+
+$$ @@
+
+PlayAudioMode !@@direct_set
+PlayAudioMode !@@random_
+PlayAudioMode !@@on_death
+PlayAudioMode !@@play_audio_mode_max
+
+$$ @@!
+// PlayAudioMode
+// EnumPath: /Niagara/Enums/Audio/PlayAudioMode.PlayAudioMode
+
+()
+
+  [
+  @@direct_set:          PlayAudioMode!int(0)
+  @@random_:             PlayAudioMode!int(1)
+  @@on_death:            PlayAudioMode!int(2)
+  @@play_audio_mode_max: PlayAudioMode!int(3)
+  ]
+
+$$ .

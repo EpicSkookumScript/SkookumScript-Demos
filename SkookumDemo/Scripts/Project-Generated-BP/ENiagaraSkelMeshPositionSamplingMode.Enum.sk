@@ -1,0 +1,30 @@
+// ENiagara Skel Mesh Position Sampling Mode
+//
+// UE4 name of this enum: ENiagaraSkelMeshPositionSamplingMode
+
+// UE4 Asset Name: ENiagaraSkelMeshPositionSamplingMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraSkelMeshPositionSamplingMode"
+
+annotations: &reflected_data &name("ENiagaraSkelMeshPositionSamplingMode")
+
+$$ @@
+
+ENiagaraSkelMeshPositionSamplingMode !@@apply_rigid_
+ENiagaraSkelMeshPositionSamplingMode !@@apply_soft_
+ENiagaraSkelMeshPositionSamplingMode !@@output
+ENiagaraSkelMeshPositionSamplingMode !@@eniagara_skel_mesh_position_sampling_mode_max
+
+$$ @@!
+// ENiagaraSkelMeshPositionSamplingMode
+// EnumPath: /Niagara/Enums/ENiagaraSkelMeshPositionSamplingMode.ENiagaraSkelMeshPositionSamplingMode
+
+()
+
+  [
+  @@apply_rigid_:                                  ENiagaraSkelMeshPositionSamplingMode!int(0)
+  @@apply_soft_:                                   ENiagaraSkelMeshPositionSamplingMode!int(1)
+  @@output:                                        ENiagaraSkelMeshPositionSamplingMode!int(2)
+  @@eniagara_skel_mesh_position_sampling_mode_max: ENiagaraSkelMeshPositionSamplingMode!int(3)
+  ]
+
+$$ .

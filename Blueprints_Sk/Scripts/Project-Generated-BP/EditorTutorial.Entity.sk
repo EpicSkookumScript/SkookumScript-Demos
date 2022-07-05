@@ -1,0 +1,7 @@
+// An asset used to build a stage-by-stage tutorial in the editor
+//
+// UE4 name of this class: EditorTutorial
+
+annotations: &reflected_cpp &name("EditorTutorial")
+
+$$ .

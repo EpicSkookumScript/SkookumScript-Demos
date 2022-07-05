@@ -1,0 +1,30 @@
+// ENiagara Waveform Count
+//
+// UE4 name of this enum: ENiagara_WaveformCount
+
+// UE4 Asset Name: ENiagara_WaveformCount
+// UE4 Package Name: "/Niagara/Enums/ENiagara_WaveformCount"
+
+annotations: &reflected_data &name("ENiagara_WaveformCount")
+
+$$ @@
+
+ENiagara_WaveformCount !@@_1_one
+ENiagara_WaveformCount !@@_2_two
+ENiagara_WaveformCount !@@_3_three
+ENiagara_WaveformCount !@@eniagara_max
+
+$$ @@!
+// ENiagara_WaveformCount
+// EnumPath: /Niagara/Enums/ENiagara_WaveformCount.ENiagara_WaveformCount
+
+()
+
+  [
+  @@_1_one:       ENiagara_WaveformCount!int(0)
+  @@_2_two:       ENiagara_WaveformCount!int(1)
+  @@_3_three:     ENiagara_WaveformCount!int(2)
+  @@eniagara_max: ENiagara_WaveformCount!int(3)
+  ]
+
+$$ .

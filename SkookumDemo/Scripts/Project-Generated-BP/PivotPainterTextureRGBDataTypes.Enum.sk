@@ -1,0 +1,36 @@
+// Pivot Painter Texture RGBData Types
+//
+// UE4 name of this enum: PivotPainterTextureRGBDataTypes
+
+// UE4 Asset Name: PivotPainterTextureRGBDataTypes
+// UE4 Package Name: "/Niagara/Functions/PivotPainter/PivotPainterTextureRGBDataTypes"
+
+annotations: &reflected_data &name("PivotPainterTextureRGBDataTypes")
+
+$$ @@
+
+PivotPainterTextureRGBDataTypes !@@pivot_position_16_bit_
+PivotPainterTextureRGBDataTypes !@@origin_position_16_bit_
+PivotPainterTextureRGBDataTypes !@@origin_extents_16_bit_
+PivotPainterTextureRGBDataTypes !@@x_vector_8_bit_
+PivotPainterTextureRGBDataTypes !@@y_vector_8_bit_
+PivotPainterTextureRGBDataTypes !@@z_vector_8_bit_
+PivotPainterTextureRGBDataTypes !@@pivot_painter_texture_rgbdata_types_max
+
+$$ @@!
+// PivotPainterTextureRGBDataTypes
+// EnumPath: /Niagara/Functions/PivotPainter/PivotPainterTextureRGBDataTypes.PivotPainterTextureRGBDataTypes
+
+()
+
+  [
+  @@pivot_position_16_bit_:                  PivotPainterTextureRGBDataTypes!int(0)
+  @@origin_position_16_bit_:                 PivotPainterTextureRGBDataTypes!int(1)
+  @@origin_extents_16_bit_:                  PivotPainterTextureRGBDataTypes!int(2)
+  @@x_vector_8_bit_:                         PivotPainterTextureRGBDataTypes!int(3)
+  @@y_vector_8_bit_:                         PivotPainterTextureRGBDataTypes!int(4)
+  @@z_vector_8_bit_:                         PivotPainterTextureRGBDataTypes!int(5)
+  @@pivot_painter_texture_rgbdata_types_max: PivotPainterTextureRGBDataTypes!int(6)
+  ]
+
+$$ .

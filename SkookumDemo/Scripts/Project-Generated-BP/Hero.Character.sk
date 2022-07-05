@@ -9,7 +9,6 @@ annotations: &reflected_data &name("Hero_C")
 
 $$ @
 
-/* &raw("UberGraphFrame") PointerToUberGraphFrame !@uber_graph_frame  // Currently unsupported */
 &raw("FollowCamera")   CameraComponent    !@follow_camera     // Follow Camera
 &raw("CameraBoom")     SpringArmComponent !@camera_boom       // Camera Boom
 &raw("BaseTurnRate")   Real               !@base_turn_rate    // Base Turn Rate

@@ -1,0 +1,28 @@
+// ENiagara Cylinder Mode
+//
+// UE4 name of this enum: ENiagara_CylinderMode
+
+// UE4 Asset Name: ENiagara_CylinderMode
+// UE4 Package Name: "/Niagara/Enums/Location/ENiagara_CylinderMode"
+
+annotations: &reflected_data &name("ENiagara_CylinderMode")
+
+$$ @@
+
+ENiagara_CylinderMode !@@random_
+ENiagara_CylinderMode !@@direct
+ENiagara_CylinderMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_CylinderMode
+// EnumPath: /Niagara/Enums/Location/ENiagara_CylinderMode.ENiagara_CylinderMode
+
+()
+
+  [
+  @@random_:      ENiagara_CylinderMode!int(0)
+  @@direct:       ENiagara_CylinderMode!int(1)
+  @@eniagara_max: ENiagara_CylinderMode!int(2)
+  ]
+
+$$ .

@@ -1,0 +1,32 @@
+// ENiagara Restitution Merge Type
+//
+// UE4 name of this enum: ENiagaraRestitutionMergeType
+
+// UE4 Asset Name: ENiagaraRestitutionMergeType
+// UE4 Package Name: "/Niagara/Enums/ENiagaraRestitutionMergeType"
+
+annotations: &reflected_data &name("ENiagaraRestitutionMergeType")
+
+$$ @@
+
+ENiagaraRestitutionMergeType !@@ignore
+ENiagaraRestitutionMergeType !@@min
+ENiagaraRestitutionMergeType !@@max
+ENiagaraRestitutionMergeType !@@average
+ENiagaraRestitutionMergeType !@@eniagara_restitution_merge_type_max
+
+$$ @@!
+// ENiagaraRestitutionMergeType
+// EnumPath: /Niagara/Enums/ENiagaraRestitutionMergeType.ENiagaraRestitutionMergeType
+
+()
+
+  [
+  @@ignore:                              ENiagaraRestitutionMergeType!int(0)
+  @@min:                                 ENiagaraRestitutionMergeType!int(1)
+  @@max:                                 ENiagaraRestitutionMergeType!int(2)
+  @@average:                             ENiagaraRestitutionMergeType!int(3)
+  @@eniagara_restitution_merge_type_max: ENiagaraRestitutionMergeType!int(4)
+  ]
+
+$$ .

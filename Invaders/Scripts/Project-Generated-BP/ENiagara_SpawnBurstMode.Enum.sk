@@ -1,0 +1,28 @@
+// ENiagara Spawn Burst Mode
+//
+// UE4 name of this enum: ENiagara_SpawnBurstMode
+
+// UE4 Asset Name: ENiagara_SpawnBurstMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_SpawnBurstMode"
+
+annotations: &reflected_data &name("ENiagara_SpawnBurstMode")
+
+$$ @@
+
+ENiagara_SpawnBurstMode !@@timed
+ENiagara_SpawnBurstMode !@@manual
+ENiagara_SpawnBurstMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_SpawnBurstMode
+// EnumPath: /Niagara/Enums/ENiagara_SpawnBurstMode.ENiagara_SpawnBurstMode
+
+()
+
+  [
+  @@timed:        ENiagara_SpawnBurstMode!int(0)
+  @@manual:       ENiagara_SpawnBurstMode!int(1)
+  @@eniagara_max: ENiagara_SpawnBurstMode!int(2)
+  ]
+
+$$ .

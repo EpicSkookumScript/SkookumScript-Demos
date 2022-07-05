@@ -1,0 +1,28 @@
+// ENiagara Transform Mode
+//
+// UE4 name of this enum: ENiagara_TransformMode
+
+// UE4 Asset Name: ENiagara_TransformMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_TransformMode"
+
+annotations: &reflected_data &name("ENiagara_TransformMode")
+
+$$ @@
+
+ENiagara_TransformMode !@@manual
+ENiagara_TransformMode !@@matrix
+ENiagara_TransformMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_TransformMode
+// EnumPath: /Niagara/Enums/ENiagara_TransformMode.ENiagara_TransformMode
+
+()
+
+  [
+  @@manual:       ENiagara_TransformMode!int(0)
+  @@matrix:       ENiagara_TransformMode!int(1)
+  @@eniagara_max: ENiagara_TransformMode!int(2)
+  ]
+
+$$ .

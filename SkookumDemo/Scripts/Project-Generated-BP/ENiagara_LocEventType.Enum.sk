@@ -1,0 +1,30 @@
+// ENiagara Loc Event Type
+//
+// UE4 name of this enum: ENiagara_LocEventType
+
+// UE4 Asset Name: ENiagara_LocEventType
+// UE4 Package Name: "/Niagara/Enums/Events/ENiagara_LocEventType"
+
+annotations: &reflected_data &name("ENiagara_LocEventType")
+
+$$ @@
+
+ENiagara_LocEventType !@@send_rate
+ENiagara_LocEventType !@@send_per_unit_traveled
+ENiagara_LocEventType !@@every_frame
+ENiagara_LocEventType !@@eniagara_max
+
+$$ @@!
+// ENiagara_LocEventType
+// EnumPath: /Niagara/Enums/Events/ENiagara_LocEventType.ENiagara_LocEventType
+
+()
+
+  [
+  @@send_rate:              ENiagara_LocEventType!int(0)
+  @@send_per_unit_traveled: ENiagara_LocEventType!int(1)
+  @@every_frame:            ENiagara_LocEventType!int(2)
+  @@eniagara_max:           ENiagara_LocEventType!int(3)
+  ]
+
+$$ .

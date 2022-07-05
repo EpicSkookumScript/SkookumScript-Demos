@@ -1,0 +1,28 @@
+// ENiagara Min or Max
+//
+// UE4 name of this enum: ENiagaraMinOrMax
+
+// UE4 Asset Name: ENiagaraMinOrMax
+// UE4 Package Name: "/Niagara/Enums/ENiagaraMinOrMax"
+
+annotations: &reflected_data &name("ENiagaraMinOrMax")
+
+$$ @@
+
+ENiagaraMinOrMax !@@min
+ENiagaraMinOrMax !@@max
+ENiagaraMinOrMax !@@eniagara_min_or_max_max
+
+$$ @@!
+// ENiagaraMinOrMax
+// EnumPath: /Niagara/Enums/ENiagaraMinOrMax.ENiagaraMinOrMax
+
+()
+
+  [
+  @@min:                     ENiagaraMinOrMax!int(0)
+  @@max:                     ENiagaraMinOrMax!int(1)
+  @@eniagara_min_or_max_max: ENiagaraMinOrMax!int(2)
+  ]
+
+$$ .

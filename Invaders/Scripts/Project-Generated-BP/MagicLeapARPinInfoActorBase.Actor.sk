@@ -1,0 +1,7 @@
+// Magic Leap ARPin Info Actor Base
+//
+// UE4 name of this class: MagicLeapARPinInfoActorBase
+
+annotations: &reflected_cpp &name("MagicLeapARPinInfoActorBase")
+
+$$ .

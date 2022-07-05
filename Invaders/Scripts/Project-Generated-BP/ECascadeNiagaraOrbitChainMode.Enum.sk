@@ -1,0 +1,32 @@
+// ECascade Niagara Orbit Chain Mode
+//
+// UE4 name of this enum: ECascadeNiagaraOrbitChainMode
+
+// UE4 Asset Name: ECascadeNiagaraOrbitChainMode
+// UE4 Package Name: "/Niagara/Enums/CascadeConversion/ECascadeNiagaraOrbitChainMode"
+
+annotations: &reflected_data &name("ECascadeNiagaraOrbitChainMode")
+
+$$ @@
+
+ECascadeNiagaraOrbitChainMode !@@add
+ECascadeNiagaraOrbitChainMode !@@scale
+ECascadeNiagaraOrbitChainMode !@@link
+ECascadeNiagaraOrbitChainMode !@@none
+ECascadeNiagaraOrbitChainMode !@@ecascade_niagara_orbit_chain_mode_max
+
+$$ @@!
+// ECascadeNiagaraOrbitChainMode
+// EnumPath: /Niagara/Enums/CascadeConversion/ECascadeNiagaraOrbitChainMode.ECascadeNiagaraOrbitChainMode
+
+()
+
+  [
+  @@add:                                   ECascadeNiagaraOrbitChainMode!int(0)
+  @@scale:                                 ECascadeNiagaraOrbitChainMode!int(1)
+  @@link:                                  ECascadeNiagaraOrbitChainMode!int(2)
+  @@none:                                  ECascadeNiagaraOrbitChainMode!int(3)
+  @@ecascade_niagara_orbit_chain_mode_max: ECascadeNiagaraOrbitChainMode!int(4)
+  ]
+
+$$ .

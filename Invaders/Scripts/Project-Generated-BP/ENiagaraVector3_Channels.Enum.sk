@@ -1,0 +1,30 @@
+// ENiagara Vector 3 Channels
+//
+// UE4 name of this enum: ENiagaraVector3_Channels
+
+// UE4 Asset Name: ENiagaraVector3_Channels
+// UE4 Package Name: "/Niagara/Enums/ENiagaraVector3_Channels"
+
+annotations: &reflected_data &name("ENiagaraVector3_Channels")
+
+$$ @@
+
+ENiagaraVector3_Channels !@@x
+ENiagaraVector3_Channels !@@y
+ENiagaraVector3_Channels !@@z
+ENiagaraVector3_Channels !@@eniagara_vector_3_max
+
+$$ @@!
+// ENiagaraVector3_Channels
+// EnumPath: /Niagara/Enums/ENiagaraVector3_Channels.ENiagaraVector3_Channels
+
+()
+
+  [
+  @@x:                     ENiagaraVector3_Channels!int(0)
+  @@y:                     ENiagaraVector3_Channels!int(1)
+  @@z:                     ENiagaraVector3_Channels!int(2)
+  @@eniagara_vector_3_max: ENiagaraVector3_Channels!int(3)
+  ]
+
+$$ .

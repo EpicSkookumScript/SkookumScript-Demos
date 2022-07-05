@@ -1,0 +1,30 @@
+// ENiagara Calculate Radius Options
+//
+// UE4 name of this enum: ENiagaraCalculateRadiusOptions
+
+// UE4 Asset Name: ENiagaraCalculateRadiusOptions
+// UE4 Package Name: "/Niagara/Enums/ENiagaraCalculateRadiusOptions"
+
+annotations: &reflected_data &name("ENiagaraCalculateRadiusOptions")
+
+$$ @@
+
+ENiagaraCalculateRadiusOptions !@@bounds
+ENiagaraCalculateRadiusOptions !@@minimum_axis
+ENiagaraCalculateRadiusOptions !@@maximum_axis
+ENiagaraCalculateRadiusOptions !@@eniagara_calculate_radius_options_max
+
+$$ @@!
+// ENiagaraCalculateRadiusOptions
+// EnumPath: /Niagara/Enums/ENiagaraCalculateRadiusOptions.ENiagaraCalculateRadiusOptions
+
+()
+
+  [
+  @@bounds:                                ENiagaraCalculateRadiusOptions!int(0)
+  @@minimum_axis:                          ENiagaraCalculateRadiusOptions!int(1)
+  @@maximum_axis:                          ENiagaraCalculateRadiusOptions!int(2)
+  @@eniagara_calculate_radius_options_max: ENiagaraCalculateRadiusOptions!int(3)
+  ]
+
+$$ .

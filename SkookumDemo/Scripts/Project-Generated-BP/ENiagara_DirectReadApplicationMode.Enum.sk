@@ -1,0 +1,28 @@
+// ENiagara Direct Read Application Mode
+//
+// UE4 name of this enum: ENiagara_DirectReadApplicationMode
+
+// UE4 Asset Name: ENiagara_DirectReadApplicationMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_DirectReadApplicationMode"
+
+annotations: &reflected_data &name("ENiagara_DirectReadApplicationMode")
+
+$$ @@
+
+ENiagara_DirectReadApplicationMode !@@overwrite
+ENiagara_DirectReadApplicationMode !@@add
+ENiagara_DirectReadApplicationMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_DirectReadApplicationMode
+// EnumPath: /Niagara/Enums/ENiagara_DirectReadApplicationMode.ENiagara_DirectReadApplicationMode
+
+()
+
+  [
+  @@overwrite:    ENiagara_DirectReadApplicationMode!int(0)
+  @@add:          ENiagara_DirectReadApplicationMode!int(1)
+  @@eniagara_max: ENiagara_DirectReadApplicationMode!int(2)
+  ]
+
+$$ .

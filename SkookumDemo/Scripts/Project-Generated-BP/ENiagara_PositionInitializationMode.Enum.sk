@@ -1,0 +1,30 @@
+// ENiagara Position Initialization Mode
+//
+// UE4 name of this enum: ENiagara_PositionInitializationMode
+
+// UE4 Asset Name: ENiagara_PositionInitializationMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_PositionInitializationMode"
+
+annotations: &reflected_data &name("ENiagara_PositionInitializationMode")
+
+$$ @@
+
+ENiagara_PositionInitializationMode !@@unset
+ENiagara_PositionInitializationMode !@@direct_set
+ENiagara_PositionInitializationMode !@@simulation_position
+ENiagara_PositionInitializationMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_PositionInitializationMode
+// EnumPath: /Niagara/Enums/ENiagara_PositionInitializationMode.ENiagara_PositionInitializationMode
+
+()
+
+  [
+  @@unset:               ENiagara_PositionInitializationMode!int(0)
+  @@direct_set:          ENiagara_PositionInitializationMode!int(1)
+  @@simulation_position: ENiagara_PositionInitializationMode!int(2)
+  @@eniagara_max:        ENiagara_PositionInitializationMode!int(3)
+  ]
+
+$$ .

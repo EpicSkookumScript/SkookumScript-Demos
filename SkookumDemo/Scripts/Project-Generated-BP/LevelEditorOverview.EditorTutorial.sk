@@ -1,0 +1,12 @@
+// Level Editor Overview
+//
+// UE4 name of this class: LevelEditorOverview_C
+
+// UE4 Asset Name: LevelEditorOverview
+// UE4 Package Name: "/Engine/Tutorial/Basics/LevelEditorOverview"
+
+annotations: &reflected_data &name("LevelEditorOverview_C")
+
+$$ @
+
+$$ .

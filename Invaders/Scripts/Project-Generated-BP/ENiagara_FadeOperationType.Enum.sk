@@ -1,0 +1,28 @@
+// ENiagara Fade Operation Type
+//
+// UE4 name of this enum: ENiagara_FadeOperationType
+
+// UE4 Asset Name: ENiagara_FadeOperationType
+// UE4 Package Name: "/Niagara/Enums/ENiagara_FadeOperationType"
+
+annotations: &reflected_data &name("ENiagara_FadeOperationType")
+
+$$ @@
+
+ENiagara_FadeOperationType !@@linear
+ENiagara_FadeOperationType !@@percentage
+ENiagara_FadeOperationType !@@eniagara_max
+
+$$ @@!
+// ENiagara_FadeOperationType
+// EnumPath: /Niagara/Enums/ENiagara_FadeOperationType.ENiagara_FadeOperationType
+
+()
+
+  [
+  @@linear:       ENiagara_FadeOperationType!int(0)
+  @@percentage:   ENiagara_FadeOperationType!int(1)
+  @@eniagara_max: ENiagara_FadeOperationType!int(2)
+  ]
+
+$$ .

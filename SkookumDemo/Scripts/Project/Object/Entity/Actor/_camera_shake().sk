@@ -15,8 +15,10 @@
 
   [
   _wait
-  CameraShake.default.@oscillation_duration := duration // This is a bit hokey - correct way is to create a specific class
-  CameraShake.default.@anim_scale := scale
-  GameLib.play_world_camera_shake(@@world CameraShake.static_class transform.@translation 100 5000 1.0)
+
+  // TODO this changed in 4.27
+//  CameraShake.default.@oscillation_duration := duration // This is a bit hokey - correct way is to create a specific class
+//  CameraShake.default.@anim_scale := scale
+  GameLib.play_world_camera_shake(@@world BP_CameraShake.static_class transform.@translation 100 5000 1.0)
   _wait(duration)
   ]

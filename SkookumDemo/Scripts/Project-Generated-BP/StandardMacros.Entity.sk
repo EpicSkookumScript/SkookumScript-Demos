@@ -1,0 +1,12 @@
+// Standard Macros
+//
+// UE4 name of this class: StandardMacros_C
+
+// UE4 Asset Name: StandardMacros
+// UE4 Package Name: "/Engine/EditorBlueprintResources/StandardMacros"
+
+annotations: &reflected_data &name("StandardMacros_C")
+
+$$ @
+
+$$ .

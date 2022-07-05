@@ -1,0 +1,32 @@
+// ENiagara Transform Orientation Mode
+//
+// UE4 name of this enum: ENiagara_TransformOrientationMode
+
+// UE4 Asset Name: ENiagara_TransformOrientationMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_TransformOrientationMode"
+
+annotations: &reflected_data &name("ENiagara_TransformOrientationMode")
+
+$$ @@
+
+ENiagara_TransformOrientationMode !@@yaw_pitch_roll
+ENiagara_TransformOrientationMode !@@quaternion
+ENiagara_TransformOrientationMode !@@matrix
+ENiagara_TransformOrientationMode !@@basis_vectors
+ENiagara_TransformOrientationMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_TransformOrientationMode
+// EnumPath: /Niagara/Enums/ENiagara_TransformOrientationMode.ENiagara_TransformOrientationMode
+
+()
+
+  [
+  @@yaw_pitch_roll: ENiagara_TransformOrientationMode!int(0)
+  @@quaternion:     ENiagara_TransformOrientationMode!int(1)
+  @@matrix:         ENiagara_TransformOrientationMode!int(2)
+  @@basis_vectors:  ENiagara_TransformOrientationMode!int(3)
+  @@eniagara_max:   ENiagara_TransformOrientationMode!int(4)
+  ]
+
+$$ .

@@ -1,0 +1,28 @@
+// ENiagara Infinite Loop Duration
+//
+// UE4 name of this enum: ENiagara_InfiniteLoopDuration
+
+// UE4 Asset Name: ENiagara_InfiniteLoopDuration
+// UE4 Package Name: "/Niagara/Enums/ENiagara_InfiniteLoopDuration"
+
+annotations: &reflected_data &name("ENiagara_InfiniteLoopDuration")
+
+$$ @@
+
+ENiagara_InfiniteLoopDuration !@@fixed
+ENiagara_InfiniteLoopDuration !@@infinite
+ENiagara_InfiniteLoopDuration !@@eniagara_max
+
+$$ @@!
+// ENiagara_InfiniteLoopDuration
+// EnumPath: /Niagara/Enums/ENiagara_InfiniteLoopDuration.ENiagara_InfiniteLoopDuration
+
+()
+
+  [
+  @@fixed:        ENiagara_InfiniteLoopDuration!int(0)
+  @@infinite:     ENiagara_InfiniteLoopDuration!int(1)
+  @@eniagara_max: ENiagara_InfiniteLoopDuration!int(2)
+  ]
+
+$$ .

@@ -9,7 +9,6 @@ annotations: &reflected_data &name("BP_Invader_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")   PointerToUberGraphFrame !@uber_graph_frame   // Currently unsupported */
 &raw("GunComponent")     GunComponent            !@gun_component      // Gun Component
 &raw("PointLight")       PointLightComponent     !@point_light        // Point Light
 &raw("SkeletalMesh")     SkeletalMeshComponent   !@skeletal_mesh      // Skeletal Mesh

@@ -1,0 +1,32 @@
+// ENiagara Linear Color Channels
+//
+// UE4 name of this enum: ENiagaraLinearColor_Channels
+
+// UE4 Asset Name: ENiagaraLinearColor_Channels
+// UE4 Package Name: "/Niagara/Enums/ENiagaraLinearColor_Channels"
+
+annotations: &reflected_data &name("ENiagaraLinearColor_Channels")
+
+$$ @@
+
+ENiagaraLinearColor_Channels !@@r
+ENiagaraLinearColor_Channels !@@g
+ENiagaraLinearColor_Channels !@@b
+ENiagaraLinearColor_Channels !@@a
+ENiagaraLinearColor_Channels !@@eniagara_linear_color_max
+
+$$ @@!
+// ENiagaraLinearColor_Channels
+// EnumPath: /Niagara/Enums/ENiagaraLinearColor_Channels.ENiagaraLinearColor_Channels
+
+()
+
+  [
+  @@r:                         ENiagaraLinearColor_Channels!int(0)
+  @@g:                         ENiagaraLinearColor_Channels!int(1)
+  @@b:                         ENiagaraLinearColor_Channels!int(2)
+  @@a:                         ENiagaraLinearColor_Channels!int(3)
+  @@eniagara_linear_color_max: ENiagaraLinearColor_Channels!int(4)
+  ]
+
+$$ .

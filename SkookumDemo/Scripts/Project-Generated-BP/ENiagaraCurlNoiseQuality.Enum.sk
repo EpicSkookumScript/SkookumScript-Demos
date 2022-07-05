@@ -1,0 +1,32 @@
+// ENiagara Curl Noise Quality
+//
+// UE4 name of this enum: ENiagaraCurlNoiseQuality
+
+// UE4 Asset Name: ENiagaraCurlNoiseQuality
+// UE4 Package Name: "/Niagara/Enums/ENiagaraCurlNoiseQuality"
+
+annotations: &reflected_data &name("ENiagaraCurlNoiseQuality")
+
+$$ @@
+
+ENiagaraCurlNoiseQuality !@@baked_low_
+ENiagaraCurlNoiseQuality !@@baked_medium_
+ENiagaraCurlNoiseQuality !@@baked_high_
+ENiagaraCurlNoiseQuality !@@evaluated_ultra_
+ENiagaraCurlNoiseQuality !@@eniagara_curl_noise_quality_max
+
+$$ @@!
+// ENiagaraCurlNoiseQuality
+// EnumPath: /Niagara/Enums/ENiagaraCurlNoiseQuality.ENiagaraCurlNoiseQuality
+
+()
+
+  [
+  @@baked_low_:                      ENiagaraCurlNoiseQuality!int(0)
+  @@baked_medium_:                   ENiagaraCurlNoiseQuality!int(1)
+  @@baked_high_:                     ENiagaraCurlNoiseQuality!int(2)
+  @@evaluated_ultra_:                ENiagaraCurlNoiseQuality!int(3)
+  @@eniagara_curl_noise_quality_max: ENiagaraCurlNoiseQuality!int(4)
+  ]
+
+$$ .

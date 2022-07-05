@@ -1,0 +1,28 @@
+// ENiagara Emitter Loc Sampling Mode
+//
+// UE4 name of this enum: ENiagara_EmitterLocSamplingMode
+
+// UE4 Asset Name: ENiagara_EmitterLocSamplingMode
+// UE4 Package Name: "/Niagara/Enums/ENiagara_EmitterLocSamplingMode"
+
+annotations: &reflected_data &name("ENiagara_EmitterLocSamplingMode")
+
+$$ @@
+
+ENiagara_EmitterLocSamplingMode !@@random_
+ENiagara_EmitterLocSamplingMode !@@sequential
+ENiagara_EmitterLocSamplingMode !@@eniagara_max
+
+$$ @@!
+// ENiagara_EmitterLocSamplingMode
+// EnumPath: /Niagara/Enums/ENiagara_EmitterLocSamplingMode.ENiagara_EmitterLocSamplingMode
+
+()
+
+  [
+  @@random_:      ENiagara_EmitterLocSamplingMode!int(0)
+  @@sequential:   ENiagara_EmitterLocSamplingMode!int(1)
+  @@eniagara_max: ENiagara_EmitterLocSamplingMode!int(2)
+  ]
+
+$$ .

@@ -9,23 +9,8 @@ annotations: &reflected_data &name("ThirdPerson_AnimBP_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")                                                  PointerToUberGraphFrame   !@uber_graph_frame                        // Currently unsupported */
-&raw("AnimGraphNode_Root_6245415D43FCCBD818C7DD8DCFD4FBC8")             AnimNode_Root             !@anim_graph_node_root_6245               // Anim Graph Node Root 6245415D43FCCBD818C7DD8DCFD4FBC8
-&raw("AnimGraphNode_TransitionResult_52E991574C5CBE6E3F940EAEA88A2707") AnimNode_TransitionResult !@anim_graph_node_transition_result_52e9  // Anim Graph Node Transition Result 52E991574C5CBE6E3F940EAEA88A2707
-&raw("AnimGraphNode_TransitionResult_D9F025E842A0DA513B905085C5E33142") AnimNode_TransitionResult !@anim_graph_node_transition_result_d9f0  // Anim Graph Node Transition Result D9F025E842A0DA513B905085C5E33142
-&raw("AnimGraphNode_TransitionResult_42EB59A647594745DECAE4A5C98FC840") AnimNode_TransitionResult !@anim_graph_node_transition_result_42eb  // Anim Graph Node Transition Result 42EB59A647594745DECAE4A5C98FC840
-&raw("AnimGraphNode_TransitionResult_178136C741BD5A74C104898AE2D0858E") AnimNode_TransitionResult !@anim_graph_node_transition_result_1781  // Anim Graph Node Transition Result 178136C741BD5A74C104898AE2D0858E
-&raw("AnimGraphNode_SequencePlayer_A0CF690444C363144EC28B95406387AA")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_a0cf    // Anim Graph Node Sequence Player A0CF690444C363144EC28B95406387AA
-&raw("AnimGraphNode_StateResult_297D99FF44D47FD485B4F89D8011EE52")      AnimNode_StateResult      !@anim_graph_node_state_result_297d       // Anim Graph Node State Result 297D99FF44D47FD485B4F89D8011EE52
-&raw("AnimGraphNode_SequencePlayer_7F3D9C864B693C7A42B6BE9C6E030836")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_7f3d    // Anim Graph Node Sequence Player 7F3D9C864B693C7A42B6BE9C6E030836
-&raw("AnimGraphNode_StateResult_1EBEFD1E44C9887ACE06AC8147E389E1")      AnimNode_StateResult      !@anim_graph_node_state_result_1ebe       // Anim Graph Node State Result 1EBEFD1E44C9887ACE06AC8147E389E1
-&raw("AnimGraphNode_SequencePlayer_42CC18D944758414A1674994127217DE")   AnimNode_SequencePlayer   !@anim_graph_node_sequence_player_42cc    // Anim Graph Node Sequence Player 42CC18D944758414A1674994127217DE
-&raw("AnimGraphNode_StateResult_046F1C2548286DB7421A07BCB8B9830E")      AnimNode_StateResult      !@anim_graph_node_state_result_046f       // Anim Graph Node State Result 046F1C2548286DB7421A07BCB8B9830E
-&raw("AnimGraphNode_BlendSpacePlayer_02DCCD344B15638E3A268A84A40F216E") AnimNode_BlendSpacePlayer !@anim_graph_node_blend_space_player_02dc // Anim Graph Node Blend Space Player 02DCCD344B15638E3A268A84A40F216E
-&raw("AnimGraphNode_StateResult_7618737141064086BB77CBB9D5CD2D59")      AnimNode_StateResult      !@anim_graph_node_state_result_7618       // Anim Graph Node State Result 7618737141064086BB77CBB9D5CD2D59
-&raw("AnimGraphNode_StateMachine_4DC365404548467BD671AEB325E4717D")     AnimNode_StateMachine     !@anim_graph_node_state_machine_4dc3      // Anim Graph Node State Machine 4DC365404548467BD671AEB325E4717D
-&raw("IsInAir?")                                                        Boolean                   !@is_in_air?                              // Is in Air?
-&raw("Speed")                                                           Real                      !@speed                                   // Speed
+&raw("IsInAir?") Boolean !@is_in_air? // Is in Air?
+&raw("Speed")    Real    !@speed      // Speed
 
 $$ @anim_graph
 // Anim Graph

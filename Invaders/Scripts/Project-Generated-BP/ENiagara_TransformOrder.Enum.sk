@@ -1,0 +1,28 @@
+// ENiagara Transform Order
+//
+// UE4 name of this enum: ENiagara_TransformOrder
+
+// UE4 Asset Name: ENiagara_TransformOrder
+// UE4 Package Name: "/Niagara/Enums/Transforms/ENiagara_TransformOrder"
+
+annotations: &reflected_data &name("ENiagara_TransformOrder")
+
+$$ @@
+
+ENiagara_TransformOrder !@@scale_rotate_offset
+ENiagara_TransformOrder !@@scale_offset_rotate
+ENiagara_TransformOrder !@@eniagara_max
+
+$$ @@!
+// ENiagara_TransformOrder
+// EnumPath: /Niagara/Enums/Transforms/ENiagara_TransformOrder.ENiagara_TransformOrder
+
+()
+
+  [
+  @@scale_rotate_offset: ENiagara_TransformOrder!int(0)
+  @@scale_offset_rotate: ENiagara_TransformOrder!int(1)
+  @@eniagara_max:        ENiagara_TransformOrder!int(2)
+  ]
+
+$$ .

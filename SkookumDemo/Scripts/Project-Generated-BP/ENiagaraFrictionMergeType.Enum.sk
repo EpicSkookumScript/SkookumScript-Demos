@@ -1,0 +1,32 @@
+// ENiagara Friction Merge Type
+//
+// UE4 name of this enum: ENiagaraFrictionMergeType
+
+// UE4 Asset Name: ENiagaraFrictionMergeType
+// UE4 Package Name: "/Niagara/Enums/ENiagaraFrictionMergeType"
+
+annotations: &reflected_data &name("ENiagaraFrictionMergeType")
+
+$$ @@
+
+ENiagaraFrictionMergeType !@@ignore
+ENiagaraFrictionMergeType !@@average
+ENiagaraFrictionMergeType !@@min
+ENiagaraFrictionMergeType !@@max
+ENiagaraFrictionMergeType !@@eniagara_friction_merge_type_max
+
+$$ @@!
+// ENiagaraFrictionMergeType
+// EnumPath: /Niagara/Enums/ENiagaraFrictionMergeType.ENiagaraFrictionMergeType
+
+()
+
+  [
+  @@ignore:                           ENiagaraFrictionMergeType!int(0)
+  @@average:                          ENiagaraFrictionMergeType!int(1)
+  @@min:                              ENiagaraFrictionMergeType!int(2)
+  @@max:                              ENiagaraFrictionMergeType!int(3)
+  @@eniagara_friction_merge_type_max: ENiagaraFrictionMergeType!int(4)
+  ]
+
+$$ .

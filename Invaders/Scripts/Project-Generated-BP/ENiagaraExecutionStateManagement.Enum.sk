@@ -1,0 +1,34 @@
+// ENiagara Execution State Management
+//
+// UE4 name of this enum: ENiagaraExecutionStateManagement
+
+// UE4 Asset Name: ENiagaraExecutionStateManagement
+// UE4 Package Name: "/Niagara/Enums/ENiagaraExecutionStateManagement"
+
+annotations: &reflected_data &name("ENiagaraExecutionStateManagement")
+
+$$ @@
+
+ENiagaraExecutionStateManagement !@@awaken
+ENiagaraExecutionStateManagement !@@sleep_and_let_particles_finish
+ENiagaraExecutionStateManagement !@@sleep_and_clear_particles
+ENiagaraExecutionStateManagement !@@kill_immediately
+ENiagaraExecutionStateManagement !@@kill_after_particles_finish
+ENiagaraExecutionStateManagement !@@eniagara_execution_state_management_max
+
+$$ @@!
+// ENiagaraExecutionStateManagement
+// EnumPath: /Niagara/Enums/ENiagaraExecutionStateManagement.ENiagaraExecutionStateManagement
+
+()
+
+  [
+  @@awaken:                                  ENiagaraExecutionStateManagement!int(0)
+  @@sleep_and_let_particles_finish:          ENiagaraExecutionStateManagement!int(1)
+  @@sleep_and_clear_particles:               ENiagaraExecutionStateManagement!int(2)
+  @@kill_immediately:                        ENiagaraExecutionStateManagement!int(3)
+  @@kill_after_particles_finish:             ENiagaraExecutionStateManagement!int(4)
+  @@eniagara_execution_state_management_max: ENiagaraExecutionStateManagement!int(5)
+  ]
+
+$$ .

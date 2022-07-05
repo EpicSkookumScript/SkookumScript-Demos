@@ -1,0 +1,12 @@
+// BP Camera Shake
+//
+// UE4 name of this class: BP_CameraShake_C
+
+// UE4 Asset Name: BP_CameraShake
+// UE4 Package Name: "/Game/Blueprints/BP_CameraShake"
+
+annotations: &reflected_data &name("BP_CameraShake_C")
+
+$$ @
+
+$$ .

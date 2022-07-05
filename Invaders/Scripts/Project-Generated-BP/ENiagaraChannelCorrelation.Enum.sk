@@ -1,0 +1,30 @@
+// ENiagara Channel Correlation
+//
+// UE4 name of this enum: ENiagaraChannelCorrelation
+
+// UE4 Asset Name: ENiagaraChannelCorrelation
+// UE4 Package Name: "/Niagara/Enums/ENiagaraChannelCorrelation"
+
+annotations: &reflected_data &name("ENiagaraChannelCorrelation")
+
+$$ @@
+
+ENiagaraChannelCorrelation !@@link_rgba
+ENiagaraChannelCorrelation !@@link_rgb_link_a
+ENiagaraChannelCorrelation !@@random_individual_channels
+ENiagaraChannelCorrelation !@@eniagara_channel_correlation_max
+
+$$ @@!
+// ENiagaraChannelCorrelation
+// EnumPath: /Niagara/Enums/ENiagaraChannelCorrelation.ENiagaraChannelCorrelation
+
+()
+
+  [
+  @@link_rgba:                        ENiagaraChannelCorrelation!int(0)
+  @@link_rgb_link_a:                  ENiagaraChannelCorrelation!int(1)
+  @@random_individual_channels:       ENiagaraChannelCorrelation!int(2)
+  @@eniagara_channel_correlation_max: ENiagaraChannelCorrelation!int(3)
+  ]
+
+$$ .

@@ -1,0 +1,34 @@
+// Pivot Painter 8Bit Texture Alpha Data Types
+//
+// UE4 name of this enum: PivotPainter8BitTextureAlphaDataTypes
+
+// UE4 Asset Name: PivotPainter8BitTextureAlphaDataTypes
+// UE4 Package Name: "/Niagara/Functions/PivotPainter/PivotPainter8BitTextureAlphaDataTypes"
+
+annotations: &reflected_data &name("PivotPainter8BitTextureAlphaDataTypes")
+
+$$ @@
+
+PivotPainter8BitTextureAlphaDataTypes !@@normalized_0_1_hierarchy_position
+PivotPainter8BitTextureAlphaDataTypes !@@normalized_0_1_value_per_element
+PivotPainter8BitTextureAlphaDataTypes !@@x_extent_divided_by_2048_2048_max_
+PivotPainter8BitTextureAlphaDataTypes !@@y_extent_divided_by_2048_2048_max_
+PivotPainter8BitTextureAlphaDataTypes !@@z_extent_divided_by_2048_2048_max_
+PivotPainter8BitTextureAlphaDataTypes !@@pivot_painter_8bit_texture_alpha_data_types_max
+
+$$ @@!
+// PivotPainter8BitTextureAlphaDataTypes
+// EnumPath: /Niagara/Functions/PivotPainter/PivotPainter8BitTextureAlphaDataTypes.PivotPainter8BitTextureAlphaDataTypes
+
+()
+
+  [
+  @@normalized_0_1_hierarchy_position:               PivotPainter8BitTextureAlphaDataTypes!int(0)
+  @@normalized_0_1_value_per_element:                PivotPainter8BitTextureAlphaDataTypes!int(1)
+  @@x_extent_divided_by_2048_2048_max_:              PivotPainter8BitTextureAlphaDataTypes!int(2)
+  @@y_extent_divided_by_2048_2048_max_:              PivotPainter8BitTextureAlphaDataTypes!int(3)
+  @@z_extent_divided_by_2048_2048_max_:              PivotPainter8BitTextureAlphaDataTypes!int(4)
+  @@pivot_painter_8bit_texture_alpha_data_types_max: PivotPainter8BitTextureAlphaDataTypes!int(5)
+  ]
+
+$$ .

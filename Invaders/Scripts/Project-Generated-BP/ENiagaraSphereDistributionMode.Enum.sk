@@ -1,0 +1,30 @@
+// ENiagara Sphere Distribution Mode
+//
+// UE4 name of this enum: ENiagaraSphereDistributionMode
+
+// UE4 Asset Name: ENiagaraSphereDistributionMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraSphereDistributionMode"
+
+annotations: &reflected_data &name("ENiagaraSphereDistributionMode")
+
+$$ @@
+
+ENiagaraSphereDistributionMode !@@random_
+ENiagaraSphereDistributionMode !@@direct
+ENiagaraSphereDistributionMode !@@uniform
+ENiagaraSphereDistributionMode !@@eniagara_sphere_distribution_mode_max
+
+$$ @@!
+// ENiagaraSphereDistributionMode
+// EnumPath: /Niagara/Enums/ENiagaraSphereDistributionMode.ENiagaraSphereDistributionMode
+
+()
+
+  [
+  @@random_:                               ENiagaraSphereDistributionMode!int(0)
+  @@direct:                                ENiagaraSphereDistributionMode!int(1)
+  @@uniform:                               ENiagaraSphereDistributionMode!int(2)
+  @@eniagara_sphere_distribution_mode_max: ENiagaraSphereDistributionMode!int(3)
+  ]
+
+$$ .

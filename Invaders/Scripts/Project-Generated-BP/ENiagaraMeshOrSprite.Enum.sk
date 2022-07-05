@@ -1,0 +1,28 @@
+// ENiagara Mesh or Sprite
+//
+// UE4 name of this enum: ENiagaraMeshOrSprite
+
+// UE4 Asset Name: ENiagaraMeshOrSprite
+// UE4 Package Name: "/Niagara/Enums/ENiagaraMeshOrSprite"
+
+annotations: &reflected_data &name("ENiagaraMeshOrSprite")
+
+$$ @@
+
+ENiagaraMeshOrSprite !@@sprite
+ENiagaraMeshOrSprite !@@mesh
+ENiagaraMeshOrSprite !@@eniagara_mesh_or_sprite_max
+
+$$ @@!
+// ENiagaraMeshOrSprite
+// EnumPath: /Niagara/Enums/ENiagaraMeshOrSprite.ENiagaraMeshOrSprite
+
+()
+
+  [
+  @@sprite:                      ENiagaraMeshOrSprite!int(0)
+  @@mesh:                        ENiagaraMeshOrSprite!int(1)
+  @@eniagara_mesh_or_sprite_max: ENiagaraMeshOrSprite!int(2)
+  ]
+
+$$ .

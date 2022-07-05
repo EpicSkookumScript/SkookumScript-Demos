@@ -1,0 +1,28 @@
+// ENiagara Torus Distribution Mode
+//
+// UE4 name of this enum: ENiagaraTorusDistributionMode
+
+// UE4 Asset Name: ENiagaraTorusDistributionMode
+// UE4 Package Name: "/Niagara/Enums/ENiagaraTorusDistributionMode"
+
+annotations: &reflected_data &name("ENiagaraTorusDistributionMode")
+
+$$ @@
+
+ENiagaraTorusDistributionMode !@@random_
+ENiagaraTorusDistributionMode !@@direct
+ENiagaraTorusDistributionMode !@@eniagara_torus_distribution_mode_max
+
+$$ @@!
+// ENiagaraTorusDistributionMode
+// EnumPath: /Niagara/Enums/ENiagaraTorusDistributionMode.ENiagaraTorusDistributionMode
+
+()
+
+  [
+  @@random_:                              ENiagaraTorusDistributionMode!int(0)
+  @@direct:                               ENiagaraTorusDistributionMode!int(1)
+  @@eniagara_torus_distribution_mode_max: ENiagaraTorusDistributionMode!int(2)
+  ]
+
+$$ .

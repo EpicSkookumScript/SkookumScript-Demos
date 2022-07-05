@@ -1,0 +1,28 @@
+// ENiagara GPUDepth Response Type
+//
+// UE4 name of this enum: ENiagaraGPUDepthResponseType
+
+// UE4 Asset Name: ENiagaraGPUDepthResponseType
+// UE4 Package Name: "/Niagara/Enums/ENiagaraGPUDepthResponseType"
+
+annotations: &reflected_data &name("ENiagaraGPUDepthResponseType")
+
+$$ @@
+
+ENiagaraGPUDepthResponseType !@@kill
+ENiagaraGPUDepthResponseType !@@bounce
+ENiagaraGPUDepthResponseType !@@eniagara_gpudepth_response_type_max
+
+$$ @@!
+// ENiagaraGPUDepthResponseType
+// EnumPath: /Niagara/Enums/ENiagaraGPUDepthResponseType.ENiagaraGPUDepthResponseType
+
+()
+
+  [
+  @@kill:                                ENiagaraGPUDepthResponseType!int(0)
+  @@bounce:                              ENiagaraGPUDepthResponseType!int(1)
+  @@eniagara_gpudepth_response_type_max: ENiagaraGPUDepthResponseType!int(2)
+  ]
+
+$$ .

@@ -1,0 +1,34 @@
+// ENiagara Skel Sampling Mode Full
+//
+// UE4 name of this enum: ENiagaraSkelSamplingModeFull
+
+// UE4 Asset Name: ENiagaraSkelSamplingModeFull
+// UE4 Package Name: "/Niagara/Enums/ENiagaraSkelSamplingModeFull"
+
+annotations: &reflected_data &name("ENiagaraSkelSamplingModeFull")
+
+$$ @@
+
+ENiagaraSkelSamplingModeFull !@@skeleton_bones_
+ENiagaraSkelSamplingModeFull !@@skeleton_sockets_
+ENiagaraSkelSamplingModeFull !@@skeleton_bones_and_sockets_
+ENiagaraSkelSamplingModeFull !@@surface_triangles_
+ENiagaraSkelSamplingModeFull !@@surface_vertices_
+ENiagaraSkelSamplingModeFull !@@eniagara_skel_sampling_mode_full_max
+
+$$ @@!
+// ENiagaraSkelSamplingModeFull
+// EnumPath: /Niagara/Enums/ENiagaraSkelSamplingModeFull.ENiagaraSkelSamplingModeFull
+
+()
+
+  [
+  @@skeleton_bones_:                      ENiagaraSkelSamplingModeFull!int(0)
+  @@skeleton_sockets_:                    ENiagaraSkelSamplingModeFull!int(1)
+  @@skeleton_bones_and_sockets_:          ENiagaraSkelSamplingModeFull!int(2)
+  @@surface_triangles_:                   ENiagaraSkelSamplingModeFull!int(3)
+  @@surface_vertices_:                    ENiagaraSkelSamplingModeFull!int(4)
+  @@eniagara_skel_sampling_mode_full_max: ENiagaraSkelSamplingModeFull!int(5)
+  ]
+
+$$ .

@@ -1,0 +1,30 @@
+// ENiagara Collision Radius Options
+//
+// UE4 name of this enum: ENiagaraCollisionRadiusOptions
+
+// UE4 Asset Name: ENiagaraCollisionRadiusOptions
+// UE4 Package Name: "/Niagara/Enums/ENiagaraCollisionRadiusOptions"
+
+annotations: &reflected_data &name("ENiagaraCollisionRadiusOptions")
+
+$$ @@
+
+ENiagaraCollisionRadiusOptions !@@sprite
+ENiagaraCollisionRadiusOptions !@@mesh
+ENiagaraCollisionRadiusOptions !@@custom
+ENiagaraCollisionRadiusOptions !@@eniagara_collision_radius_options_max
+
+$$ @@!
+// ENiagaraCollisionRadiusOptions
+// EnumPath: /Niagara/Enums/ENiagaraCollisionRadiusOptions.ENiagaraCollisionRadiusOptions
+
+()
+
+  [
+  @@sprite:                                ENiagaraCollisionRadiusOptions!int(0)
+  @@mesh:                                  ENiagaraCollisionRadiusOptions!int(1)
+  @@custom:                                ENiagaraCollisionRadiusOptions!int(2)
+  @@eniagara_collision_radius_options_max: ENiagaraCollisionRadiusOptions!int(3)
+  ]
+
+$$ .

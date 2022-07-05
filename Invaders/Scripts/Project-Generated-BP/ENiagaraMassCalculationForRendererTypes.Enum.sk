@@ -1,0 +1,30 @@
+// ENiagara Mass Calculation for Renderer Types
+//
+// UE4 name of this enum: ENiagaraMassCalculationForRendererTypes
+
+// UE4 Asset Name: ENiagaraMassCalculationForRendererTypes
+// UE4 Package Name: "/Niagara/Enums/ENiagaraMassCalculationForRendererTypes"
+
+annotations: &reflected_data &name("ENiagaraMassCalculationForRendererTypes")
+
+$$ @@
+
+ENiagaraMassCalculationForRendererTypes !@@sprite
+ENiagaraMassCalculationForRendererTypes !@@mesh
+ENiagaraMassCalculationForRendererTypes !@@ribbon
+ENiagaraMassCalculationForRendererTypes !@@eniagara_mass_calculation_for_renderer_types_max
+
+$$ @@!
+// ENiagaraMassCalculationForRendererTypes
+// EnumPath: /Niagara/Enums/ENiagaraMassCalculationForRendererTypes.ENiagaraMassCalculationForRendererTypes
+
+()
+
+  [
+  @@sprite:                                           ENiagaraMassCalculationForRendererTypes!int(0)
+  @@mesh:                                             ENiagaraMassCalculationForRendererTypes!int(1)
+  @@ribbon:                                           ENiagaraMassCalculationForRendererTypes!int(2)
+  @@eniagara_mass_calculation_for_renderer_types_max: ENiagaraMassCalculationForRendererTypes!int(3)
+  ]
+
+$$ .

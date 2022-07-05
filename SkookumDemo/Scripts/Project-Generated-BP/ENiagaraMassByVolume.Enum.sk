@@ -1,0 +1,36 @@
+// ENiagara Mass by Volume
+//
+// UE4 name of this enum: ENiagaraMassByVolume
+
+// UE4 Asset Name: ENiagaraMassByVolume
+// UE4 Package Name: "/Niagara/Enums/ENiagaraMassByVolume"
+
+annotations: &reflected_data &name("ENiagaraMassByVolume")
+
+$$ @@
+
+ENiagaraMassByVolume !@@rock
+ENiagaraMassByVolume !@@steel
+ENiagaraMassByVolume !@@wood
+ENiagaraMassByVolume !@@water
+ENiagaraMassByVolume !@@paper
+ENiagaraMassByVolume !@@styrofoam
+ENiagaraMassByVolume !@@eniagara_mass_by_volume_max
+
+$$ @@!
+// ENiagaraMassByVolume
+// EnumPath: /Niagara/Enums/ENiagaraMassByVolume.ENiagaraMassByVolume
+
+()
+
+  [
+  @@rock:                        ENiagaraMassByVolume!int(0)
+  @@steel:                       ENiagaraMassByVolume!int(1)
+  @@wood:                        ENiagaraMassByVolume!int(2)
+  @@water:                       ENiagaraMassByVolume!int(3)
+  @@paper:                       ENiagaraMassByVolume!int(4)
+  @@styrofoam:                   ENiagaraMassByVolume!int(5)
+  @@eniagara_mass_by_volume_max: ENiagaraMassByVolume!int(6)
+  ]
+
+$$ .

@@ -1,0 +1,32 @@
+// ENiagara Float 4Channel
+//
+// UE4 name of this enum: ENiagara_Float4Channel
+
+// UE4 Asset Name: ENiagara_Float4Channel
+// UE4 Package Name: "/Niagara/Enums/ENiagara_Float4Channel"
+
+annotations: &reflected_data &name("ENiagara_Float4Channel")
+
+$$ @@
+
+ENiagara_Float4Channel !@@r
+ENiagara_Float4Channel !@@g
+ENiagara_Float4Channel !@@b
+ENiagara_Float4Channel !@@a
+ENiagara_Float4Channel !@@eniagara_max
+
+$$ @@!
+// ENiagara_Float4Channel
+// EnumPath: /Niagara/Enums/ENiagara_Float4Channel.ENiagara_Float4Channel
+
+()
+
+  [
+  @@r:            ENiagara_Float4Channel!int(0)
+  @@g:            ENiagara_Float4Channel!int(1)
+  @@b:            ENiagara_Float4Channel!int(2)
+  @@a:            ENiagara_Float4Channel!int(3)
+  @@eniagara_max: ENiagara_Float4Channel!int(4)
+  ]
+
+$$ .

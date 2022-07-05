@@ -1,0 +1,12 @@
+// Dmg Type BP Environmental
+//
+// UE4 name of this class: DmgTypeBP_Environmental_C
+
+// UE4 Asset Name: DmgTypeBP_Environmental
+// UE4 Package Name: "/Engine/EngineDamageTypes/DmgTypeBP_Environmental"
+
+annotations: &reflected_data &name("DmgTypeBP_Environmental_C")
+
+$$ @
+
+$$ .

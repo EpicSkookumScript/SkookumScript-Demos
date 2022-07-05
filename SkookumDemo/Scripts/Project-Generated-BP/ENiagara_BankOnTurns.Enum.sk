@@ -1,0 +1,28 @@
+// ENiagara Bank on Turns
+//
+// UE4 name of this enum: ENiagara_BankOnTurns
+
+// UE4 Asset Name: ENiagara_BankOnTurns
+// UE4 Package Name: "/Niagara/Enums/ENiagara_BankOnTurns"
+
+annotations: &reflected_data &name("ENiagara_BankOnTurns")
+
+$$ @@
+
+ENiagara_BankOnTurns !@@add_local_banking_rotation
+ENiagara_BankOnTurns !@@full_orientation_update
+ENiagara_BankOnTurns !@@eniagara_max
+
+$$ @@!
+// ENiagara_BankOnTurns
+// EnumPath: /Niagara/Enums/ENiagara_BankOnTurns.ENiagara_BankOnTurns
+
+()
+
+  [
+  @@add_local_banking_rotation: ENiagara_BankOnTurns!int(0)
+  @@full_orientation_update:    ENiagara_BankOnTurns!int(1)
+  @@eniagara_max:               ENiagara_BankOnTurns!int(2)
+  ]
+
+$$ .

@@ -9,43 +9,50 @@ annotations: &reflected_data &name("BP_Security_Camera_Tracking_C")
 
 $$ @
 
-/* &raw("UberGraphFrame")                                                   PointerToUberGraphFrame !@uber_graph_frame                     // Currently unsupported */
-/* &raw("SceneCapture")                                                     SceneCaptureComponent2D !@scene_capture                        // Currently unsupported */
-/* &raw("Audio_Scanner")                                                    AudioComponent !@audio_scanner                        // Currently unsupported */
-/* &raw("ViewCapsule")                                                      CapsuleComponent !@view_capsule                         // Currently unsupported */
-/* &raw("Viewcone")                                                         StaticMeshComponent !@viewcone                             // Currently unsupported */
-/* &raw("SpotLight")                                                        SpotLightComponent !@spot_light                           // Currently unsupported */
-/* &raw("Camera")                                                           StaticMeshComponent !@camera                               // Currently unsupported */
-/* &raw("Camera base")                                                      StaticMeshComponent !@camera_base                          // Currently unsupported */
-/* &raw("Actor Base")                                                       ArrowComponent !@actor_base                           // Currently unsupported */
-&raw("Alarm_Delay_Delay_Duration_D105A900420FE5044E28169B8164BA5A")      Real           !@alarm_delay_delay_duration_d105      // Alarm Delay Delay Duration D105A900420FE5044E28169B8164BA5A
-/* &raw("Alarm_Delay__Direction_D105A900420FE5044E28169B8164BA5A")          ETimelineDirection !@alarm_delay_direction_d105           // Currently unsupported */
-/* &raw("Alarm Delay")                                                      TimelineComponent !@alarm_delay                          // Currently unsupported */
-&raw("Scan_Rot_Timeline_scan_rotation_DB1E8CE441D991A3AFD277B6343D6482") Real           !@scan_rot_timeline_scan_rotation_db1e // Scan Rot Timeline Scan Rotation DB1E8CE441D991A3AFD277B6343D6482
-/* &raw("Scan_Rot_Timeline__Direction_DB1E8CE441D991A3AFD277B6343D6482")    ETimelineDirection !@scan_rot_timeline_direction_db1e     // Currently unsupported */
-/* &raw("Scan Rot Timeline")                                                TimelineComponent !@scan_rot_timeline                    // Currently unsupported */
-&raw("Camera Max Yaw")                                                   Real           !@camera_max_yaw                       // Maximum rotation angle for side to side scanning.
-&raw("Light attenuation Radius")                                         Real           !@light_attenuation_radius             // Attenuation radius for the spot light
-&raw("Spotlight Brightness")                                             Real           !@spotlight_brightness                 // Brightness of the spot light
-&raw("Light Color Alarm Off")                                            Color          !@light_color_alarm_off                // Light color when the alarm is off
-&raw("Light Color Alarm On")                                             Color          !@light_color_alarm_on                 // Light color when the alarm is off
-&raw("HasTarget")                                                        Boolean        !@has_target?                          // Has Target
-&raw("Camera Pitch")                                                     Real           !@camera_pitch                         // Rotation pitch for the camera
-&raw("Target Lost")                                                      Boolean        !@target_lost?                         // Target Lost
-/* &raw("Blueprint to trigger alarm array")                                 List{Actor}    !@blueprint_to_trigger_alarm_array     // Currently unsupported */
-&raw("Default Rotation")                                                 RotationAngles !@default_rotation                     // Default Rotation
-/* &raw("Scene Capture Texture")                                            TextureRenderTarget2D !@scene_capture_texture                // Currently unsupported */
-&raw("Scene Capture View Distance")                                      Real           !@scene_capture_view_distance          // Scene Capture View Distance
-/* &raw("Viewcone Material")                                                MaterialInstanceDynamic !@viewcone_material                    // Currently unsupported */
-/* &raw("Lens Material")                                                    MaterialInstanceDynamic !@lens_material                        // Currently unsupported */
-&raw("Test Alarm Material Settings")                                     Boolean        !@test_alarm_material_settings?        // TUrn on to test "Alarm On" Material colors
-/* &raw("Player")                                                           Actor          !@player                               // Currently unsupported */
-/* &raw("Alarm Interactors")                                                Actor          !@alarm_interactors                    // Currently unsupported */
-&raw("In Range")                                                         Boolean        !@in_range?                            // In Range
-&raw("Music Change")                                                     Boolean        !@music_change?                        // Music Change
-/* &raw("Scanner Soundcue")                                                 SoundBase      !@scanner_soundcue                     // Currently unsupported */
-/* &raw("Scanner Alarm Soundcue")                                           SoundBase      !@scanner_alarm_soundcue               // Currently unsupported */
-/* &raw("Scanner Reset Soundcue")                                           SoundBase      !@scanner_reset_soundcue               // Currently unsupported */
+&raw("SceneCapture")                                                     SceneCaptureComponent2D !@scene_capture                        // Scene Capture
+&raw("Audio_Scanner")                                                    AudioComponent          !@audio_scanner                        // Audio Scanner
+&raw("ViewCapsule")                                                      CapsuleComponent        !@view_capsule                         // View Capsule
+&raw("Viewcone")                                                         StaticMeshComponent     !@viewcone                             // Viewcone
+&raw("SpotLight")                                                        SpotLightComponent      !@spot_light                           // Spot Light
+&raw("Camera")                                                           StaticMeshComponent     !@camera                               // Camera
+&raw("Camera base")                                                      StaticMeshComponent     !@camera_base                          // Camera Base
+&raw("Actor Base")                                                       ArrowComponent          !@actor_base                           // Actor Base
+&raw("Alarm_Delay_Delay_Duration_D105A900420FE5044E28169B8164BA5A")      Real                    !@alarm_delay_delay_duration_d105      // Alarm Delay Delay Duration D105A900420FE5044E28169B8164BA5A
+&raw("Alarm Delay")                                                      TimelineComponent       !@alarm_delay                          // Alarm Delay
+&raw("Scan_Rot_Timeline_scan_rotation_DB1E8CE441D991A3AFD277B6343D6482") Real                    !@scan_rot_timeline_scan_rotation_db1e // Scan Rot Timeline Scan Rotation DB1E8CE441D991A3AFD277B6343D6482
+&raw("Scan Rot Timeline")                                                TimelineComponent       !@scan_rot_timeline                    // Scan Rot Timeline
+&raw("Camera Max Yaw")                                                   Real                    !@camera_max_yaw                       // Maximum rotation angle for side to side scanning.
+&raw("Light attenuation Radius")                                         Real                    !@light_attenuation_radius             // Attenuation radius for the spot light
+&raw("Spotlight Brightness")                                             Real                    !@spotlight_brightness                 // Brightness of the spot light
+&raw("Light Color Alarm Off")                                            Color                   !@light_color_alarm_off                // Light color when the alarm is off
+&raw("Light Color Alarm On")                                             Color                   !@light_color_alarm_on                 // Light color when the alarm is off
+&raw("HasTarget")                                                        Boolean                 !@has_target?                          // Has Target
+&raw("Camera Pitch")                                                     Real                    !@camera_pitch                         // Rotation pitch for the camera
+&raw("Target Lost")                                                      Boolean                 !@target_lost?                         // Target Lost
+&raw("Blueprint to trigger alarm array")                                 List{Actor}             !@blueprint_to_trigger_alarm_array     // Blueprint To Trigger Alarm Array
+&raw("Default Rotation")                                                 RotationAngles          !@default_rotation                     // Default Rotation
+&raw("Scene Capture Texture")                                            TextureRenderTarget2D   !@scene_capture_texture                // Scene Capture Texture
+&raw("Scene Capture View Distance")                                      Real                    !@scene_capture_view_distance          // Scene Capture View Distance
+&raw("Viewcone Material")                                                MaterialInstanceDynamic !@viewcone_material                    // Viewcone Material
+&raw("Lens Material")                                                    MaterialInstanceDynamic !@lens_material                        // Lens Material
+&raw("Test Alarm Material Settings")                                     Boolean                 !@test_alarm_material_settings?        // TUrn on to test "Alarm On" Material colors
+&raw("Player")                                                           Actor                   !@player                               // Player
+&raw("Alarm Interactors")                                                Actor                   !@alarm_interactors                    // Alarm Interactors
+&raw("In Range")                                                         Boolean                 !@in_range?                            // In Range
+&raw("Music Change")                                                     Boolean                 !@music_change?                        // Music Change
+&raw("Scanner Soundcue")                                                 SoundBase               !@scanner_soundcue                     // Scanner Soundcue
+&raw("Scanner Alarm Soundcue")                                           SoundBase               !@scanner_alarm_soundcue               // Scanner Alarm Soundcue
+&raw("Scanner Reset Soundcue")                                           SoundBase               !@scanner_reset_soundcue               // Scanner Reset Soundcue
+
+$$ @scene_capture_activation
+// Scene Capture Activation
+//
+// UE4 name of this method: Scene capture activation
+
+&aka("Scene capture activation")
+
+(Boolean               activation?     : false
+ TextureRenderTarget2D capture_texture : TextureRenderTarget2D!null) 
 
 $$ @security_alarm_interface
 // Security Alarm Interface

@@ -1,0 +1,28 @@
+// The emitter indipendent space of the region offset and rotation transforms
+//
+// UE4 name of this enum: ENiagaraRegionCoordinateSpace
+
+// UE4 Asset Name: ENiagaraRegionCoordinateSpace
+// UE4 Package Name: "/Niagara/Enums/ENiagaraRegionCoordinateSpace"
+
+annotations: &reflected_data &name("ENiagaraRegionCoordinateSpace")
+
+$$ @@
+
+ENiagaraRegionCoordinateSpace !@@world_
+ENiagaraRegionCoordinateSpace !@@local
+ENiagaraRegionCoordinateSpace !@@eniagara_region_coordinate_space_max
+
+$$ @@!
+// ENiagaraRegionCoordinateSpace
+// EnumPath: /Niagara/Enums/ENiagaraRegionCoordinateSpace.ENiagaraRegionCoordinateSpace
+
+()
+
+  [
+  @@world_:                               ENiagaraRegionCoordinateSpace!int(0)
+  @@local:                                ENiagaraRegionCoordinateSpace!int(1)
+  @@eniagara_region_coordinate_space_max: ENiagaraRegionCoordinateSpace!int(2)
+  ]
+
+$$ .
